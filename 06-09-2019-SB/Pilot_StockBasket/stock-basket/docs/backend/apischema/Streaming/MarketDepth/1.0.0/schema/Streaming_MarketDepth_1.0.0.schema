@@ -1,0 +1,157 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "streaming_type": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "streaming_type"
+                }, 
+                "request_type": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "request_type"
+                }, 
+                "session": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "session"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "symbols": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "symbols"
+                        }
+                    }
+                }, 
+                "response_format": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "response_format"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "streaming_type": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "streaming_type"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "bidValues": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "price": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "price"
+                                    }, 
+                                    "no": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "no"
+                                    }, 
+                                    "qty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "qty"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "bidValues"
+                        }, 
+                        "askValues": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "price": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "price"
+                                    }, 
+                                    "no": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "no"
+                                    }, 
+                                    "qty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "qty"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "askValues"
+                        }, 
+                        "taq": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "taq"
+                        }, 
+                        "ltt": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "ltt"
+                        }, 
+                        "lttUTC": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "lttUTC"
+                        }, 
+                        "tbq": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "tbq"
+                        }, 
+                        "symbol": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "symbol"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

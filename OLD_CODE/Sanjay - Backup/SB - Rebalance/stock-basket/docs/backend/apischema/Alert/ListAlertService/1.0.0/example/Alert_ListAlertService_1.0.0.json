@@ -1,0 +1,53 @@
+{
+    "echo": {},
+        "request": {
+            "data": {},
+            "appID": "a7a84f33504caa69e3f82c764621ec82"
+        },
+        "response": {
+            "svcName": "ListAlertService",
+            "serverTime": "1497862747919",
+            "infoID": "0",
+            "data": {
+                "alertList": [
+                {
+                    "dispExpDate": "27JUL2017",
+                    "instrument": "OPTSTK",
+                    "triggerPrice": "",
+                    "triggerType": "",
+                    "displayStrikePrice": "270",
+                    "criteriaVal": "53.00",
+                    "dispInstType": "OPTSTK",
+                    "displayAlertCriteria": "Rises >53.00",
+                    "expiry": "27 Jul 17",
+                    "change": "0.00",
+                    "alertType": "Price",
+                    "changePer": "0.00",
+                    "notifyType": "P,E",
+                    "exc": "NFO",
+                    "lTP": "0.00",
+                    "strikePrice": "270.00",
+                    "triggerQty": "",
+                    "symbol": "100000_NFO",
+                    "optionType": "PE",
+                    "criteriaType": "Rises Above",
+                    "alertID": "13689",
+                    "triggeredAt": "",
+                    "isTriggered": true,
+                    "symName": "MARICO",
+                    "productCode": "",
+                    "validity": "Day"
+                }
+                ]
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "c0b45eff-7a85-47d7-8ecb-cbade89ea028",
+            "svcGroup": "Alert"
+        },
+        "config": {
+            "label": 4,
+            "message": 196,
+            "menu": 51,
+            "app": 76
+        }
+}

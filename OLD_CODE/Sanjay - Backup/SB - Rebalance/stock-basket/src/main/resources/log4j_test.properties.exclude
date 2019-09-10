@@ -1,0 +1,12 @@
+#log4j.rootLogger=DEBUG, FILE
+log4j.logger.com.msf= DEBUG, FILE, C
+
+log4j.appender.C = org.apache.log4j.ConsoleAppender
+log4j.appender.C.layout = org.apache.log4j.PatternLayout
+log4j.appender.C.layout.ConversionPattern=[%d{dd MMM yyyy - hh:mm:ss,SSS a}] [%t]  %5p - %m %n
+
+log4j.appender.FILE=org.apache.log4j.FileAppender
+log4j.appender.FILE.Appender=true
+log4j.appender.FILE.file=/tmp/samco_dev.log
+log4j.appender.FILE.Layout=org.apache.log4j.PatternLayout
+log4j.appender.FILE.layout.ConversionPattern=[%d{dd MMM yyyy - hh:mm:ss,SSS}] [%t] [%C] %5p - %m %n

@@ -1,0 +1,2088 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {
+                "app": "0",
+                "message": "0",
+                "label": "0",
+                "menu": "0",
+                "lang": "ENGLISH"
+            }
+        },
+        "response": {
+            "svcName": "Base",
+            "serverTime": "1507804793543",
+            "infoID": "0",
+            "data": {
+                "label": {
+                    "version": 4,
+                    "config": [
+                    {
+                        "key": "LG_YOB",
+                        "value": "Year Of Birth"
+                    },
+                    {
+                        "key": "LG_PASSWORD",
+                        "value": "Password"
+                    },
+                    {
+                        "key": "LG_USERNAME",
+                        "value": "Username"
+                    }
+                    ]
+                },
+                "message": {
+                    "version": 233,
+                    "config": [
+                    {
+                        "key": "EGN0001",
+                        "value": {
+                            "message": "App ID is invalid",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EGN0002",
+                        "value": {
+                            "message": "Request failed",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EGN0004",
+                        "value": {
+                            "message": "Response failed",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EGN0005",
+                        "value": {
+                            "message": "Dynamic message",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EGN0006",
+                        "value": {
+                            "message": "Invalid exchange",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EIT0001",
+                        "value": {
+                            "message": "Invalid build",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EGN0007",
+                        "value": {
+                            "message": "Session Expired. Please login again.",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EGN0011",
+                        "value": {
+                            "message": "Duplicate Order Request",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0001",
+                        "value": {
+                            "message": "Circuit limits not available",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0002",
+                        "value": {
+                            "message": "Price should be in-between circuit price range",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0003",
+                        "value": {
+                            "message": "Please enter valid date",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0004",
+                        "value": {
+                            "message": "Not able to retrieve validate GTD",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0005",
+                        "value": {
+                            "message": "Please enter valid month",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0006",
+                        "value": {
+                            "message": "Please enter valid day",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0007",
+                        "value": {
+                            "message": "Entered date is greater than expiry date",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0008",
+                        "value": {
+                            "message": "Enteded Date is less than current date",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0009",
+                        "value": {
+                            "message": "Entered date is greater than 7 days",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EGN0003",
+                        "value": {
+                            "message": "Invalid Request Parameters",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELG0001",
+                        "value": {
+                            "message": "Login failed. Please provide valid credentials",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELG0002",
+                        "value": {
+                            "message": "Account Blocked. To unblock account use Login Help",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELG0003",
+                        "value": {
+                            "message": "Logout Failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELG0004",
+                        "value": {
+                            "message": "Invalid Password",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELG0005",
+                        "value": {
+                            "message": "Invalid 'Year of Birth'",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0001",
+                        "value": {
+                            "message": "Unblock user failed. Please ensure the details entered are correct",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0002",
+                        "value": {
+                            "message": "Forgot password failed. Please ensure the details entered are correct",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0003",
+                        "value": {
+                            "message": "Forgot user ID retrieval failed. Please ensure the details entered are correct",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0004",
+                        "value": {
+                            "message": "Change Password Failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0005",
+                        "value": {
+                            "message": "Please enter valid e-mail id",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0006",
+                        "value": {
+                            "message": "Please enter valid PAN number",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0007",
+                        "value": {
+                            "message": "Please enter valid user ID",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0008",
+                        "value": {
+                            "message": "Change password failed. The password should not be last 3 previous passwords",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EWL0001",
+                        "value": {
+                            "message": "New market watch group creation failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EWL0002",
+                        "value": {
+                            "message": "Market watch group deletion failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EWL0003",
+                        "value": {
+                            "message": "New symbol addition failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EWL0004",
+                        "value": {
+                            "message": "Symbol deletion failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EWL0006",
+                        "value": {
+                            "message": "Symbol retrieval failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EWL0007",
+                        "value": {
+                            "message": "Setting of default market watch group failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EWL0008",
+                        "value": {
+                            "message": "Predefined market watch groups retrieval failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EWL0009",
+                        "value": {
+                            "message": "Predefined symbols retrieval failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EWL0010",
+                        "value": {
+                            "message": "Rearrange Scrips Failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EWL0011",
+                        "value": {
+                            "message": "The symbol already exists in this group",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EQT0001",
+                        "value": {
+                            "message": "Quotes Retrieval Failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EQT0002",
+                        "value": {
+                            "message": "Market Depth Retrieval Failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EQT0003",
+                        "value": {
+                            "message": "Market Data Retrieval Failed",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EHL0001",
+                        "value": {
+                            "message": "Holdings Retrieval Failed",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EPS0001",
+                        "value": {
+                            "message": "Positions Retrieval Failed",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EIN0001",
+                        "value": {
+                            "message": "Index Exchanges Retrieval Failed",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EIN0002",
+                        "value": {
+                            "message": "Index Details Retrieval Failed",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ECH0001",
+                        "value": {
+                            "message": "Chart Data Retrieval Failed",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ESE0001",
+                        "value": {
+                            "message": "Symbol not found",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ELS0001",
+                        "value": {
+                            "message": "Limits Retrieval Failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EPS0002",
+                        "value": {
+                            "message": "SquareOff Position Failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EPS0003",
+                        "value": {
+                            "message": "Position Conversion Failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0009",
+                        "value": {
+                            "message": "Transaction password failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0010",
+                        "value": {
+                            "message": "Please enter number of days between 1-7",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0011",
+                        "value": {
+                            "message": "Please enter valid number of days",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0012",
+                        "value": {
+                            "message": "Please enter number of days which are less than expiry date",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0013",
+                        "value": {
+                            "message": "Please enter valid time",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0014",
+                        "value": {
+                            "message": "CO type supports MKT order only",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ETV0015",
+                        "value": {
+                            "message": "Cover percentage is not available",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EQT0004",
+                        "value": {
+                            "message": "Please try another symbol",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EGN0008",
+                        "value": {
+                            "message": "No data found",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ECO0001",
+                        "value": {
+                            "message": "Unable to process order cancellation",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ECO0002",
+                        "value": {
+                            "message": "Error occured while cancelling order",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EMO0001",
+                        "value": {
+                            "message": "Unable to process order modification",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EMO0002",
+                        "value": {
+                            "message": "Error occured while cancelling order",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ERS0001",
+                        "value": {
+                            "message": "No data available for related derivatives",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ERS0002",
+                        "value": {
+                            "message": "No data available for future chain",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ERS0003",
+                        "value": {
+                            "message": "No data available for related stocks",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EGN0012",
+                        "value": {
+                            "message": "No Data available for this filter",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EPO0001",
+                        "value": {
+                            "message": "Unable to process the order",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EPO0002",
+                        "value": {
+                            "message": "Error occured while placing order",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EOB0001",
+                        "value": {
+                            "message": "Unable to fetch order book",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EOB0003",
+                        "value": {
+                            "message": "No Orders available for this filter",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ESN0001",
+                        "value": {
+                            "message": "Max faviuorite symbols reached",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ESN0002",
+                        "value": {
+                            "message": "Invalid group",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ESN0003",
+                        "value": {
+                            "message": "Invalid symbol",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ESN0004",
+                        "value": {
+                            "message": "Cannot fetch watchlist",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ESN0005",
+                        "value": {
+                            "message": "Cannot fetch favourites",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ESN0006",
+                        "value": {
+                            "message": "Cannot fetch stocknote groups",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EBO0001",
+                        "value": {
+                            "message": "Trailing Tick should be multiple of tick size",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EBO0002",
+                        "value": {
+                            "message": "Stop Loss Absolute should be multiple of tick size",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EBO0003",
+                        "value": {
+                            "message": "Please enter valid Trailing Tick",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EBO0004",
+                        "value": {
+                            "message": "Square Off Absolute should be multiple of tick size",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EBO0005",
+                        "value": {
+                            "message": "Please enter valid Stop Loss Absolute",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EBO0006",
+                        "value": {
+                            "message": "Please enter valid Square Off Absolute",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EBO0007",
+                        "value": {
+                            "message": "Error occured while placing BO",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0010",
+                        "value": {
+                            "message": "New password does not satisfy the password policy. Please retry with the new password",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EOB0002",
+                        "value": {
+                            "message": "No orders available under this section",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EBO0008",
+                        "value": {
+                            "message": "Unable to cancel BO order.",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EIT0002",
+                        "value": {
+                            "message": "Unable to connect to server",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EGN0009",
+                        "value": {
+                            "message": "Unknown error",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ESD0001",
+                        "value": {
+                            "message": "Symbol not found",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EAT0001",
+                        "value": {
+                            "message": "Alert already exists",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EGN0010",
+                        "value": {
+                            "message": "Request Failed",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ESN0007",
+                        "value": {
+                            "message": "No favourite symbols set",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ESN0008",
+                        "value": {
+                            "message": "No symbols are muted",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EPAY0001",
+                        "value": {
+                            "message": "Payin request failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EPAY0002",
+                        "value": {
+                            "message": "Payout request failed",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "ELH0011",
+                        "value": {
+                            "message": "Unable to fetch user details",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EAT0002",
+                        "value": {
+                            "message": "You have no notifications",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "EAT0003",
+                        "value": {
+                            "message": "No notifications for this group",
+                            "action": 54
+                        }
+                    },
+                    {
+                        "key": "ELH0012",
+                        "value": {
+                            "message": "Reset 2FA failed. Please ensure the details entered are correct",
+                            "action": 50
+                        }
+                    },
+                    {
+                        "key": "EPG0001",
+                        "value": {
+                            "message": "No more pages to scroll!",
+                            "action": 54
+                        }
+                    }
+                    ]
+                },
+                "menu": {
+                    "version": 68,
+                    "config": [
+                    {
+                        "key": "RT",
+                        "value": {
+                            "parent": "NA",
+                            "isActive": "true",
+                            "description": "NA",
+                            "isAvailForOpenUser": "true",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_FEEDS",
+                        "value": {
+                            "parent": "RT",
+                            "isActive": "true",
+                            "description": "Feeds",
+                            "isAvailForOpenUser": "true",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_FEEDS_TREND",
+                        "value": {
+                            "parent": "MNU_FEEDS",
+                            "isActive": "true",
+                            "description": "Trending Notes",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "true",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_FEEDS_WATCHLIST",
+                        "value": {
+                            "parent": "MNU_FEEDS",
+                            "isActive": "true",
+                            "description": "Watchlist Notes",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_FEEDS_TOP",
+                        "value": {
+                            "parent": "MNU_FEEDS",
+                            "isActive": "true",
+                            "description": "Top Notes",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 3
+                        }
+                    },
+                    {
+                        "key": "MNU_FEEDS_ALL",
+                        "value": {
+                            "parent": "MNU_FEEDS",
+                            "isActive": "true",
+                            "description": "All Notes",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "true",
+                            "displayOrder": 4
+                        }
+                    },
+                    {
+                        "key": "MNU_WATCH",
+                        "value": {
+                            "parent": "RT",
+                            "isActive": "true",
+                            "description": "Watchlist",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_WATCH_USER",
+                        "value": {
+                            "parent": "MNU_WATCH",
+                            "isActive": "true",
+                            "description": "Your Watchlist",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_WATCH_POS",
+                        "value": {
+                            "parent": "MNU_WATCH",
+                            "isActive": "true",
+                            "description": "Your Positions/Holdings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_WATCH_INDICES",
+                        "value": {
+                            "parent": "MNU_WATCH",
+                            "isActive": "true",
+                            "description": "Indices Watchlist",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 3
+                        }
+                    },
+                    {
+                        "key": "MNU_WATCH_MKT",
+                        "value": {
+                            "parent": "MNU_WATCH",
+                            "isActive": "true",
+                            "description": "Market Movers",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 4
+                        }
+                    },
+                    {
+                        "key": "MNU_ORDERS",
+                        "value": {
+                            "parent": "RT",
+                            "isActive": "true",
+                            "description": "Orders",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 3
+                        }
+                    },
+                    {
+                        "key": "MNU_ORDERS_ORDBOOK",
+                        "value": {
+                            "parent": "MNU_ORDERS",
+                            "isActive": "true",
+                            "description": "Order Book",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ORDERS_TRDBOOK",
+                        "value": {
+                            "parent": "MNU_ORDERS",
+                            "isActive": "true",
+                            "description": "Trade Book",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ALERTS",
+                        "value": {
+                            "parent": "RT",
+                            "isActive": "true",
+                            "description": "Alerts",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 4
+                        }
+                    },
+                    {
+                        "key": "MNU_ALERTS_VIEW",
+                        "value": {
+                            "parent": "MNU_ALERTS",
+                            "isActive": "true",
+                            "description": "View Alerts",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ALERTS_NOTIF",
+                        "value": {
+                            "parent": "MNU_ALERTS",
+                            "isActive": "true",
+                            "description": "Notifications",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACCOUNT",
+                        "value": {
+                            "parent": "RT",
+                            "isActive": "true",
+                            "description": "Accounts",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 5
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET",
+                        "value": {
+                            "parent": "MNU_ACCOUNT",
+                            "isActive": "true",
+                            "description": "My Account",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_POS",
+                        "value": {
+                            "parent": "MNU_ACC_SET",
+                            "isActive": "true",
+                            "description": "My Positions",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 3
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_HOLD",
+                        "value": {
+                            "parent": "MNU_ACC_SET",
+                            "isActive": "true",
+                            "description": "My Holdings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 4
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_FUNDS",
+                        "value": {
+                            "parent": "MNU_ACC_SET",
+                            "isActive": "true",
+                            "description": "Manage Funds",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_HIST",
+                        "value": {
+                            "parent": "MNU_ACCOUNT",
+                            "isActive": "true",
+                            "description": "Reports",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_HIST_PROFLOS",
+                        "value": {
+                            "parent": "MNU_ACC_HIST",
+                            "isActive": "true",
+                            "description": "Historical Profit & Loss",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_HIST_TRADE",
+                        "value": {
+                            "parent": "MNU_ACC_HIST",
+                            "isActive": "true",
+                            "description": "Historical Trades",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUPPORT",
+                        "value": {
+                            "parent": "MNU_ACCOUNT",
+                            "isActive": "true",
+                            "description": "Support",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 3
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUPPORT_RAISE",
+                        "value": {
+                            "parent": "MNU_ACC_SUPPORT",
+                            "isActive": "true",
+                            "description": "Raise a Support Ticket",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUPPORT_CONTACT",
+                        "value": {
+                            "parent": "MNU_ACC_SUPPORT",
+                            "isActive": "true",
+                            "description": "Contact",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_MANAGE",
+                        "value": {
+                            "parent": "MNU_ACC_SET",
+                            "isActive": "true",
+                            "description": "Manage My Subscriptions",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 5
+                        }
+                    },
+                    {
+                        "key": "MNU_GENERAL",
+                        "value": {
+                            "parent": "MNU_ACCOUNT",
+                            "isActive": "true",
+                            "description": "General",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 4
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_ABTHEP",
+                        "value": {
+                            "parent": "MNU_GENERAL",
+                            "isActive": "true",
+                            "description": "About and Help",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_REFER",
+                        "value": {
+                            "parent": "MNU_GENERAL",
+                            "isActive": "true",
+                            "description": "Refer a Friend",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_FEEDS_FAVOURITE",
+                        "value": {
+                            "parent": "MNU_FEEDS",
+                            "isActive": "true",
+                            "description": "Favourite Notes",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 5
+                        }
+                    },
+                    {
+                        "key": "MNU_FEEDS_NOTIFICATION",
+                        "value": {
+                            "parent": "MNU_FEEDS",
+                            "isActive": "true",
+                            "description": "Stock Notes Notification",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 6
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_FEED",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STOCK",
+                            "isActive": "true",
+                            "description": "Feed Settings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_FAV",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STOCK",
+                            "isActive": "true",
+                            "description": "Favourites",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_MUTE",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STOCK",
+                            "isActive": "true",
+                            "description": "Muted",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 3
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_PUSH",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STOCK",
+                            "isActive": "true",
+                            "description": "Push Notifications",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 4
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_PUSH_VOL",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STK_PUSH",
+                            "isActive": "true",
+                            "description": "Volume",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_PUSH_EMAIL",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STK_PUSH",
+                            "isActive": "true",
+                            "description": "E-mail",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_FEED_ALGO",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STK_FEED",
+                            "isActive": "true",
+                            "description": "Algorithmic",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_FEED_CHRONO",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STK_FEED",
+                            "isActive": "true",
+                            "description": "Chronological",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_PUSH_VOL_HIGH",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STK_PUSH_VOL",
+                            "isActive": "true",
+                            "description": "High",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_PUSH_VOL_MEDIUM",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STK_PUSH_VOL",
+                            "isActive": "true",
+                            "description": "Medium",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_PUSH_VOL_LOW",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STK_PUSH_VOL",
+                            "isActive": "true",
+                            "description": "Low",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 3
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_PUSH_EMAIL_ALL",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STK_PUSH_EMAIL",
+                            "isActive": "true",
+                            "description": "All",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_STK_PUSH_EMAIL_SUMMARY",
+                        "value": {
+                            "parent": "MNU_ACC_SET_STK_PUSH_EMAIL",
+                            "isActive": "true",
+                            "description": "Summary",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUB_SET",
+                        "value": {
+                            "parent": "MNU_ACC_SET",
+                            "isActive": "true",
+                            "description": "Settings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 6
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUB_SET_PROD_TYPE",
+                        "value": {
+                            "parent": "MNU_ACC_SUB_SET",
+                            "isActive": "true",
+                            "description": "Product Type Settings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUB_SET_ORD_TYPE",
+                        "value": {
+                            "parent": "MNU_ACC_SUB_SET",
+                            "isActive": "true",
+                            "description": "Order Type Settings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 2
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUB_SET_POS_BOOK_SET",
+                        "value": {
+                            "parent": "MNU_ACC_SUB_SET",
+                            "isActive": "true",
+                            "description": "Position Book Settings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 3
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUB_SET_CHART",
+                        "value": {
+                            "parent": "MNU_ACC_SUB_SET",
+                            "isActive": "true",
+                            "description": "Chart Settings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 4
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUB_SET_ALERT_NOTIFICATION_SET",
+                        "value": {
+                            "parent": "MNU_ACC_SUB_SET",
+                            "isActive": "true",
+                            "description": "Alerts and Notifications Settings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 5
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUB_SET_STOCK_NOTE",
+                        "value": {
+                            "parent": "MNU_ACC_SUB_SET",
+                            "isActive": "true",
+                            "description": "Stock Note Settings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 6
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SUB_SET_PASSWORD",
+                        "value": {
+                            "parent": "MNU_ACC_SUB_SET",
+                            "isActive": "true",
+                            "description": "Password Settings",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 7
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_GEN_OPEN_ACC",
+                        "value": {
+                            "parent": "MNU_GENERAL",
+                            "isActive": "true",
+                            "description": "Open an Account",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 3
+                        }
+                    },
+                    {
+                        "key": "MNU_ACC_SET_CHANGE_PASSWD",
+                        "value": {
+                            "parent": "MNU_ACC_SET",
+                            "isActive": "true",
+                            "description": "Change Password",
+                            "isAvailForOpenUser": "false",
+                            "isAvailForGuestUser": "false",
+                            "displayOrder": 1
+                        }
+                    }
+                    ]
+                },
+                "app": {
+                    "version": 98,
+                    "config": [
+                    {
+                        "key": "SUPPORT_URL",
+                        "value": "https://www.samco.in"
+                    },
+                    {
+                        "key": "CALL_US",
+                        "value": "+91 22 2222 7777"
+                    },
+                    {
+                        "key": "EDIT_COLUMN",
+                        "value": [
+                            "Line Chart",
+                        "Volume / Value",
+                        "High / Low",
+                        "Previous Close / Open",
+                        "OI / OI Build up",
+                        "OI Build up absolute / OI Build up %",
+                        "Bid price (Qty)/Ask price (Qty)"
+                            ]
+                    },
+                    {
+                        "key": "SYMBOL_SORTING",
+                        "value": [
+                            "Alphabetical",
+                        "LTP",
+                        "Change",
+                        "Change%"
+                            ]
+                    },
+                    {
+                        "key": "NSE_INDICES",
+                        "value": [
+                        {
+                            "symName": "Nifty 50",
+                            "symbol": "-21"
+                        },
+                        {
+                            "symName": "India VIX",
+                            "symbol": "-22"
+                        },
+                        {
+                            "symName": "Nifty Bank",
+                            "symbol": "-23"
+                        },
+                        {
+                            "symName": "Nifty Next 50",
+                            "symbol": "-24"
+                        },
+                        {
+                            "symName": "Nifty 100",
+                            "symbol": "-25"
+                        },
+                        {
+                            "symName": "Nifty 200",
+                            "symbol": "-26"
+                        },
+                        {
+                            "symName": "Nifty 500",
+                            "symbol": "-27"
+                        },
+                        {
+                            "symName": "Nifty Midcap 50",
+                            "symbol": "-28"
+                        },
+                        {
+                            "symName": "Nifty MID100 Free",
+                            "symbol": "-29"
+                        },
+                        {
+                            "symName": "Nifty SML100 Free",
+                            "symbol": "-30"
+                        },
+                        {
+                            "symName": "Nifty Auto",
+                            "symbol": "-31"
+                        },
+                        {
+                            "symName": "Nifty Fin Service",
+                            "symbol": "-32"
+                        },
+                        {
+                            "symName": "Nifty FMCG",
+                            "symbol": "-33"
+                        },
+                        {
+                            "symName": "Nifty IT",
+                            "symbol": "-34"
+                        },
+                        {
+                            "symName": "Nifty Media",
+                            "symbol": "-35"
+                        },
+                        {
+                            "symName": "Nifty Metal",
+                            "symbol": "-36"
+                        },
+                        {
+                            "symName": "Nifty Pharma",
+                            "symbol": "-37"
+                        },
+                        {
+                            "symName": "Nifty PSU Bank",
+                            "symbol": "-38"
+                        },
+                        {
+                            "symName": "Nifty Pvt Bank",
+                            "symbol": "-39"
+                        },
+                        {
+                            "symName": "Nifty Realty",
+                            "symbol": "-40"
+                        },
+                        {
+                            "symName": "Nifty Div Opps 50",
+                            "symbol": "-41"
+                        },
+                        {
+                            "symName": "Nifty GrowSect 15",
+                            "symbol": "-42"
+                        },
+                        {
+                            "symName": "Nifty Quality 30",
+                            "symbol": "-43"
+                        },
+                        {
+                            "symName": "Nifty50 Value 20",
+                            "symbol": "-44"
+                        },
+                        {
+                            "symName": "Nifty50 TR 2x Lev",
+                            "symbol": "-45"
+                        },
+                        {
+                            "symName": "Nifty50 PR 2x Lev",
+                            "symbol": "-46"
+                        },
+                        {
+                            "symName": "Nifty50 TR 1x Inv",
+                            "symbol": "-47"
+                        },
+                        {
+                            "symName": "Nifty50 PR 1x Inv",
+                            "symbol": "-48"
+                        },
+                        {
+                            "symName": "Nifty50 Div Point",
+                            "symbol": "-49"
+                        },
+                        {
+                            "symName": "Nifty Commodities",
+                            "symbol": "-50"
+                        },
+                        {
+                            "symName": "Nifty Consumption",
+                            "symbol": "-51"
+                        },
+                        {
+                            "symName": "Nifty CPSE",
+                            "symbol": "-52"
+                        },
+                        {
+                            "symName": "Nifty Corporate Group",
+                            "symbol": "-53"
+                        },
+                        {
+                            "symName": "Nifty Infra",
+                            "symbol": "-54"
+                        },
+                        {
+                            "symName": "Nifty100 Liq 15",
+                            "symbol": "-55"
+                        },
+                        {
+                            "symName": "Nifty Midcap Liquid 15",
+                            "symbol": "-56"
+                        },
+                        {
+                            "symName": "Nifty MNC",
+                            "symbol": "-57"
+                        },
+                        {
+                            "symName": "Nifty PSE",
+                            "symbol": "-58"
+                        },
+                        {
+                            "symName": "Nifty Serv Sector",
+                            "symbol": "-59"
+                        }
+                        ]
+                    },
+                    {
+                        "key": "BSE_INDICES",
+                        "value": [
+                        {
+                            "symName": "SENSEX",
+                            "symbol": "-101"
+                        },
+                        {
+                            "symName": "DOLLEX 100",
+                            "symbol": "-102"
+                        },
+                        {
+                            "symName": "DOLLEX 200",
+                            "symbol": "-103"
+                        },
+                        {
+                            "symName": "TECK",
+                            "symbol": "-104"
+                        },
+                        {
+                            "symName": "BSE PSU",
+                            "symbol": "-105"
+                        },
+                        {
+                            "symName": "BSE Auto",
+                            "symbol": "-106"
+                        },
+                        {
+                            "symName": "Bankex",
+                            "symbol": "-107"
+                        },
+                        {
+                            "symName": "Capital Goods",
+                            "symbol": "-108"
+                        },
+                        {
+                            "symName": "Cons Durables",
+                            "symbol": "-109"
+                        },
+                        {
+                            "symName": "Fast Mov Cons Goods",
+                            "symbol": "-110"
+                        },
+                        {
+                            "symName": "HealthCare",
+                            "symbol": "-111"
+                        },
+                        {
+                            "symName": "BSE IT",
+                            "symbol": "-112"
+                        },
+                        {
+                            "symName": "Metal",
+                            "symbol": "-113"
+                        },
+                        {
+                            "symName": "OilGas",
+                            "symbol": "-114"
+                        },
+                        {
+                            "symName": "DOLLEX 30",
+                            "symbol": "-115"
+                        },
+                        {
+                            "symName": "CARBONEX",
+                            "symbol": "-116"
+                        },
+                        {
+                            "symName": "BSE IPO",
+                            "symbol": "-117"
+                        },
+                        {
+                            "symName": "GREENEX",
+                            "symbol": "-118"
+                        },
+                        {
+                            "symName": "Power",
+                            "symbol": "-119"
+                        },
+                        {
+                            "symName": "Realty",
+                            "symbol": "-120"
+                        },
+                        {
+                            "symName": "SME IPO",
+                            "symbol": "-121"
+                        },
+                        {
+                            "symName": "BSE AllCap",
+                            "symbol": "-122"
+                        },
+                        {
+                            "symName": "Basic Materials",
+                            "symbol": "-123"
+                        },
+                        {
+                            "symName": "Cons Disc Goods Services",
+                            "symbol": "-124"
+                        },
+                        {
+                            "symName": "BSE LargeCap",
+                            "symbol": "-125"
+                        },
+                        {
+                            "symName": "BSE Midcap Select",
+                            "symbol": "-126"
+                        },
+                        {
+                            "symName": "BSE SmallCap Select",
+                            "symbol": "-127"
+                        },
+                        {
+                            "symName": "Sensex Next 50",
+                            "symbol": "-128"
+                        },
+                        {
+                            "symName": "Sensex 50",
+                            "symbol": "-129"
+                        }
+                        ]
+                    },
+                    {
+                        "key": "DEFAULT_INDICES",
+                        "value": [
+                            "Nifty 50",
+                        "SENSEX",
+                        "India VIX",
+                        "Nifty Bank"
+                            ]
+                    },
+                    {
+                        "key": "L",
+                        "value": "LIMIT"
+                    },
+                    {
+                        "key": "MKT",
+                        "value": "MARKET"
+                    },
+                    {
+                        "key": "SL",
+                        "value": "STOP LIMIT"
+                    },
+                    {
+                        "key": "SL-M",
+                        "value": "STOP LOSS MARKET"
+                    },
+                    {
+                        "key": "NRML",
+                        "value": "NORMAL"
+                    },
+                    {
+                        "key": "CNC",
+                        "value": "CASH AND CARRY"
+                    },
+                    {
+                        "key": "CO",
+                        "value": "COVER ORDER"
+                    },
+                    {
+                        "key": "BO",
+                        "value": "BRACKET ORDER"
+                    },
+                    {
+                        "key": "MIS",
+                        "value": "MARGIN INTRADAY SQR.OFF"
+                    },
+                    {
+                        "key": "MARKET_STAT_EQT_DISP_SORTING",
+                        "value": [
+                            "Gainers",
+                        "Losers",
+                        "52 Week High",
+                        "52 Week Low",
+                        "Active by Value",
+                        "Active by Volume",
+                        "Upper Circuit",
+                        "Lower Circuit"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_DER_DISP_SORTING",
+                        "value": [
+                            "Gainers",
+                        "Losers",
+                        "OI Gainers(%)",
+                        "OI Losers(%)",
+                        "Active Futures(by turnover value)",
+                        "Active Options(by notional turnover)",
+                        "Active Calls",
+                        "Active Puts"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_DER_REQ_SORTING",
+                        "value": [
+                            "gainers",
+                        "losers",
+                        "oIGainers",
+                        "oILosers",
+                        "activeFutures",
+                        "activeOptions",
+                        "activeCalls",
+                        "activePuts"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_NSE_DISP_FILTERS",
+                        "value": [
+                            "All",
+                        "Nifty 50",
+                        "F&O Stocks",
+                        "Non F&O Stocks",
+                        "Securities Price < Rs.20",
+                        "Securities Price > Rs.20"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_BSE_DISP_FILTERS",
+                        "value": [
+                            "All",
+                        "A",
+                        "B",
+                        "T",
+                        "TS"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_NSE_REQ_FILTERS",
+                        "value": [
+                            "all",
+                        "nifty 50",
+                        "futopt",
+                        "non futopt",
+                        "ltp less",
+                        "ltp more"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_BSE_REQ_FILTERS",
+                        "value": [
+                            "all",
+                        "a",
+                        "b",
+                        "t",
+                        "ts"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_EQT_DER_DISP_FILTERS",
+                        "value": [
+                            "Indices",
+                        "Stocks"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_EQT_DER_REQ_FILTERS",
+                        "value": [
+                            "indices",
+                        "stocks"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_COMD_DER_DISP_FILTERS",
+                        "value": [
+                            "Agri Commodities",
+                        "Non Agri Commodities"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_COMD_DER_REQ_FILTERS",
+                        "value": [
+                            "agri",
+                        "non agri"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_EQT_REQ_SORTING",
+                        "value": [
+                            "gainers",
+                        "losers",
+                        "52WkHigh",
+                        "52WkLow",
+                        "activeValue",
+                        "activeVolume",
+                        "upperCircuit",
+                        "lowerCircuit"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_CURR_DER_DISP_FILTERS",
+                        "value": [
+                            "All"
+                            ]
+                    },
+                    {
+                        "key": "MARKET_STAT_CURR_DER_REQ_FILTERS",
+                        "value": [
+                            "all"
+                            ]
+                    },
+                    {
+                        "key": "TEST_URL1",
+                        "value": [
+                            "www.google.com",
+                        "www.test.com"
+                            ]
+                    },
+                    {
+                        "key": "OPEN_AN_ACCOUNT_URL",
+                        "value": "http://www.samco.in/register"
+                    },
+                    {
+                        "key": "CONTACT_URL",
+                        "value": "http://www.samco.in/contact_us"
+                    },
+                    {
+                        "key": "RAISE_TICKET_URL",
+                        "value": "http://www.samco.in/support"
+                    },
+                    {
+                        "key": "REFER_FRIEND_URL",
+                        "value": "http://www.samco.in/referral"
+                    },
+                    {
+                        "key": "ALERT_PRICE_DISP_FILTERS",
+                        "value": [
+                            "Rises Above",
+                        "Falls Below",
+                        "Price Hit"
+                            ]
+                    },
+                    {
+                        "key": "ALERT_PRICE_REQ_FILTERS",
+                        "value": [
+                            "gp",
+                        "lp",
+                        "sp"
+                            ]
+                    },
+                    {
+                        "key": "ALERT_VOLUME_DISP_FILTERS",
+                        "value": [
+                            "Volume Above",
+                        "Volume Below"
+                            ]
+                    },
+                    {
+                        "key": "ALERT_VOLUME_REQ_FILTERS",
+                        "value": [
+                            "gv",
+                        "lv"
+                            ]
+                    },
+                    {
+                        "key": "ALERT_DISP_VALIDITY",
+                        "value": [
+                            "Day",
+                        "1 Week",
+                        "1 Month",
+                        "3 Months",
+                        "6 Months"
+                            ]
+                    },
+                    {
+                        "key": "ALERT_REQ_VALIDITY",
+                        "value": [
+                            "D",
+                        "oneWk",
+                        "oneM",
+                        "threeM",
+                        "sixM"
+                            ]
+                    },
+                    {
+                        "key": "ALERT_PERCHANGE_DISP_FILTERS",
+                        "value": [
+                            "From LTP",
+                        "Daily % Chg"
+                            ]
+                    },
+                    {
+                        "key": "ALERT_DAILY_PER_CHANGE_DISP_FILTERS",
+                        "value": [
+                            "Daily % Chg Above",
+                        "Daily % Chg Below"
+                            ]
+                    },
+                    {
+                        "key": "days_PL",
+                        "value": "Day's P/L and Pr Close"
+                    },
+                    {
+                        "key": "avg_price",
+                        "value": "Avg price and Total P/L"
+                    },
+                    {
+                        "key": "ALERT_LTP_PERCHANGE_DISP_FILTERS",
+                        "value": [
+                            ">=",
+                        "<=",
+                        "Equal to"
+                            ]
+                    },
+                    {
+                        "key": "NOTES_MEDIA_TYPE",
+                        "value": [
+                            "IMAGE",
+                        "VIDEO",
+                        "PDF"
+                            ]
+                    },
+                    {
+                        "key": "WL_SETTINGS_MENU",
+                        "value": [
+                            "Sort By",
+                        "Add Symbols",
+                        "Remove symbols",
+                        "Rearrange symbols",
+                        "Edit Column",
+                        "Edit Watchlist Group",
+                        "Edit Indices",
+                        "Add New Watchlist Group",
+                        "Set as Default Watchlist"
+                            ]
+                    },
+                    {
+                        "key": "EXCHANGE_DEMO_TEXT",
+                        "value": "SEBI registration number : INZ000002535"
+                    },
+                    {
+                        "key": "ALERT_INBOX",
+                        "value": [
+                        {
+                            "symName": "All",
+                            "symbol": "all"
+                        },
+                        {
+                            "symName": "Order Status",
+                            "symbol": "orderStatus"
+                        },
+                        {
+                            "symName": "Order Price",
+                            "symbol": " orderPrice"
+                        },
+                        {
+                            "symName": "Price Alert",
+                            "symbol": " priceAlert"
+                        },
+                        {
+                            "symName": "Margin Alert",
+                            "symbol": " margin"
+                        },
+                        {
+                            "symName": "Volume Alert",
+                            "symbol": " volumeAlert"
+                        },
+                        {
+                            "symName": "From LTP Alert",
+                            "symbol": " ltpAlert"
+                        },
+                        {
+                            "symName": "Daily % Change",
+                            "symbol": " dailyChgAlert"
+                        },
+                        {
+                            "symName": "Portfolio Mover",
+                            "symbol": " portfolioMover"
+                        },
+                        {
+                            "symName": "Position Conversion",
+                            "symbol": " posCoversion"
+                        },
+                        {
+                            "symName": " Position Squareoff",
+                            "symbol": " posSqrOff "
+                        }
+                        ]
+                    },
+                    {
+                        "key": "ABOUT_URL",
+                        "value": "https://www.samco.in/about-online-trading-indian-stock-market"
+                    }
+                    ]
+                }
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "9fe1e44d-e275-4a99-8926-917118de2b5f",
+            "svcGroup": "Config"
+        },
+        "config": {
+            "label": 4,
+            "message": 233,
+            "menu": 68,
+            "app": 98
+        }
+}

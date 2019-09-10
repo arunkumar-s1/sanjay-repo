@@ -1,0 +1,27 @@
+{
+  "request": {
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "data": {
+      "mobile": "8754446697",
+      "isOTPVerified": true,
+      "loginID": "xyz@abc.com"
+    }
+  },
+  "response": {
+    "svcName": "GetOTPVerificationStatus",
+    "serverTime": "1517998238997",
+    "infoID": "0",
+    "data": {
+      "status": "success"
+    },
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "msgID": "c2cd8f17-ee7e-4b1e-8801-4eb2c4e22b4e",
+    "svcGroup": "Guest"
+  },
+  "config": {
+    "label": 4,
+    "message": 251,
+    "menu": 78,
+    "app": 110
+  }
+}

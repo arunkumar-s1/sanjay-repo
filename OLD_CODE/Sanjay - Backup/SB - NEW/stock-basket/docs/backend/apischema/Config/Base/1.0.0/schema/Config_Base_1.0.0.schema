@@ -1,0 +1,308 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "lang": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "lang"
+                        }, 
+                        "menu": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "menu"
+                        }, 
+                        "app": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "app"
+                        }, 
+                        "message": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "message"
+                        }, 
+                        "label": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "label"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "menu": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "menu", 
+                            "properties": {
+                                "version": {
+                                    "required": true, 
+                                    "type": "number", 
+                                    "id": "version"
+                                }, 
+                                "config": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "object", 
+                                        "id": "0", 
+                                        "properties": {
+                                            "key": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "key"
+                                            }, 
+                                            "value": {
+                                                "required": true, 
+                                                "type": "object", 
+                                                "id": "value", 
+                                                "properties": {
+                                                    "description": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "description"
+                                                    }, 
+                                                    "parent": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "parent"
+                                                    }, 
+                                                    "isAvailForOpenUser": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "isAvailForOpenUser"
+                                                    }, 
+                                                    "isAvailForGuestUser": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "isAvailForGuestUser"
+                                                    }, 
+                                                    "displayOrder": {
+                                                        "required": true, 
+                                                        "type": "number", 
+                                                        "id": "displayOrder"
+                                                    }, 
+                                                    "isActive": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "isActive"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "config"
+                                }
+                            }
+                        }, 
+                        "message": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "message", 
+                            "properties": {
+                                "version": {
+                                    "required": true, 
+                                    "type": "number", 
+                                    "id": "version"
+                                }, 
+                                "config": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "object", 
+                                        "id": "0", 
+                                        "properties": {
+                                            "key": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "key"
+                                            }, 
+                                            "value": {
+                                                "required": true, 
+                                                "type": "object", 
+                                                "id": "value", 
+                                                "properties": {
+                                                    "action": {
+                                                        "required": true, 
+                                                        "type": "number", 
+                                                        "id": "action"
+                                                    }, 
+                                                    "message": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "message"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "config"
+                                }
+                            }
+                        }, 
+                        "app": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "app", 
+                            "properties": {
+                                "version": {
+                                    "required": true, 
+                                    "type": "number", 
+                                    "id": "version"
+                                }, 
+                                "config": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "object", 
+                                        "id": "0", 
+                                        "properties": {
+                                            "key": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "key"
+                                            }, 
+                                            "value": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "value"
+                                            }
+                                        }
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "config"
+                                }
+                            }
+                        }, 
+                        "label": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "label", 
+                            "properties": {
+                                "version": {
+                                    "required": true, 
+                                    "type": "number", 
+                                    "id": "version"
+                                }, 
+                                "config": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "object", 
+                                        "id": "0", 
+                                        "properties": {
+                                            "key": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "key"
+                                            }, 
+                                            "value": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "value"
+                                            }
+                                        }
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "config"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

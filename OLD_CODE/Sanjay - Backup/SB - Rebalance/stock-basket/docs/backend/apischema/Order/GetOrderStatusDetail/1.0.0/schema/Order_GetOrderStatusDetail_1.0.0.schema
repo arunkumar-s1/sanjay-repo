@@ -1,0 +1,279 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "requestType": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "requestType"
+                }, 
+                "formFactor": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "formFactor"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "productCode": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "productCode"
+                        }, 
+                        "exc": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "exc"
+                        }, 
+                        "orderType": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "orderType"
+                        }, 
+                        "symbol": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "symbol"
+                        }, 
+                        "totalQuantity": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "totalQuantity"
+                        }, 
+                        "orderPrice": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "orderPrice"
+                        }, 
+                        "scripCode": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "scripCode"
+                        }, 
+                        "instrument": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "instrument"
+                        }, 
+                        "rejectionReason": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "rejectionReason"
+                        }, 
+                        "transactionType": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "transactionType"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "status": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "status"
+                        }, 
+                        "isAccepted": {
+                            "required": true, 
+                            "type": "boolean", 
+                            "id": "isAccepted"
+                        }, 
+                        "rejDetails": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "rejDetails", 
+                            "properties": {
+                                "primarySolution": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "primarySolution"
+                                }, 
+                                "possibleSolutions": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "object", 
+                                        "id": "0", 
+                                        "properties": {
+                                            "navigate": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "navigate"
+                                            }, 
+                                            "dispSolutionMsg": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "dispSolutionMsg"
+                                            }, 
+                                            "dispSolutionID": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "dispSolutionID"
+                                            }, 
+                                            "navigationDetails": {
+                                                "required": true, 
+                                                "type": "object", 
+                                                "id": "navigationDetails", 
+                                                "properties": {
+                                                    "toFund": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toFund"
+                                                    }, 
+                                                    "toWatchlist": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toWatchlist"
+                                                    }, 
+                                                    "toWebLink": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toWebLink"
+                                                    }, 
+                                                    "toTrade": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toTrade"
+                                                    }, 
+                                                    "updatedQty": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "updatedQty"
+                                                    }, 
+                                                    "updatedProdType": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "updatedProdType"
+                                                    }, 
+                                                    "webLinkUrl": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "webLinkUrl"
+                                                    }, 
+                                                    "side": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "side"
+                                                    }
+                                                }
+                                            }, 
+                                            "solutionID": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "solutionID"
+                                            }, 
+                                            "buttonName": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "buttonName"
+                                            }
+                                        }
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "possibleSolutions"
+                                }, 
+                                "rejectionReason": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "rejectionReason"
+                                }, 
+                                "dispRejReason": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "dispRejReason"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

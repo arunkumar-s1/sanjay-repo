@@ -1,0 +1,62 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {
+                "userID": "5234",
+                "password": "abc@123",
+                "apkVersion": "1.0.0.0",
+                "dob": "1234"
+            }
+        },
+        "response": {
+            "svcName": "TwoFactorLogin",
+            "serverTime": "1510650228810",
+            "infoID": "0",
+            "data": {
+                "accountID": "5234",
+                "defaultMarketWatch": "T",
+                "alertCount": "86",
+                "brokerName": "SAMRUDDHI",
+                "exchangeArray": [
+                    "MCX",
+                "NFO",
+                "NSE",
+                "CDS",
+                "BSE"
+                    ],
+                "orderTypeArray": [
+                    "L",
+                "MKT",
+                "SL",
+                "SL-M"
+                    ],
+                "snInboxCount": "1",
+                "PRODUCT_TYPE": {
+                    "cash": "MIS",
+                    "options": "MIS",
+                    "derivatives": "MIS"
+                },
+                "ORDER_TYPE": "L",
+                "isWelcomeAboard": false,
+                "branchID": "HANSA",
+                "accountName": "NAROTTAM B. VYAS",
+                "sessionID": "48a74fc2e55f776040deb4d9cbb536e2",
+                "defProdTypeAlerts": "CNC",
+                "passwordResetFlag": "N",
+                "productArray": [
+                    "CNC",
+                "NRML"
+                    ]
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "e2dadf89-1dd7-4b2c-9388-39503615c85e",
+            "svcGroup": "Login"
+        },
+        "config": {
+            "label": 4,
+            "message": 235,
+            "menu": 70,
+            "app": 101
+        }
+}

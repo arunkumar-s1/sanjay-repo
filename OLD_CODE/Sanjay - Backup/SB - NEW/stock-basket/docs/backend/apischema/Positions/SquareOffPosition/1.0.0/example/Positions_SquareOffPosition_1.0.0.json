@@ -1,0 +1,32 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "exc": "NFO",
+      "productCode": "NRML",
+      "netQty": "9000",
+      "symbol": "49615_NFO",
+      "symName": "L&TFH17MAYFUT"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "SquareOffPosition",
+    "serverTime": "1493894552035",
+    "infoID": "0",
+    "data": {
+      "msg": "Position Squared Off successfully"
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "0388fb95-9b52-4cd6-b1f8-eefdd31f4733",
+    "svcGroup": "Positions"
+  },
+  "config": {
+    "label": 4,
+    "message": 121,
+    "menu": 49,
+    "app": 44
+  }
+}

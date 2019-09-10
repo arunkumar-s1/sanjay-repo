@@ -1,0 +1,31 @@
+{
+  "echo": {},
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "syomOrdNo": "",
+      "orderStatus": "open",
+      "nestOrderNumber": "170905000000040"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "response": {
+    "svcName": "ExitBracketOrder",
+    "serverTime": "1500640768099",
+    "infoID": "0",
+    "data": {
+      "msg": "BO order exited successfully"
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "9ed3d221-3b9e-4f27-99d6-ad46f64c577f",
+    "svcGroup": "Order"
+  },
+  "config": {
+    "label": 4,
+    "message": 207,
+    "menu": 43,
+    "app": 92
+  }
+}
+

@@ -1,0 +1,208 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "streaming_type": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "streaming_type"
+                }, 
+                "request_type": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "request_type"
+                }, 
+                "session": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "session"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "symbols": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "symbols"
+                        }
+                    }
+                }, 
+                "response_format": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "response_format"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "streaming_type": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "streaming_type"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "ch": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "ch"
+                        }, 
+                        "vol": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "vol"
+                        }, 
+                        "ttv": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "ttv"
+                        }, 
+                        "bPr": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "bPr"
+                        }, 
+                        "chPer": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "chPer"
+                        }, 
+                        "aPr": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "aPr"
+                        }, 
+                        "oIChg": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "oIChg"
+                        }, 
+                        "tBQ": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "tBQ"
+                        }, 
+                        "lTrdT": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "lTrdT"
+                        }, 
+                        "tSQ": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "tSQ"
+                        }, 
+                        "oI": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "oI"
+                        }, 
+                        "c": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "c"
+                        }, 
+                        "sym": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "sym"
+                        }, 
+                        "yH": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "yH"
+                        }, 
+                        "ltq": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "ltq"
+                        }, 
+                        "ltp": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "ltp"
+                        }, 
+                        "yL": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "yL"
+                        }, 
+                        "bSz": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "bSz"
+                        }, 
+                        "ltt": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "ltt"
+                        }, 
+                        "aSz": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "aSz"
+                        }, 
+                        "l": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "l"
+                        }, 
+                        "o": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "o"
+                        }, 
+                        "h": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "h"
+                        }, 
+                        "lttUTC": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "lttUTC"
+                        }, 
+                        "avgPr": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "avgPr"
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

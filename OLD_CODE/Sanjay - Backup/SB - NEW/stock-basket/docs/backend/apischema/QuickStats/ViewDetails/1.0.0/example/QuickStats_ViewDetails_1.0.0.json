@@ -1,0 +1,69 @@
+{
+  "request": {
+    "requestType": "U",
+    "msgID": "be63b5a3-258a-447c-93c7-610e8c6bfb3a",
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "segment": "Equity"
+    },
+    "formFactor": "M"
+  },
+  "response": {
+    "svcName": "ViewDetails",
+    "serverTime": "1497530666261",
+    "infoID": "0",
+    "data": {
+      "statDetails": [
+        {
+          "key": "Account Value",
+          "value": "1"
+        },
+        {
+          "key": "Margin Available",
+          "value": "1"
+        },
+        {
+          "key": "MTM Today",
+          "value": "7200.0"
+        },
+        {
+          "key": "Margin Used",
+          "value": "1"
+        },
+        {
+          "key": "Holdings",
+          "value": "1"
+        },
+        {
+          "key": "Open Positions",
+          "value": "2"
+        },
+        {
+          "key": "Available Funds",
+          "value": "0.00"
+        },
+        {
+          "key": "Pending Orders",
+          "value": "2"
+        },
+        {
+          "key": "Collateral Margins",
+          "value": "0"
+        },
+        {
+          "key": "Additional Margins",
+          "value": "0"
+        }
+      ]
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "be63b5a3-258a-447c-93c7-610e8c6bfb3a",
+    "svcGroup": "QuickStats"
+  },
+  "config": {
+    "label": 4,
+    "message": 196,
+    "menu": 51,
+    "app": 76
+  }
+}

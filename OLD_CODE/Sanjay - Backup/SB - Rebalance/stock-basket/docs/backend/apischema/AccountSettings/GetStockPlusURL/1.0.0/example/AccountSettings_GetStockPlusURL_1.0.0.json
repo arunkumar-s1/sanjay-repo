@@ -1,0 +1,26 @@
+{
+    "request": {
+        "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {},
+            "formFactor": "s",
+            "requestType": "U"
+    },
+        "echo": {},
+        "response": {
+            "svcName": "GetStockPlusURL",
+            "serverTime": "1507544736816",
+            "infoID": "0",
+            "data": {
+                "url": "http://star.samco.in/msfapi_client/subscription/dmhsNDloYVQ1RlYvUXlHQUYwMTlLZz09/0e0e0ff956be41a3a313100abd7aa2cf/intraplus"
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "9a3f299e-ec6f-4ee7-a310-a1fe116916eb",
+            "svcGroup": "AccountSettings"
+        },
+        "config": {
+            "label": 4,
+            "message": 233,
+            "menu": 67,
+            "app": 98
+        }
+}

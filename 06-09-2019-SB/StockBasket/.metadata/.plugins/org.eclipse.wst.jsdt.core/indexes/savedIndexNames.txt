@@ -1,0 +1,2 @@
+INDEX VERSION 1.3+D:\06-09-2019-SB\StockBasket\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1946570120.index

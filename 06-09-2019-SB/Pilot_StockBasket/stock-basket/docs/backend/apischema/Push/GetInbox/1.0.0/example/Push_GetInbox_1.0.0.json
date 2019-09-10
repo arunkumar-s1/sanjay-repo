@@ -1,0 +1,56 @@
+{
+    "echo": {},
+        "request": {
+            "data": {
+                "pageNo": "1",
+                "type": "all"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "GetInbox",
+            "serverTime": "1506092681665",
+            "infoID": "0",
+            "data": {
+                "inbox": [
+                {
+                    "extraInfo": {
+                        "SCREEN": "TRADE",
+                        "triggerQty": "2",
+                        "triggerPrice": "23000",
+                        "productCode": "CNC",
+                        "triggerType": "Buy"
+                    },
+                    "alertID": "166",
+                    "headline": " Your Order for RPOWER is moving away from the current LTP at 43.50 ",
+                    "msg": "",
+                    "time": "8 Hour ago - 11:51 AM",
+                    "symbol": "",
+                    "changePer": "",
+                    "dispInstType": "",
+                    "symName": "",
+                    "dispExpDate": "",
+                    "isRead": false,
+                    "mesgID": "1cca9a94045bb308d01814db3371f6c4",
+                    "type": "order price",
+                    "dispType": "Order Price",
+                    "change": "",
+                    "lTP": "",
+                    "exc": ""
+                }
+                ],
+                    "totalPages": "42",
+                    "alertCount": "429",
+                    "snInboxCount": "2651"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "73a89520-b54f-442b-9160-393165bc9be9",
+            "svcGroup": "Push"
+        },
+        "config": {
+            "label": 4,
+            "message": 228,
+            "menu": 66,
+            "app": 96
+        }
+}

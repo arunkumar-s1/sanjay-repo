@@ -1,0 +1,32 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {
+                "exc": "MCX"
+            },
+            "formFactor": "s",
+            "requestType": "U"
+        },
+        "response": {
+            "svcName": "RetrieveMarketStatus",
+            "serverTime": "1508221814347",
+            "infoID": "0",
+            "data": {
+                "marketStatus": "Normal Market Open",
+                "marketMode": "Normal market",
+                "exchSeg": "mcx_fo",
+                "exchFeedTime": "17-Oct-2017 10:00:00",
+                "text": "MCX Market Open Close Notification"
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "302b0c61-c3b8-4f97-8ee3-2a85808b9547",
+            "svcGroup": "MarketStatus"
+        },
+        "config": {
+            "label": 4,
+            "message": 233,
+            "menu": 69,
+            "app": 98
+        }
+}

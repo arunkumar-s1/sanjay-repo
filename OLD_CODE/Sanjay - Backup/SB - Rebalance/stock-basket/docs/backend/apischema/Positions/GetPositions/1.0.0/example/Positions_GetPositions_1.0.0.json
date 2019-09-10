@@ -1,0 +1,101 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "type": "NET",
+      "filter": {
+        "exchange": [
+          "nfo",
+          "nse"
+        ],
+        "prodType": [
+          "nrml"
+        ],
+        "tradeType": [
+          "BUY"
+        ],
+        "instrument": [
+          "FUTSTK"
+        ],
+        "posSize": [
+          "6"
+        ],
+        "expiry": [
+          "6"
+        ]
+      }
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "GetPositions",
+    "serverTime": "1512386817108",
+    "infoID": "0",
+    "data": {
+      "gainingToday": "5",
+      "positionsData": [
+        {
+          "avgBuyPrice": "0.00",
+          "cfVal": "-1605960.00",
+          "cfAvgPrc": "-669.15",
+          "change": "-23.55",
+          "totalPnL": "-3238080.00",
+          "symName": "BHARATFORG",
+          "netAvgPrc": "-669.15",
+          "exc": "NFO",
+          "optionType": "",
+          "changePer": "-3.35",
+          "tradingSymbol": "BHARATFORG17DECFUT",
+          "netQty": "2400",
+          "lTP": "680.05",
+          "cfQty": "-2400",
+          "symbol": "48244_NFO",
+          "transactionType": "SELL",
+          "calcNetQty": "-2400.0",
+          "boughtVal": "0.00",
+          "productCode": "NRML",
+          "boardLotQty": "1200",
+          "soldVal": "0.00",
+          "prevClose": "703.60",
+          "netPosVal": "-1632120.00",
+          "displayStrikePrice": "-",
+          "daysPnL": "56520.00",
+          "dispExpDate": "28DEC2017",
+          "positionFlag": "true",
+          "dispNetQty": "2400",
+          "avgPrc": "-669.15",
+          "squareOffFlag": "Y",
+          "expiry": "28 Dec 17",
+          "sellQty": "0",
+          "instrument": "FUTSTK",
+          "buyQty": "0",
+          "netQtyPosConvFlag": "Y",
+          "multiplier": "1",
+          "dispInstType": "FUT",
+          "avgSellPrice": "0.00",
+          "positionType": "C",
+          "lotSize": "1200",
+          "strikePrice": "-",
+          "marginBlocked": "",
+          "breakEvenPrc": "123.50",
+          "possibleConvs": [
+            "MIS"
+          ],
+          "netVal": "-1605960.00"
+        }
+      ],
+      "losingToday": "4"
+    },
+    "appID": "e2e78dfc0254776788889ef32c8f9cf3",
+    "msgID": "6c7650f7-0b1c-4961-a128-e0f8eb70166a",
+    "svcGroup": "Positions"
+  },
+  "config": {
+    "label": 4,
+    "message": 243,
+    "menu": 74,
+    "app": 104
+  }
+}

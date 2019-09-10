@@ -1,0 +1,27 @@
+{
+    "echo": {},
+        "request": {
+            "data": {
+                "symbols": ["1594_NSE"]
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "MuteSymbolService",
+            "serverTime": "1506343782757",
+            "infoID": "0",
+            "data": {
+                "status": "success",
+                "msg": "Symbol muted successfully"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "77b59e42-6738-413e-8ce1-607741f9f1e9",
+            "svcGroup": "StockNotes"
+        },
+        "config": {
+            "label": 4,
+            "message": 228,
+            "menu": 66,
+            "app": 96
+        }
+}

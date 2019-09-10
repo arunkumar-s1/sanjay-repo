@@ -1,0 +1,83 @@
+{
+    "request": {
+        "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {
+                "userID": "E104",
+                "symbol": "22_NSE"
+            },
+            "formFactor": "s",
+            "requestType": "U"
+    },
+        "echo": {},
+        "response": {
+            "svcName": "MarketDepth",
+            "serverTime": "1505726974041",
+            "infoID": "0",
+            "data": {
+                "marketDepth": {
+                    "tradingSymbol": "FORTIS-EQ",
+                    "tBuyQty": "406617",
+                    "changePer": "0.60",
+                    "tSellQty": "520605",
+                    "lTT": "2017-09-18 14:59:30.0",
+                    "change": "0.90",
+                    "lTP": "150.85",
+                    "bestFiveAsk": [
+                    {
+                        "askSize": "664",
+                        "askPrice": "150.95"
+                    },
+                    {
+                        "askSize": "3351",
+                        "askPrice": "151.00"
+                    },
+                    {
+                        "askSize": "3507",
+                        "askPrice": "151.05"
+                    },
+                    {
+                        "askSize": "8060",
+                        "askPrice": "151.10"
+                    },
+                    {
+                        "askSize": "2711",
+                        "askPrice": "151.15"
+                    }
+                    ],
+                        "bestFiveBid": [
+                        {
+                            "bidSize": "192",
+                            "bidPrice": "150.85"
+                        },
+                        {
+                            "bidSize": "4949",
+                            "bidPrice": "150.80"
+                        },
+                        {
+                            "bidSize": "1018",
+                            "bidPrice": "150.75"
+                        },
+                        {
+                            "bidSize": "6430",
+                            "bidPrice": "150.70"
+                        },
+                        {
+                            "bidSize": "1096",
+                            "bidPrice": "150.65"
+                        }
+                    ],
+                        "exc": "NSE",
+                        "companyName": "FORTIS HEALTHCARE LTD"
+                }
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "5e5b2d75-6772-4e2b-ab56-968963f79714",
+            "svcGroup": "Quotes"
+        },
+        "config": {
+            "label": 4,
+            "message": 226,
+            "menu": 44,
+            "app": 96
+        }
+}

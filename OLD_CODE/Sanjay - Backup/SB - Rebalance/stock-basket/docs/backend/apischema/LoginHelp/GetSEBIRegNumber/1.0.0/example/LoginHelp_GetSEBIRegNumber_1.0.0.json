@@ -1,0 +1,27 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {}
+        },
+        "response": {
+            "svcName": "GetSEBIRegNumber",
+            "serverTime": "1508235095684",
+            "infoID": "0",
+            "data": {
+                "regDetails": [
+                    "NSE:INEB 231213530",
+                "NFO:INF 231213530"
+                    ]
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "dc518d84-2d2c-494c-ac65-2f4e5c537b85",
+            "svcGroup": "LoginHelp"
+        },
+        "config": {
+            "label": 4,
+            "message": 233,
+            "menu": 69,
+            "app": 98
+        }
+}

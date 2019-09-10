@@ -1,0 +1,33 @@
+{
+    "echo": {},
+        "request": {
+            "data": {},
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "GetFavouriteSymbols",
+            "serverTime": "1505136485570",
+            "infoID": "0",
+            "data": {
+                "favourite": [
+                {
+                    "symName": "EMAMILTD",
+                    "symbol": "13517_NSE"
+                },
+                {
+                    "symName": "RELIANCE",
+                    "symbol": "50493_NFO"
+                }
+                ]
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "085eb393-9cf7-4f90-956d-1594f78a9714",
+            "svcGroup": "StockNotes"
+        },
+        "config": {
+            "label": 4,
+            "message": 224,
+            "menu": 44,
+            "app": 96
+        }
+}

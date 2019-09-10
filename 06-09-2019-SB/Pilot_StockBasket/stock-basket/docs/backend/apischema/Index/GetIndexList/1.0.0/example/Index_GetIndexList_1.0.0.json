@@ -1,0 +1,64 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {
+                "exc": "NSE",
+                "indices": "Nifty 50",
+                "sortBy": "alphabetical",
+                "orderBy": "ascending"
+            }
+        },
+        "response": {
+            "svcName": "GetIndexList",
+            "serverTime": "1507884868751",
+            "infoID": "0",
+            "data": {
+                "indexList": [
+                {
+                    "tradingSymbol": "ACC-EQ",
+                    "displayStrikePrice": "",
+                    "expiry": "",
+                    "symbol": "22_NSE",
+                    "strikePrice": "",
+                    "changePer": "-9.17",
+                    "dispInstType": "",
+                    "associatedSymbol": [
+                    {
+                        "exc": "BSE",
+                        "symName": "ACC",
+                        "symbol": "500410_BSE"
+                    }
+                    ],
+                        "symName": "ACC",
+                        "dispExpDate": "",
+                        "optionType": "",
+                        "change": "-166.35",
+                        "lTP": "1647.00",
+                        "exc": "NSE",
+                        "companyName": "ACC Ltd.",
+                        "instrument": ""
+                }
+                ],
+                    "indexDetails": {
+						"tradingSymbol": "ACC-EQ",
+                        "exc": "NSE",
+                        "lTT": "13 Oct 2017, 09:16:42 AM",
+                        "symName": "Nifty 50",
+                        "lTP": "10128.80",
+                        "symbol": "-21",
+                        "changePer": "1.44",
+                        "change": "144.00"
+                    }
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "841c65c1-512e-4b8f-b686-c70a534451e3",
+            "svcGroup": "Index"
+        },
+        "config": {
+            "label": 4,
+            "message": 233,
+            "menu": 68,
+            "app": 98
+        }
+}

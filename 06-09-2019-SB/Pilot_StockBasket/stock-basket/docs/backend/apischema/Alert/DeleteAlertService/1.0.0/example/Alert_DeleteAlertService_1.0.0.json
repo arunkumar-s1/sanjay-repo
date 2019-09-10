@@ -1,0 +1,30 @@
+{
+  "echo": {},
+  "request": {
+    "requestType": "U",
+    "data": {
+      "alertID": [
+        "13678"
+      ]
+    },
+    "appID": "{{appid}}",
+    "formFactor": "M"
+  },
+  "response": {
+    "svcName": "DeleteAlertService",
+    "serverTime": "1497863026387",
+    "infoID": "0",
+    "data": {
+      "msg": "alert deleted successfully"
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "2adb9f84-ddba-407b-8b33-f224e3606f8e",
+    "svcGroup": "Alert"
+  },
+  "config": {
+    "label": 4,
+    "message": 196,
+    "menu": 51,
+    "app": 76
+  }
+}

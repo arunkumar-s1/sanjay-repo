@@ -1,0 +1,31 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "E104",
+      "symbols": [
+        "22_NSE"
+      ],
+      "groupName": "test4"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "DeleteSymbols",
+    "serverTime": "1488199182803",
+    "infoID": "0",
+    "data": {
+      "msg": "Selected symbols have been successfully deleted"
+    },
+    "msgID": "29a435a1-8d22-4d2f-8ece-5a9b2631cf8d",
+    "svcGroup": "Watchlist"
+  },
+  "config": {
+    "label": 4,
+    "message": 58,
+    "menu": 45,
+    "app": 9
+  }
+}

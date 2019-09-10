@@ -1,0 +1,42 @@
+{
+    "echo": {},
+        "request": {
+            "response_format": "json",
+            "requestType": "U",
+            "msgID": "c651f259-06d3-43dd-91a2-73babaaf1eec",
+            "data": {
+                "price": "64",
+                "symbol": "1099_CDS",
+                "productCode": "NRML",
+                "misMultiplier": "9",
+                "qty": "10",
+                "instrument": "FUTCUR",
+                "strikePrice": "123",
+                "side": "BUY",
+                "lotSize": "1",
+                "triggerPrice": "1234"
+            },
+            "appID": "dc5facf71719ffaca062e2bebcf075ed",
+            "formFactor": "M"
+        },
+        "response": {
+            "svcName": "SpanCalculator",
+            "serverTime": "1497424040986",
+            "infoID": "0",
+            "data": {
+                "estimatedBrokerage": "0.13",
+                "estimatedExpenses": "0.06",
+                "estimatedOrderValue": "640.19",
+                "marginRequired": "11305.30"
+            },
+            "appID": "dc5facf71719ffaca062e2bebcf075ed",
+            "msgID": "c651f259-06d3-43dd-91a2-73babaaf1eec",
+            "svcGroup": "Order"
+        },
+        "config": {
+            "label": 4,
+            "message": 196,
+            "menu": 51,
+            "app": 76
+        }
+}

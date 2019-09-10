@@ -1,0 +1,64 @@
+{
+  "request": {
+    "data": {},
+    "appID": "169fd42ab825341a351381cf08606e3a"
+  },
+  "response": {
+    "svcName": "GetNotificationSettings",
+    "serverTime": "1507030019893",
+    "infoID": "0",
+    "data": {
+      "notifyPref": [
+        {
+          "notifyName": "Order and Trade Alerts",
+          "enable": "true",
+          "notifyType": "ordTrdAlerts"
+        },
+        {
+          "notifyName": "Margin Alerts",
+          "enable": "true",
+          "notifyType": "mrgAlerts"
+        },
+        {
+          "notifyName": "Position Conversion Alerts",
+          "enable": "true",
+          "notifyType": "posConvAlerts"
+        },
+        {
+          "notifyName": "Position Square-off Alerts",
+          "enable": "true",
+          "notifyType": "posSqrAlerts"
+        },
+        {
+          "notifyName": "Position and Portfolio Alerts",
+          "enable": "true",
+          "notifyType": "ppAlerts"
+        },
+        {
+          "notifyName": "Order Monitoring Alerts",
+          "enable": "true",
+          "notifyType": "ordMonAlerts"
+        },
+        {
+          "notifyName": "Default Product type Alerts",
+          "enable": "CNC",
+          "notifyType": "defProdTypeAlerts"
+        },
+        {
+          "notifyName": "Default Order type Alerts",
+          "enable": "L",
+          "notifyType": "defOrdTypeAlerts"
+        }
+      ]
+    },
+    "appID": "169fd42ab825341a351381cf08606e3a",
+    "msgID": "19e087da-c7c1-423d-9334-fb5219ca44f3",
+    "svcGroup": "Settings"
+  },
+  "config": {
+    "label": 4,
+    "message": 231,
+    "menu": 66,
+    "app": 97
+  }
+}

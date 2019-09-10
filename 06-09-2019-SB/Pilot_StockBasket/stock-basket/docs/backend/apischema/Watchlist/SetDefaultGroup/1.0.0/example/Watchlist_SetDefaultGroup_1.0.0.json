@@ -1,0 +1,28 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "E101",
+      "groupName": "test"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "SetDefaultGroup",
+    "serverTime": "1487744295692",
+    "infoID": "0",
+    "data": {
+      "msg": "Selected Group has been set as Default Group"
+    },
+    "msgID": "256115e3-0c39-42c5-af6b-44f4a7f5de24",
+    "svcGroup": "Watchlist"
+  },
+  "config": {
+    "label": 2,
+    "message": 50,
+    "menu": 45,
+    "app": 9
+  }
+}

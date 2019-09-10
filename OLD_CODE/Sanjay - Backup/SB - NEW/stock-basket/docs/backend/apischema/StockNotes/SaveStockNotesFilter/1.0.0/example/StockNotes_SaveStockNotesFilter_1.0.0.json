@@ -1,0 +1,34 @@
+{
+    "echo": {},
+        "request": {
+            "data": {
+                "filterID": [
+                    "2",
+                "3",
+                "4",
+                "10",
+                "26",
+                "32"
+                    ]
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "formFactor": "M"
+        },
+        "response": {
+            "svcName": "SaveStockNotesFilter",
+            "serverTime": "1499863817477",
+            "infoID": "0",
+            "data": {
+                "status": "success"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "bea674a9-4b06-4f1d-b0db-75301e87d454",
+            "svcGroup": "StockNotes"
+        },
+        "config": {
+            "label": 4,
+            "message": 207,
+            "menu": 41,
+            "app": 90
+        }
+}

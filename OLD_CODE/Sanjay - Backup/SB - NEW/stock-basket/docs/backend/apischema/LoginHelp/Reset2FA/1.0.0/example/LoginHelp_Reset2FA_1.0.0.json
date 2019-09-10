@@ -1,0 +1,30 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {
+                "userID": "RP1001",
+                "emailID": "listsamco@inxsasia.com",
+                "panNo": "AGAPA5926H"
+            },
+            "formFactor": "s",
+            "requestType": "U"
+        },
+        "response": {
+            "svcName": "Reset2FA",
+            "serverTime": "1507107205183",
+            "infoID": "0",
+            "data": {
+                "msg": "Year of birth is resetted successfully. Please enter your correct year of birth on your next login"
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "7fc80fbb-1aab-4928-a892-37c7c55a69b1",
+            "svcGroup": "LoginHelp"
+        },
+        "config": {
+            "label": 4,
+            "message": 232,
+            "menu": 66,
+            "app": 97
+        }
+}

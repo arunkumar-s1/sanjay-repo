@@ -1,0 +1,33 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "E103",
+      "groupName": "test",
+      "scrips": [
+        "10100_NSE",
+        "2885_NSE",
+        "22_NSE"
+      ]
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "RearrangeScrips",
+    "serverTime": "1487767257590",
+    "infoID": "0",
+    "data": {
+      "msg": "Scrips in the selected group have been successfully re-arranged"
+    },
+    "msgID": "f2b5988e-f45b-4672-8f65-6bd709fb190b",
+    "svcGroup": "Watchlist"
+  },
+  "config": {
+    "label": 2,
+    "message": 50,
+    "menu": 45,
+    "app": 9
+  }
+}

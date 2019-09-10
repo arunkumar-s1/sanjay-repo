@@ -1,0 +1,30 @@
+{
+    "echo": {},
+        "request": {
+            "data": {},
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "GetStockNotesSettings",
+            "serverTime": "1505798359318",
+            "infoID": "0",
+            "data": {
+                "stockNotesSettings": {
+                    "feedTypeFW": "chronological",
+                    "feedTypeTT": "general",
+                    "feedTypeAll": "chronological",
+                    "email": "summary",
+                    "volume": "high"
+                }
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "5e0bcfb5-c6df-44ac-843d-6989f0126afa",
+            "svcGroup": "StockNotes"
+        },
+        "config": {
+            "label": 4,
+            "message": 226,
+            "menu": 44,
+            "app": 96
+        }
+}

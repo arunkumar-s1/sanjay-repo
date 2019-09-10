@@ -1,0 +1,51 @@
+{
+    "echo": {},
+        "request": {
+            "data": {
+                "searchStr": "zee"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "SimpleSearch",
+            "serverTime": "1506343951844",
+            "infoID": "0",
+            "data": {
+                "symbols": [
+                {
+                    "exc": "NSE",
+                    "tradingSymbol": "ZEEMEDIA-EQ",
+                    "symName": "ZEEMEDIA",
+                    "description": "ZEE MEDIA CORPORATION LTD",
+                    "isin": "INE966H01019",
+                    "symbol": "14003_NSE"
+                },
+                {
+                    "exc": "NSE",
+                    "tradingSymbol": "ZEELEARN-EQ",
+                    "symName": "ZEELEARN",
+                    "description": "ZEE LEARN LIMITED",
+                    "isin": "INE565L01011",
+                    "symbol": "20852_NSE"
+                },
+                {
+                    "exc": "NSE",
+                    "tradingSymbol": "ZEEL-EQ",
+                    "symName": "ZEEL",
+                    "description": "ZEE ENTERTAINMENT ENT LTD",
+                    "isin": "INE256A01028",
+                    "symbol": "3812_NSE"
+                }
+                ]
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "d56335c6-c35d-486b-ab9b-56feab57c563",
+            "svcGroup": "Search"
+        },
+        "config": {
+            "label": 4,
+            "message": 228,
+            "menu": 66,
+            "app": 96
+        }
+}

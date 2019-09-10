@@ -1,0 +1,26 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {
+                "accountName": "PRATIK DILIP ADANI"
+            }
+        },
+        "response": {
+            "svcName": "Payin",
+            "serverTime": "1506073779952",
+            "infoID": "0",
+            "data": {
+                "payinUrl": "http://103.210.194.91/PaymentGateway/Main/Hold_Funds.jsp?sLoginId=RP1001&sAccountId=RP1001&token=73eefab9-fd6c-48c1-ab74-a3571ab967fc"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "450fd224-58f7-4955-8395-a14d3c024ba0",
+            "svcGroup": "Payments"
+        },
+        "config": {
+            "label": 4,
+            "message": 226,
+            "menu": 66,
+            "app": 96
+        }
+}

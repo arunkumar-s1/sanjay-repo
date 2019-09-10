@@ -1,0 +1,39 @@
+{
+	"request": {
+		"data": {
+			"resolution": "1 MIN",
+				"symbol": "8142_NSE",
+				"tradingSymbol":""
+		},
+			"appID": "169fd42ab825341a351381cf08606e3a"
+	},
+		"echo": {},
+		"response": {
+			"svcName": "IntraDayChart",
+			"serverTime": "1504078270249",
+			"infoID": "0",
+			"data": {
+				"precision": "2",
+				"points": [
+				{
+					"Low": "4.50",
+					"Open": "4.50",
+					"Volume": "0",
+					"DT": "2017-08-30 09:00:00",
+					"DT_UTC": "2017-07-14 00:00:00",
+					"High": "4.50",
+					"Close": "4.50"
+				}
+				]
+			},
+			"appID": "169fd42ab825341a351381cf08606e3a",
+			"msgID": "85ff7255-0478-4897-aa36-9c9ceebe43a2",
+			"svcGroup": "Chart"
+		},
+		"config": {
+			"label": 4,
+			"message": 223,
+			"menu": 43,
+			"app": 93
+		}
+}

@@ -1,0 +1,32 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "E104",
+      "symbols": [
+        "22_NSE",
+        "2885_NSE"
+      ],
+      "groupName": "test2"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "CreateNewGroup",
+    "serverTime": "1487926332902",
+    "infoID": "0",
+    "data": {
+      "msg": "New market watch has been created"
+    },
+    "msgID": "4763ab63-4b27-4889-91d4-9efe8a0ec146",
+    "svcGroup": "Watchlist"
+  },
+  "config": {
+    "label": 2,
+    "message": 57,
+    "menu": 45,
+    "app": 9
+  }
+}

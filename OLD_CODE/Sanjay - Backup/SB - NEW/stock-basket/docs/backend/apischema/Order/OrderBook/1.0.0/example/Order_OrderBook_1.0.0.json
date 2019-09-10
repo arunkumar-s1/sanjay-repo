@@ -1,0 +1,111 @@
+{
+    "request": {
+        "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {
+                "orderStatus": "ALL",
+                "filter": {
+                    "exchange": [
+                        "NFO",
+                    "NSE"
+                        ],
+                    "orderType": [
+                        "L"
+                        ],
+                    "tradeType": [
+                        "SELL"
+                        ],
+                    "instrument": [
+                        "OPTSTK"
+                        ],
+                    "prodType": [
+                        "NRML"
+                        ],
+                    "orderVal": [
+                        "lesser"
+                        ],
+                    "status": [
+                        "rejected"
+                        ],
+                    "expiry": [
+                        "rejected"
+                        ]
+                }
+            },
+            "formFactor": "s",
+            "requestType": "U"
+    },
+        "echo": {},
+        "response": {
+            "svcName": "OrderBook",
+            "serverTime": "1496835299628",
+            "infoID": "0",
+            "data": {
+                "orderBook": [
+                {
+                    "clientCode": "E104",
+                    "exchangeOrderNo": "NA",
+                    "fillPrice": "00.00",
+                    "symName": "RELIANCE",
+                    "orderValue": "24.00",
+                    "discQty": "0",
+                    "exc": "NFO",
+                    "isExecuted": false,
+                    "optionType": "PE",
+                    "tickSize": "5",
+                    "tradingSymbol": "RELIANCE17JUN1320PE",
+                    "coverPercent": "0.0",
+                    "exchange": "NFO",
+                    "orderType": "L",
+                    "iscancelable": false,
+                    "orderEntryTime": "07/06/2017 16:39:14",
+                    "validity": "DAY",
+                    "symbol": "95249_NFO",
+                    "transactionType": "SELL",
+                    "productCode": "NRML",
+                    "isexitexecutable": false,
+                    "boardLotQty": "500",
+                    "remark": "--",
+                    "displayStrikePrice": "1320",
+                    "exchSegment": "nse_fo",
+                    "dispExpDate": "29JUN2017",
+                    "nestOrderNumber": "170607000000198",
+                    "triggerPrice": "00.00",
+                    "dispNetQty": "500",
+                    "scripCode": "95249",
+                    "avgPrc": "00.00",
+                    "status": "rejected",
+                    "userID": "E104",
+                    "expiry": "29 Jun, 2017",
+                    "pendingQuantity": "500",
+                    "instrument": "OPTSTK",
+                    "isRejected": true,
+                    "scripName": "OPTSTK-RELIANCE-29 Jun, 2017",
+                    "requestID": "1",
+                    "dispInstType": "OPTSTK",
+                    "decPrecision": "2",
+                    "filledQuantity": "0",
+                    "totalQuantity": "500",
+                    "ismodifiable": false,
+                    "isPending": false,
+                    "strikePrice": "1320.00",
+                    "orderSrc": "NEST_REST",
+                    "orderPrice": "24.00",
+                    "rejectionReason": "ADAPTER is down",
+                    "syomOrdNo": "",
+                    "mrktProtection": "NA",
+                    "isTriggerPending": false,
+                    "isAMO": false
+                }
+                ]
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "3fef6ebb-e8db-4357-bb36-f0490d61103d",
+            "svcGroup": "Order"
+        },
+        "config": {
+            "label": 4,
+            "message": 195,
+            "menu": 51,
+            "app": 71
+        }
+}

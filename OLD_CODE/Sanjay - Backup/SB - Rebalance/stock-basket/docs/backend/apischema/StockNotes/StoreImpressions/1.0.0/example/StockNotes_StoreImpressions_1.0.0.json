@@ -1,0 +1,71 @@
+{
+  "echo": {},
+  "request": {
+    "response_format": "json",
+    "requestType": "U",
+    "data": {
+      "notes": [
+        {
+          "newsID": "",
+          "impressions": {
+            "feedCount": "",
+            "detailedNoteCount": ""
+          },
+          "embClicks": {
+            "feedCount": "",
+            "detailedNoteCount": ""
+          },
+          "mediaOpens": {
+            "feedCount": "",
+            "detailedNoteCount": ""
+          },
+          "notesClicked": {
+            "feedCount": "",
+            "detailedNoteCount": ""
+          },
+          "sharesCount": {
+            "feedCount": "",
+            "detailedNoteCount": ""
+          },
+          "buyClicks": {
+            "feedCount": "",
+            "detailedNoteCount": ""
+          },
+          "sellClicks": {
+            "feedCount": "",
+            "detailedNoteCount": ""
+          },
+          "tranClicks": {
+            "feedCount": "",
+            "detailedNoteCount": ""
+          },
+          "timeSpent": {
+            "feedCount": "",
+            "detailedNoteCount": ""
+          },
+          "searchNotes": {
+            "feedCount": "",
+            "detailedNoteCount": ""
+          }
+        }
+      ]
+    },
+    "appID": "dba5140010484493327d87d49f28f4b3",
+    "formFactor": "M"
+  },
+  "response": {
+    "svcName": "StoreImpressions",
+    "serverTime": "1504871706440",
+    "infoID": "0",
+    "data": {},
+    "appID": "dba5140010484493327d87d49f28f4b3",
+    "msgID": "68bbb786-272d-4e73-b526-408d127292ec",
+    "svcGroup": "StockNotes"
+  },
+  "config": {
+    "label": 4,
+    "message": 224,
+    "menu": 44,
+    "app": 96
+  }
+}

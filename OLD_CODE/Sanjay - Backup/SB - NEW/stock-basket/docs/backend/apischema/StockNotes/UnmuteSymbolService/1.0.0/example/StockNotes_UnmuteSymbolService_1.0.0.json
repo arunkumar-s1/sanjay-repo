@@ -1,0 +1,26 @@
+{
+    "request": {
+        "data": {
+            "symbol": "1594_NSE"
+        },
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+    },
+        "response": {
+            "svcName": "UnmuteSymbolService",
+            "serverTime": "1505213824294",
+            "infoID": "0",
+            "data": {
+                "status": "success",
+                "msg": "Symbol unmuted successfully"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "b39603b8-294e-47c4-9f74-9ce85ab3eee2",
+            "svcGroup": "StockNotes"
+        },
+        "config": {
+            "label": 4,
+            "message": 224,
+            "menu": 44,
+            "app": 96
+        }
+}

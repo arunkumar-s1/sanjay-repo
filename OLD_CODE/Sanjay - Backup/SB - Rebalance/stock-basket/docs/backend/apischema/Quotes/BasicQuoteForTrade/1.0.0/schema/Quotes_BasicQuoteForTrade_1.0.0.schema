@@ -1,0 +1,367 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "requestType": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "requestType"
+                }, 
+                "formFactor": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "formFactor"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "symbol": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "symbol"
+                        }
+                    }
+                }, 
+                "response_format": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "response_format"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "tradeQuote": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "tradeQuote", 
+                            "properties": {
+                                "usedAmt": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "usedAmt"
+                                }, 
+                                "optionType": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "optionType"
+                                }, 
+                                "PRODUCT_TYPE": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "PRODUCT_TYPE"
+                                }, 
+                                "ORDER_TYPE": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "ORDER_TYPE"
+                                }, 
+                                "upperCktLimit": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "upperCktLimit"
+                                }, 
+                                "lowerCktLimit": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "lowerCktLimit"
+                                }, 
+                                "amoStatus": {
+                                    "required": true, 
+                                    "type": "boolean", 
+                                    "id": "amoStatus"
+                                }, 
+                                "marginAvl": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "marginAvl"
+                                }, 
+                                "displayStrikePrice": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "displayStrikePrice"
+                                }, 
+                                "askSize": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "askSize"
+                                }, 
+                                "instrument": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "instrument"
+                                }, 
+                                "tradingSymbol": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "tradingSymbol"
+                                }, 
+                                "lotSize": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "lotSize"
+                                }, 
+                                "symbol": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "symbol"
+                                }, 
+                                "dispInstType": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "dispInstType"
+                                }, 
+                                "companyName": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "companyName"
+                                }, 
+                                "tradeValidity": {
+                                    "required": true, 
+                                    "type": "object", 
+                                    "id": "tradeValidity", 
+                                    "properties": {
+                                        "slm": {
+                                            "items": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "0"
+                                            }, 
+                                            "required": true, 
+                                            "type": "array", 
+                                            "id": "slm"
+                                        }, 
+                                        "limit": {
+                                            "items": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "0"
+                                            }, 
+                                            "required": true, 
+                                            "type": "array", 
+                                            "id": "limit"
+                                        }, 
+                                        "market": {
+                                            "items": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "0"
+                                            }, 
+                                            "required": true, 
+                                            "type": "array", 
+                                            "id": "market"
+                                        }, 
+                                        "sl": {
+                                            "items": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "0"
+                                            }, 
+                                            "required": true, 
+                                            "type": "array", 
+                                            "id": "sl"
+                                        }
+                                    }
+                                }, 
+                                "askPrice": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "askPrice"
+                                }, 
+                                "symName": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "symName"
+                                }, 
+                                "validity": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "validity"
+                                }, 
+                                "prodType": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "prodType"
+                                }, 
+                                "change": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "change"
+                                }, 
+                                "freezeQty": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "freezeQty"
+                                }, 
+                                "multiplier": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "multiplier"
+                                }, 
+                                "bidSize": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "bidSize"
+                                }, 
+                                "expiry": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "expiry"
+                                }, 
+                                "dispExpDate": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "dispExpDate"
+                                }, 
+                                "strikePrice": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "strikePrice"
+                                }, 
+                                "lTP": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "lTP"
+                                }, 
+                                "exc": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "exc"
+                                }, 
+                                "lTT": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "lTT"
+                                }, 
+                                "changePer": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "changePer"
+                                }, 
+                                "amoTime": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "amoTime"
+                                }, 
+                                "tickSize": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "tickSize"
+                                }, 
+                                "bidPrice": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "bidPrice"
+                                }, 
+                                "sqrOffTime": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "sqrOffTime"
+                                }, 
+                                "misMultiplier": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "misMultiplier"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

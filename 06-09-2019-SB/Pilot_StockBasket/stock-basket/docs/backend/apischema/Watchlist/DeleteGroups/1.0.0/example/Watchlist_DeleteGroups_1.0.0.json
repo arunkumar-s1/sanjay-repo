@@ -1,0 +1,30 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "E104",
+      "groupNames": [
+        "test4"
+      ]
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "DeleteGroups",
+    "serverTime": "1488199301488",
+    "infoID": "0",
+    "data": {
+      "msg": "Selected groups have been successfully deleted"
+    },
+    "msgID": "183dbe54-6fe1-4bdd-912c-34a06b11955a",
+    "svcGroup": "Watchlist"
+  },
+  "config": {
+    "label": 4,
+    "message": 58,
+    "menu": 45,
+    "app": 9
+  }
+}

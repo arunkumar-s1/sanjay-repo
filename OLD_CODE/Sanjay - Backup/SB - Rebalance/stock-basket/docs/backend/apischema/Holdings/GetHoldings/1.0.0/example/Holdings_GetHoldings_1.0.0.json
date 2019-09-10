@@ -1,0 +1,154 @@
+{
+    "request": {
+        "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {
+                "filter": {
+                    "qty": [
+                        "lesser"
+                        ],
+                    "secPrice": [
+                        "lesser"
+                        ],
+                    "value": [
+                        "lesser"
+                        ]
+                }
+            },
+            "formFactor": "s",
+            "requestType": "U"
+    },
+        "echo": {},
+        "response": {
+            "svcName": "GetHoldings",
+            "serverTime": "1507184590376",
+            "infoID": "0",
+            "data": {
+                "gainingToday": "1",
+                "daysGnLPer": "25444.58",
+                "totGnLPer": "5997023.03",
+                "portfolioVal": "491,810.00",
+                "totGnL": "198900.00",
+                "daysGnL": "1708.25",
+                "holdingsData": [
+                {
+                    "totalPnL": "",
+                    "soldnPendingSellQty": "5",
+                    "todaysMtoM": "8.25",
+                    "totGnLPer": "",
+                    "holdingVal": "2610",
+                    "stockRating": "",
+                    "productCode": "CNC",
+                    "BTSTHoldingsQty": "0",
+                    "holdingsQty": "5",
+                    "holdQty": "1000",
+                    "change": "1.65",
+                    "totalMtoM": "",
+                    "haircut": "100.00",
+                    "daysGnLPer": "1.59",
+                    "changePer": "0.32",
+                    "exc": "BSE",
+                    "prevClose": "520.35",
+                    "lTP": "522.00",
+                    "isin": "INE704P01017",
+                    "tradingSymbol": "COCHINSHIP",
+                    "symbol": "540678_BSE",
+                    "isSymbolPresent": true,
+                    "daysPnL": "8",
+                    "collateralQty": "0",
+                    "avgPrc": "",
+                    "symName": "COCHINSHIP",
+                    "calcNetQty": "1234",
+                    "associatedSymbol": [
+                    {
+                        "exc": "NSE",
+                        "symName": "CHOWGULSTM",
+                        "symbol": "688_NSE"
+                    }
+                    ]
+                },
+                {
+                    "totalPnL": "-2K",
+                    "soldnPendingSellQty": "1000",
+                    "todaysMtoM": "200.00",
+                    "totGnLPer": "-7441.25",
+                    "holdingVal": "35450",
+                    "stockRating": "",
+                    "productCode": "CNC",
+                    "BTSTHoldingsQty": "0",
+                    "holdingsQty": "1K",
+                    "holdQty": "1000",
+                    "change": "0.20",
+                    "totalMtoM": "-2850.00",
+                    "haircut": "100.00",
+                    "daysGnLPer": "567.38",
+                    "changePer": "0.57",
+                    "exc": "BSE",
+                    "prevClose": "35.25",
+                    "lTP": "35.45",
+                    "isin": "INE879I01012",
+                    "tradingSymbol": "DBREALTY",
+                    "symbol": "533160_BSE",
+                    "isSymbolPresent": true,
+                    "daysPnL": "200",
+                    "collateralQty": "0",
+                    "avgPrc": "38.30",
+                    "symName": "DBREALTY",
+                    "calcNetQty": "1234",
+                    "associatedSymbol": [
+                    {
+                        "exc": "NSE",
+                        "symName": "CHOWGULSTM",
+                        "symbol": "688_NSE"
+                    }
+                    ]
+                },
+                {
+                    "totalPnL": "2L",
+                    "soldnPendingSellQty": "75000",
+                    "todaysMtoM": "1500.00",
+                    "totGnLPer": "6004464.29",
+                    "holdingVal": "453750",
+                    "stockRating": "",
+                    "productCode": "CNC",
+                    "BTSTHoldingsQty": "0",
+                    "holdingsQty": "75K",
+                    "holdQty": "1000",
+                    "change": "0.02",
+                    "totalMtoM": "201750.00",
+                    "haircut": "100.00",
+                    "daysGnLPer": "24875.62",
+                    "changePer": "0.33",
+                    "exc": "BSE",
+                    "prevClose": "6.03",
+                    "lTP": "6.05",
+                    "isin": "INE834M01019",
+                    "tradingSymbol": "RTNINFRA",
+                    "symbol": "534597_BSE",
+                    "isSymbolPresent": true,
+                    "daysPnL": "1K",
+                    "collateralQty": "0",
+                    "avgPrc": "3.36",
+                    "symName": "RTNINFRA",
+                    "calcNetQty": "1234",
+                    "associatedSymbol": [
+                    {
+                        "exc": "NSE",
+                        "symName": "CHOWGULSTM",
+                        "symbol": "688_NSE"
+                    }
+                    ]
+                }
+                ],
+                    "losingToday": "1"
+            },
+            "appID": "22c830c1ef350ebe081bd5a5e1d4259b",
+            "msgID": "c7d6bdb0-2c46-473f-94b9-112beff60399",
+            "svcGroup": "Holdings"
+        },
+        "config": {
+            "label": 4,
+            "message": 232,
+            "menu": 66,
+            "app": 97
+        }
+}

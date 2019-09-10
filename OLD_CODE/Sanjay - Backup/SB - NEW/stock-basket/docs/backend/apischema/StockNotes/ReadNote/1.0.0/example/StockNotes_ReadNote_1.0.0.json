@@ -1,0 +1,58 @@
+{
+	"echo": {},
+		"request": {
+			"data": {
+				"newsID": "2"
+			},
+			"appID": "f24c543af510aea86e1f4413687ab5b6",
+			"formFactor": "M"
+		},
+		"response": {
+			"svcName": "ReadNote",
+			"serverTime": "1499330862172",
+			"infoID": "0",
+			"data": {
+				"notes": {
+					"thumbNailUrl":"https://www.youtube.com/watch?v=iIYmUFi5RsI",
+					"dispExpDate": "-",
+					"mediaType": "-",
+					"instrument": "0",
+					"mediaURL": "https://www.youtube.com/watch?v=iIYmUFi5RsI",
+					"displayStrikePrice": "-",
+					"sentiment": "Bearish",
+					"dispInstType": "-",
+					"headline": "Not sure about Bharti Airtel buying Tata Teleservices: PhillipCapital",
+					"change": "7.15",
+					"newsID": "2",
+					"changePer": "1.90",
+					"exc": "NSE",
+					"lTP": "384.35",
+					"newsURL": "http://www.moneycontrol.com/news/business/companies/not-sure-about-bharti-airtel-buying-tata-teleservices-phillipcapital-2314421.html",
+					"source": "MoneyControl",
+					"content": "Telecom stocks surged in trade yesterday. In an interview to CNBC-TV18, Naveen Kulkarni, Co-Head of Research at PhillipCapital spoke about the latest happenings in the sector.According to him, Bharti Airtel will be aggressive in terms of market share gains going ahead, adding that they prefer the stock as it is a low risk player.However, he is sceptical about Bharti Airtel buying Tata Teleservices.",
+					"symbol": "10604_NSE",
+					"udpateTime": "05 Jul 2017, 14:41 PM",
+					"eventDate": "05 Jul 2017, 14:41 PM",
+					"optionType": "-",
+					"symName": "BHARTIARTL",
+					"shareURL": "",
+					"secContracts": [
+					{
+						"symbol": "22_NSE",
+						"symName": "ACC"
+					}
+					]
+				}
+			},
+			"appID": "f24c543af510aea86e1f4413687ab5b6",
+			"msgID": "6e3633dd-cdf1-4a9c-bef7-411ad9e6d596",
+			"svcGroup": "StockNotes"
+		},
+		"config": {
+			"label": 4,
+			"message": 198,
+			"menu": 41,
+			"app": 89
+		}
+}
+

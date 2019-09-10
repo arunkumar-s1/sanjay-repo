@@ -1,0 +1,30 @@
+{
+    "echo": {},
+        "request": {
+            "data": {
+                "symbols": [
+                    "22_NSE",
+                "1594_NSE"
+                    ]
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "UpdateFavouriteSymbols",
+            "serverTime": "1505210343584",
+            "infoID": "0",
+            "data": {
+                "status": "success",
+                "msg": "Favourite symbols updated successfully"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "86c3974b-4335-407d-b8b8-86413b06f7c2",
+            "svcGroup": "StockNotes"
+        },
+        "config": {
+            "label": 4,
+            "message": 224,
+            "menu": 44,
+            "app": 96
+        }
+}

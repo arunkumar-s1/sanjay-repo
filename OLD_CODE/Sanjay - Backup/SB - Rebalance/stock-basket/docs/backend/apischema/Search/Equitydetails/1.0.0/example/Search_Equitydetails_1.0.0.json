@@ -1,0 +1,43 @@
+{
+  "echo": {},
+  "request": {
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "data": {
+      "symName": "1922_NSE",
+      "exc": "NSE"
+    }
+  },
+  "response": {
+    "svcName": "Equitydetails",
+    "serverTime": "1491471578451",
+    "infoID": "0",
+    "data": {
+      "details": {
+        "tradingSymbol": "KOTAKBANK-EQ",
+        "symbol": "1922_NSE",
+        "changePer": "-0.01",
+        "associatedSymbol": [
+          {
+            "exc": "BSE",
+            "symName": "KOTAKBANK",
+            "symbol": "500247_BSE"
+          }
+        ],
+        "symName": "KOTAKBANK",
+        "change": "-0.05",
+        "lTP": "889.80",
+        "exc": "NSE",
+        "companyName": "KOTAK MAHINDRA BANK LTD"
+      }
+    },
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "msgID": "7d8117eb-dd6d-4c8f-9a7f-578e85d9cd63",
+    "svcGroup": "Search"
+  },
+  "config": {
+    "label": 4,
+    "message": 113,
+    "menu": 49,
+    "app": 35
+  }
+}

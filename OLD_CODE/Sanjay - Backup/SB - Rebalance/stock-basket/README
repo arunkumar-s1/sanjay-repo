@@ -1,0 +1,9 @@
+1. To Create War file using a profile(say, dev)
+	*mvn clean package -P dev
+	/*  this will create a war file as 'filename.war' as  specified in the <fileName> section of the pom.xml*/
+    /*	for the mentioned profile(eg:dev)*/
+
+2. To Deploy war file to the server from terminal using the profile (say, dev)
+	*mvn clean tomcat7:redeploy -P dev
+	/* this will deploy or redeploy the 'filename.war' file to the server given in the pom.xml, */
+	/* for the mentioned profile(say, dev)*/

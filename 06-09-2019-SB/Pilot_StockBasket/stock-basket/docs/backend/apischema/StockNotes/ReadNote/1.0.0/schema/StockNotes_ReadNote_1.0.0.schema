@@ -1,0 +1,257 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "formFactor": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "formFactor"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "newsID": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "newsID"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "notes": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "notes", 
+                            "properties": {
+                                "optionType": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "optionType"
+                                }, 
+                                "newsID": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "newsID"
+                                }, 
+                                "udpateTime": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "udpateTime"
+                                }, 
+                                    "eventDate": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "eventDate"
+                                    }, 
+                                "sentiment": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "sentiment"
+                                }, 
+                                "mediaURL": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "mediaURL"
+                                }, 
+                                "headline": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "headline"
+                                }, 
+                                "displayStrikePrice": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "displayStrikePrice"
+                                }, 
+                                "mediaType": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "mediaType"
+                                }, 
+                                "content": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "content"
+                                }, 
+                                "instrument": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "instrument"
+                                }, 
+                                "dispExpDate": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "dispExpDate"
+                                }, 
+                                "newsURL": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "newsURL"
+                                }, 
+                                "dispInstType": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "dispInstType"
+                                }, 
+                                "symbol": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "symbol"
+                                }, 
+                                "symName": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "symName"
+                                }, 
+                                "secContracts": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "object", 
+                                        "id": "0", 
+                                        "properties": {
+                                            "symbol": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "symbol"
+                                            }, 
+                                            "symName": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "symName"
+                                            }
+                                        }
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "secContracts"
+                                }, 
+                                "change": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "change"
+                                }, 
+                                "lTP": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "lTP"
+                                }, 
+                                "exc": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "exc"
+                                }, 
+                                "source": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "source"
+                                }, 
+                                "shareURL": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "shareURL"
+                                }, 
+                                "thumbNailUrl": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "thumbNailUrl"
+                                }, 
+                                "changePer": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "changePer"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

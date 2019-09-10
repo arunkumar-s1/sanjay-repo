@@ -1,0 +1,31 @@
+{
+    "echo": {},
+        "request": {
+            "data": {
+                "type": "student"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "SetUserProfile",
+            "serverTime": "1510650847256",
+            "infoID": "0",
+            "data": {
+                "ORDER_TYPE": "L",
+                "PRODUCT_TYPE": {
+                    "cash": "NRML",
+                    "derivatives": "CNC",
+                    "options": "NRML"
+                }
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "0c71e9f3-28d6-4b68-afdf-d6402a8b1507",
+            "svcGroup": "Welcome"
+        },
+        "config": {
+            "label": 4,
+            "message": 235,
+            "menu": 70,
+            "app": 101
+        }
+}

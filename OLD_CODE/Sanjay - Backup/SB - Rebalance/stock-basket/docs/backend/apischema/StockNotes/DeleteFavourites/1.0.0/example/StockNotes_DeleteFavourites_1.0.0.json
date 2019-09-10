@@ -1,0 +1,31 @@
+{
+  "echo": {},
+  "request": {
+    "data": {
+      "symbol": [
+        "1_CDS",
+        "22_NSE"
+      ]
+    },
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "formFactor": "M"
+  },
+  "response": {
+    "svcName": "DeleteFavourites",
+    "serverTime": "1499071178609",
+    "infoID": "0",
+    "data": {
+      "status": "success",
+      "msg": "Symbol is unmarked from favorites"
+    },
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "msgID": "bc2b3904-06c6-4995-a31e-771806fabb1f",
+    "svcGroup": "StockNotes"
+  },
+  "config": {
+    "label": 4,
+    "message": 198,
+    "menu": 41,
+    "app": 89
+  }
+}

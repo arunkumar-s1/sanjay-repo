@@ -1,0 +1,50 @@
+{
+	"request": {
+		"data": {
+			"startDate": "08-07-2017",
+				"endDate": "29-08-2017",
+				"resolution": "1 DAY",
+				"symbol": "8142_NSE",
+				"tradingSymbol": "test",
+				"type": "NEAR"
+		},
+			"appID": "169fd42ab825341a351381cf08606e3a"
+	},
+		"echo": {},
+		"response": {
+			"svcName": "GetHistoricalCharts",
+			"serverTime": "1504078313426",
+			"infoID": "0",
+			"data": {
+				"precision": "2",
+				"points": [
+				{
+					"Low": "4.70",
+					"Open": "4.90",
+					"Volume": "12680",
+					"DT": "2017-07-14 00:00:00",
+					"DT_UTC": "2017-07-14 00:00:00",
+					"High": "5.10",
+					"Close": "4.70"
+				}
+				],
+					"coAction": [
+					{
+						"headline": "Test for editing corporate action ",
+						"category": "Bonus",
+						"DT": "2017-08-03",
+						"DT_UTC": "2017-07-14 00:00:00"
+					}
+				]
+			},
+			"appID": "169fd42ab825341a351381cf08606e3a",
+			"msgID": "51cbc21e-f8a4-4f02-8ab9-98b56ef1a915",
+			"svcGroup": "Chart"
+		},
+		"config": {
+			"label": 4,
+			"message": 223,
+			"menu": 43,
+			"app": 93
+		}
+}

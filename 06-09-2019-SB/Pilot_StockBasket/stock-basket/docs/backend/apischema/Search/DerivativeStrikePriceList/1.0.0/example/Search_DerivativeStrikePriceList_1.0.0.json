@@ -1,0 +1,59 @@
+{
+  "echo": {},
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "symName": "RELINFRA",
+      "instrument": "OPTSTK",
+      "expiry": "30MAR2017",
+      "optionType": "CE",
+      "exc": "NFO"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "response": {
+    "svcName": "DerivativeStrikePriceList",
+    "serverTime": "1490884024756",
+    "infoID": "0",
+    "data": {
+      "strikePriceList": [
+        "680",
+        "700",
+        "740",
+        "720",
+        "760",
+        "260",
+        "280",
+        "300",
+        "320",
+        "340",
+        "360",
+        "380",
+        "400",
+        "420",
+        "440",
+        "460",
+        "480",
+        "500",
+        "520",
+        "540",
+        "560",
+        "580",
+        "600",
+        "620",
+        "640",
+        "660"
+      ]
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "056d7c75-477f-4a86-8c0b-ebe6f2134703",
+    "svcGroup": "Search"
+  },
+  "config": {
+    "label": 4,
+    "message": 66,
+    "menu": 49,
+    "app": 35
+  }
+}

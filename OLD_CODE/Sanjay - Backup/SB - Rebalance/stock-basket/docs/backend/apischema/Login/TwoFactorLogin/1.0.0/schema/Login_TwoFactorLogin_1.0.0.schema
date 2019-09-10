@@ -1,0 +1,235 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "dob": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "dob"
+                        }, 
+                        "userID": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "userID"
+                        }, 
+                        "password": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "password"
+                        }, 
+                        "apkVersion": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "apkVersion"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "passwordResetFlag": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "passwordResetFlag"
+                        }, 
+                        "PRODUCT_TYPE": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "PRODUCT_TYPE", 
+                            "properties": {
+                                "cash": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "cash"
+                                }, 
+                                "derivatives": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "derivatives"
+                                }, 
+                                "options": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "options"
+                                }
+                            }
+                        }, 
+                        "ORDER_TYPE": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "ORDER_TYPE"
+                        }, 
+                        "branchID": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "branchID"
+                        }, 
+                        "exchangeArray": {
+                            "items": {
+                                "required": true, 
+                                "type": "string", 
+                                "id": "0"
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "exchangeArray"
+                        }, 
+                        "snInboxCount": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "snInboxCount"
+                        }, 
+                        "defaultMarketWatch": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "defaultMarketWatch"
+                        }, 
+                        "accountName": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "accountName"
+                        }, 
+                        "orderTypeArray": {
+                            "items": {
+                                "required": true, 
+                                "type": "string", 
+                                "id": "0"
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "orderTypeArray"
+                        }, 
+                        "sessionID": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "sessionID"
+                        }, 
+                        "brokerName": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "brokerName"
+                        }, 
+                        "alertCount": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "alertCount"
+                        }, 
+                        "productArray": {
+                            "items": {
+                                "required": true, 
+                                "type": "string", 
+                                "id": "0"
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "productArray"
+                        }, 
+                        "isWelcomeAboard": {
+                            "required": true, 
+                            "type": "boolean", 
+                            "id": "isWelcomeAboard"
+                        }, 
+                        "defProdTypeAlerts": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "defProdTypeAlerts"
+                        }, 
+                        "accountID": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "accountID"
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "E104",
+      "symbols": [
+        "35003_NFO",
+        "35008_NFO"
+      ],
+      "groupName": "test4"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "AddSymbols",
+    "serverTime": "1488198997109",
+    "infoID": "0",
+    "data": {
+      "msg": "Selected symbols have been successfully added to the group"
+    },
+    "msgID": "ab887dbd-8b2f-4ce6-a3b6-dcad34b7a499",
+    "svcGroup": "Watchlist"
+  },
+  "config": {
+    "label": 4,
+    "message": 58,
+    "menu": 45,
+    "app": 9
+  }
+}

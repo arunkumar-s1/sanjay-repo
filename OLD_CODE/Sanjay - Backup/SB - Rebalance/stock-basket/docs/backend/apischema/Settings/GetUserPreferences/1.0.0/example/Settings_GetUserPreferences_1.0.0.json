@@ -1,0 +1,87 @@
+{
+  "echo": {},
+  "request": {
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "data": {
+      "prefType": "PRODUCT_TYPE"
+    }
+  },
+  "response": {
+    "svcName": "GetUserPreferences",
+    "serverTime": "1510732188335",
+    "infoID": "0",
+    "data": {
+      "ORDER_TYPE": [
+        {
+          "filterName": "L",
+          "isChecked": true
+        },
+        {
+          "filterName": "MKT",
+          "isChecked": false
+        },
+        {
+          "filterName": "SL",
+          "isChecked": false
+        },
+        {
+          "filterName": "SL-M",
+          "isChecked": false
+        }
+      ],
+      "PRODUCT_TYPE": {
+        "cash": [
+          {
+            "filterName": "CNC",
+            "isChecked": true
+          },
+          {
+            "filterName": "CO",
+            "isChecked": false
+          },
+          {
+            "filterName": "MIS",
+            "isChecked": false
+          },
+          {
+            "filterName": "NRML",
+            "isChecked": false
+          }
+        ],
+        "derivatives": [
+          {
+            "filterName": "CO",
+            "isChecked": false
+          },
+          {
+            "filterName": "MIS",
+            "isChecked": false
+          },
+          {
+            "filterName": "NRML",
+            "isChecked": true
+          }
+        ],
+        "options": [
+          {
+            "filterName": "MIS",
+            "isChecked": false
+          },
+          {
+            "filterName": "NRML",
+            "isChecked": true
+          }
+        ]
+      }
+    },
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "msgID": "23415d1b-71d4-4b49-9172-a0a30fdc93b7",
+    "svcGroup": "Settings"
+  },
+  "config": {
+    "label": 4,
+    "message": 236,
+    "menu": 72,
+    "app": 101
+  }
+}

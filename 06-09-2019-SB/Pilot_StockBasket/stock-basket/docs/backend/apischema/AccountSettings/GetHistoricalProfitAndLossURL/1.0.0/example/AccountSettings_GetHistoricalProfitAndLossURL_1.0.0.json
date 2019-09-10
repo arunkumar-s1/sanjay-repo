@@ -1,0 +1,28 @@
+{
+    "request": {
+        "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {
+                "assetClass": "derivative"
+            },
+            "formFactor": "s",
+            "requestType": "U"
+    },
+        "echo": {},
+        "response": {
+            "svcName": "GetHistoricalProfitAndLossURL",
+            "serverTime": "1507546838877",
+            "infoID": "0",
+            "data": {
+                "url": "http://star.samco.in/msfapi_client/futureAndOption/dmhsNDloYVQ1RlYvUXlHQUYwMTlLZz09/8cfa673cdc036e142573d7c60ad6eba3"
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "0c4df25d-eec8-4e64-82fe-8ff6461bac91",
+            "svcGroup": "AccountSettings"
+        },
+        "config": {
+            "label": 4,
+            "message": 233,
+            "menu": 67,
+            "app": 98
+        }
+}

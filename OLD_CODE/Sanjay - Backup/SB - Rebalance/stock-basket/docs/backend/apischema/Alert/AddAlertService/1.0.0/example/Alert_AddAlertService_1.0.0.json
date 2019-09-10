@@ -1,0 +1,41 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {
+                "alertType": "Price",
+                "symbol": "100000_NFO",
+                "tradingSymbol": "INFY",
+                "criteriaType": "Rises Above",
+                "criteriaVal": "59",
+                "lTP": "58",
+                "notifyType": [
+                    "P",
+                "E"
+                    ],
+                "validity": "6 Months",
+                "triggerPrice": "1200",
+                "triggerQty": "100",
+                "triggerType": "Buy",
+                "productCode": "CNC"
+            }
+        },
+        "response": {
+            "svcName": "AddAlertService",
+            "serverTime": "1497862569162",
+            "infoID": "0",
+            "data": {
+                "msg": "alert added successfully"
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "8da871a7-4179-439a-8f6c-b882ef9aee39",
+            "svcGroup": "Alert"
+        },
+        "config": {
+            "label": 4,
+            "message": 196,
+            "menu": 51,
+            "app": 76
+        }
+}
+

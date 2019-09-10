@@ -1,0 +1,114 @@
+{
+    "echo": {},
+        "request": {
+            "data": {
+                "type": [
+                    "eqs",
+                "eqd",
+                "comm",
+                "ind",
+                "cur"
+                    ]
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "GetInterestedSymbols",
+            "serverTime": "1510651027889",
+            "infoID": "0",
+            "data": {
+                "noRecs": "50",
+                "symbols": {
+                    "eqs": [
+                    {
+                        "tradingSymbol": "TCS-EQ",
+                        "displayStrikePrice": "-",
+                        "expiry": "-",
+                        "symbol": "11536_NSE",
+                        "strikePrice": "-",
+                        "dispInstType": "-",
+                        "symName": "TCS",
+                        "dispExpDate": "-",
+                        "optionType": "-",
+                        "companyName": "TATA CONSULTANCY SERV LT",
+                        "instrument": "-",
+                        "enable": false
+                    }
+                    ],
+                        "comm": [
+                        {
+                            "tradingSymbol": "CRUDEOILM17NOVFUT",
+                            "displayStrikePrice": "0",
+                            "expiry": "17 Nov 17",
+                            "symbol": "208874_MFO",
+                            "strikePrice": "0.00",
+                            "dispInstType": "FUT",
+                            "symName": "CRUDEOILM",
+                            "dispExpDate": "17NOV2017",
+                            "optionType": "XX",
+                            "companyName": "Light Sweet Crude OilMini",
+                            "instrument": "FUTCOM",
+                            "enable": false
+                        }
+                    ],
+                        "ind": [
+                        {
+                            "tradingSymbol": "NIFTY17NOVFUT",
+                            "displayStrikePrice": "-0.01",
+                            "expiry": "30 Nov 17",
+                            "symbol": "53580_NFO",
+                            "strikePrice": "-0.01",
+                            "dispInstType": "FUT",
+                            "symName": "NIFTY",
+                            "dispExpDate": "30NOV2017",
+                            "optionType": "XX",
+                            "companyName": "-",
+                            "instrument": "FUTIDX",
+                            "enable": false
+                        }
+                    ],
+                        "eqd": [
+                        {
+                            "tradingSymbol": "NIFTY17NOVFUT",
+                            "displayStrikePrice": "-0.01",
+                            "expiry": "30 Nov 17",
+                            "symbol": "53580_NFO",
+                            "strikePrice": "-0.01",
+                            "dispInstType": "FUT",
+                            "symName": "NIFTY",
+                            "dispExpDate": "30NOV2017",
+                            "optionType": "XX",
+                            "companyName": "-",
+                            "instrument": "FUTIDX",
+                            "enable": false
+                        }
+                    ],
+                        "cur": [
+                        {
+                            "tradingSymbol": "USDINR17NOVFUT",
+                            "displayStrikePrice": "-0",
+                            "expiry": "28 Nov 17",
+                            "symbol": "1034_CDS",
+                            "strikePrice": "-0.00",
+                            "dispInstType": "FUT",
+                            "symName": "USDINR",
+                            "dispExpDate": "28NOV2017",
+                            "optionType": "XX",
+                            "companyName": "USDINR",
+                            "instrument": "FUTCUR",
+                            "enable": false
+                        }
+                    ]
+                }
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "821e992a-a412-4948-8487-f0206180ac7b",
+            "svcGroup": "Welcome"
+        },
+        "config": {
+            "label": 4,
+            "message": 235,
+            "menu": 70,
+            "app": 101
+        }
+}

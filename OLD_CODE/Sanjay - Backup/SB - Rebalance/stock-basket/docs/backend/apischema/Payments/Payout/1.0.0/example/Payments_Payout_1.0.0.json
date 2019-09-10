@@ -1,0 +1,24 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {}
+        },
+        "response": {
+            "svcName": "Payout",
+            "serverTime": "1506075075152",
+            "infoID": "0",
+            "data": {
+                "payoutUrl": "http://star.samco.in/msfapi_client/payout/eXNlMnUwVm9yRlZTVTFGdkNxdHFOZz09/e7b8557e5eb30d75f0faa71a600c5145"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "0c2ab316-cc59-44c4-b632-ef26eed8a4b4",
+            "svcGroup": "Payments"
+        },
+        "config": {
+            "label": 4,
+            "message": 228,
+            "menu": 66,
+            "app": 96
+        }
+}

@@ -1,0 +1,236 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {
+                "searchStr": "sym"
+            }
+        },
+        "response": {
+            "svcName": "Equities",
+            "serverTime": "1492062330542",
+            "infoID": "0",
+            "data": {
+                "MutualFund": [
+                {
+                    "tradingSymbol": "-",
+                    "dispName": "SAHARA BANKING & FINANCIAL SERVICES FUND- GROWTH OPTION",
+                    "sortPriority": 0,
+                    "symbol": "109493",
+                    "changePer": "-",
+                    "istradeableIndex": false,
+                    "associatedSymbol": [
+                    {
+                        "exc": "BSE",
+                        "symName": "BANKBARODA",
+                        "dispSymName":"BANKBARODA",
+                        "symbol": "532134_BSE"
+                    }
+                    ],
+                        "symName": "SAHARA BANKING & FINANCIAL SERVICES FUND- GROWTH OPTION",
+                        "dispSymName": "SAHARA BANKING & FINANCIAL SERVICES FUND- GROWTH OPTION",
+                        "change": "-",
+                        "lTP": "52.3283",
+                        "dispLen": "55",
+                        "exc": "-",
+                        "companyName": "SAHARA BANKING & FINANCIAL SERVICES FUND- GROWTH OPTION",
+                        "dispCompanyName": "SAHARA BANKING & FINANCIAL SERVICES FUND- GROWTH OPTION"
+                }
+                ],
+                    "Stocks": [
+                    {
+                        "tradingSymbol": "BANKBARODA-EQ",
+                        "dispName": "BANKBARODA",
+                        "sortPriority": 1,
+                        "symbol": "4668_NSE",
+                        "changePer": "2.55",
+                        "istradeableIndex": false,
+                        "associatedSymbol": [
+                        {
+                            "exc": "BSE",
+                            "symName": "BANKBARODA",
+                            "dispSymName": "BANKBARODA",
+                            "symbol": "532134_BSE"
+                        }
+                        ],
+                            "symName": "BANKBARODA",
+                            "dispSymName": "BANKBARODA",
+                            "change": "4.40",
+                            "dispLen": "10",
+                            "lTP": "176.75",
+                            "exc": "NSE",
+                            "companyName": "BANK OF BARODA",
+                            "dispCompanyName": "BANK OF BARODA"
+                    },
+                    {
+                        "tradingSymbol": "BANKINDIA-EQ",
+                        "dispName": "BANKINDIA",
+                        "sortPriority": 1,
+                        "symbol": "4745_NSE",
+                        "changePer": "1.39",
+                        "istradeableIndex": false,
+                        "associatedSymbol": [
+                        {
+                            "exc": "BSE",
+                            "symName": "BANKINDIA",
+                            "dispSymName": "BANKINDIA",
+                            "symbol": "532149_BSE"
+                        }
+                        ],
+                            "symName": "BANKINDIA",
+                            "dispSymName": "BANKINDIA",
+                            "change": "2.05",
+                            "dispLen": "9",
+                            "lTP": "149.70",
+                            "exc": "NSE",
+                            "companyName": "BANK OF INDIA",
+                            "dispCompanyName": "BANK OF INDIA"
+                   }
+                ],
+                    "Indices": [
+                    {
+                        "tradingSymbol": "BANKEX",
+                        "dispName": "BANKEX",
+                        "sortPriority": 0,
+                        "symbol": "-107",
+                        "changePer": "0.00",
+                        "istradeableIndex": false,
+                        "associatedSymbol": [
+                        {
+                            "exc": "BSE",
+                            "symName": "BANKINDIA",
+                            "dispSymName": "BANKINDIA",
+                            "symbol": "532149_BSE"
+                        }
+                        ],
+                            "symName": "BANKEX",
+                            "dispSymName": "BANKEX",
+                            "change": "0.00",
+                            "dispLen": "6",
+                            "lTP": "24820.70",
+                            "exc": "BSE",
+                            "companyName": "BANKEX",
+                            "dispCompanyName": "BANKEX"
+                    }
+                ],
+                    "DEBT": [
+                    {
+                        "tradingSymbol": "KOTAKBANK-EQ",
+                        "symbol": "1922_NSE",
+                        "changePer": "-9.83",
+                        "istradeableIndex": false,
+                        "associatedSymbol": [
+                        {
+                            "exc": "BFO",
+                            "symName": "YESBANK",
+                            "dispSymName": "YESBANK",
+                            "symbol": "843715_BFO"
+                        }
+                        ],
+                            "symName": "KOTAKBANK",
+                            "dispSymName": "KOTAKBANK",
+                            "change": "-79.60",
+                            "lTP": "729.90",
+                            "exc": "NSE",
+                            "companyName": "KOTAK MAHINDRA BANK LTD",
+                            "dispCompanyName": "KOTAK MAHINDRA BANK LTD",
+                            "dispName": "RELIANCE ETF HANGSENGBEES",
+                            "dispLen": "25",
+                            "sortPriority": 0
+                    }
+                ],
+                    "ETF": [
+                    {
+                        "tradingSymbol": "BANKBEES-BL",
+                        "dispName": "BANKBEES",
+                        "sortPriority": 0,
+                        "symbol": "12244_NSE",
+                        "changePer": "-",
+                        "istradeableIndex": false,
+                        "associatedSymbol": [
+                        {
+                            "exc": "BSE",
+                            "symName": "BANKBEES",
+                            "dispSymName": "BANKBEES",
+                            "symbol": "590106_BSE"
+                        }
+                        ],
+                            "symName": "BANKBEES",
+                            "dispSymName": "BANKBEES",
+                            "change": "-",
+                            "dispLen": "8",
+                            "lTP": "-",
+                            "exc": "NSE",
+                            "companyName": "RELIANCE ETF BANK BEES",
+                            "dispCompanyName": "RELIANCE ETF BANK BEES"
+                    },
+                    {
+                        "tradingSymbol": "BANKBEES-RL",
+                        "dispName": "BANKBEES",
+                        "sortPriority": 0,
+                        "symbol": "30480_NSE",
+                        "changePer": "-",
+                        "istradeableIndex": false,
+                        "associatedSymbol": [
+                        {
+                            "exc": "BSE",
+                            "symName": "BANKBEES",
+                            "dispSymName": "BANKBEES",
+                            "symbol": "590106_BSE"
+                        }
+                        ],
+                            "symName": "BANKBEES",
+                            "dispSymName": "BANKBEES",
+                            "change": "-",
+                            "dispLen": "8",
+                            "lTP": "-",
+                            "exc": "NSE",
+                            "companyName": "RELIANCE ETF BANK BEES",
+                            "dispCompanyName": "RELIANCE ETF BANK BEES"
+                    }
+                ],
+                    "masterList": [
+                    {
+                        "tradingSymbol": "MCDOWELL-N17MAY1900CE",
+                        "displayStrikePrice": "1900.00",
+                        "dispName": "MCDOWELL-N",
+                        "sortPriority": 0,
+                        "expiry": "25 May 17",
+                        "symbol": "68936_NFO",
+                        "changePer": "0",
+                        "strikePrice": "1900.00",
+                        "optionType": "CE",
+                        "dispInstType": "OPTSTK",
+                        "istradeableIndex": false,
+                        "associatedSymbol": [
+                        {
+                            "exc": "BFO",
+                            "symName": "YESBANK",
+                            "dispSymName": "YESBANK",
+                            "symbol": "843715_BFO"
+                        }
+                        ],
+                            "symName": "MCDOWELL-N",
+                            "dispSymName": "MCDOWELL-N",
+                            "dispExpDate": "25MAY2017",
+                            "change": "0",
+                            "lTP": "0",
+                            "exc": "NFO",
+                            "instrument": "OPTSTK",
+                            "companyName": "WABCO INDIA LIMITED",
+                            "dispCompanyName": "WABCO INDIA LIMITED",
+                            "dispLen": "25"
+                    }
+                ]
+            },
+            "appID": "324cb1db7c317459a39015ab9b63d7f0",
+            "msgID": "7e0c3cda-bc83-4755-8c69-dab72c4ac60e",
+            "svcGroup": "Search"
+        },
+        "config": {
+            "label": 4,
+            "message": 117,
+            "menu": 49,
+            "app": 35
+        }
+}

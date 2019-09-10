@@ -1,0 +1,284 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>stock-basket</groupId>
+	<artifactId>stock-basket</artifactId>
+	<version>0.0.1</version>
+	<packaging>war</packaging>
+	<dependencies>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>msf</groupId>
+			<artifactId>libsb</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+   			<groupId>org.apache.commons</groupId>
+   			<artifactId>commons-math3</artifactId>
+   			<version>3.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+		
+    <groupId>org.decimal4j</groupId>
+    <artifactId>decimal4j</artifactId>
+    <version>1.0.3</version>
+</dependency>
+		
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<build>
+				<finalName>sb-dev</finalName>
+				<plugins>
+
+					<plugin>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>3.5.1</version>
+						<configuration>
+							<source>1.8</source>
+							<target>1.8</target>
+						</configuration>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>validate</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<delete file="src/main/webapp/META-INF/context.xml" />
+										<delete file="${project.build.outputDirectory}/config.properties" />
+										<delete file="${project.build.outputDirectory}/jslog.properties" />
+
+										<copy file="src/main/webapp/META-INF/context_dev.xml"
+											tofile="src/main/webapp/META-INF/context.xml" />
+										<copy file="src/main/resources/config_dev.properties.exclude"
+											tofile="${project.build.outputDirectory}/config.properties" />
+										<copy file="src/main/resources/jslog_dev.properties.exclude"
+											tofile="${project.build.outputDirectory}/jslog.properties" />
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-war-plugin</artifactId>
+						<version>3.1.0</version>
+						<configuration>
+							<packagingExcludes>WEB-INF/classes/*.exclude</packagingExcludes>
+							<packagingExcludes>META-INF/*.exclude</packagingExcludes>
+							<failOnMissingWebXml>false</failOnMissingWebXml>
+						</configuration>
+					</plugin>
+
+					<plugin>
+						<groupId>org.apache.tomcat.maven</groupId>
+						<artifactId>tomcat7-maven-plugin</artifactId>
+						<version>2.1</version>
+						<configuration>
+							<url>http://103.210.194.141:80/manager/text</url>
+							<server>samco-dev</server>
+							<path>/sb-dev</path>
+						</configuration>
+					</plugin>
+
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>test</id>
+			<build>
+				<finalName>sb-test</finalName>
+				<plugins>
+					<plugin>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>3.5.1</version>
+						<configuration>
+							<source>1.8</source>
+							<target>1.8</target>
+						</configuration>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>validate</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<delete file="src/main/webapp/META-INF/context.xml" />
+										<delete file="${project.build.outputDirectory}/jslog.properties" />
+										<delete file="${project.build.outputDirectory}/config.properties" />
+
+										<copy file="src/main/resources/config_test.properties.exclude"
+											tofile="${project.build.outputDirectory}/config.properties" />
+										<copy file="src/main/webapp/META-INF/context_test.xml"
+											tofile="src/main/webapp/META-INF/context.xml" />
+										<copy file="src/main/resources/jslog_test.properties.exclude"
+											tofile="${project.build.outputDirectory}/jslog.properties" />
+
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-war-plugin</artifactId>
+						<version>3.1.0</version>
+						<configuration>
+							<packagingExcludes>WEB-INF/classes/*.exclude</packagingExcludes>
+							<packagingExcludes>META-INF/*.exclude</packagingExcludes>
+							<failOnMissingWebXml>false</failOnMissingWebXml>
+						</configuration>
+					</plugin>
+
+					<plugin>
+						<groupId>org.apache.tomcat.maven</groupId>
+						<artifactId>tomcat7-maven-plugin</artifactId>
+						<version>2.1</version>
+						<configuration>
+							<url>http://103.210.194.141:80/manager/text</url>
+							<server>samco-dev</server>
+							<path>/sb-test</path>
+						</configuration>
+					</plugin>
+
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>prod</id>
+			<build>
+				<finalName>samco-webservice</finalName>
+				<plugins>
+
+					<plugin>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>3.5.1</version>
+						<configuration>
+							<source>1.8</source>
+							<target>1.8</target>
+						</configuration>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>validate</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<delete file="src/main/webapp/META-INF/context.xml" />
+										<delete file="${project.build.outputDirectory}/config.properties" />
+										<delete file="${project.build.outputDirectory}/jslog.properties" />
+
+										<copy file="src/main/webapp/META-INF/context_prod.xml"
+											tofile="src/main/webapp/META-INF/context.xml" />
+										<copy file="src/main/resources/config_prod.properties.exclude"
+											tofile="${project.build.outputDirectory}/config.properties" />
+										<copy file="src/main/resources/jslog_prod.properties.exclude"
+											tofile="${project.build.outputDirectory}/jslog.properties" />
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-war-plugin</artifactId>
+						<version>3.1.0</version>
+						<configuration>
+							<packagingExcludes>WEB-INF/classes/*.exclude</packagingExcludes>
+							<packagingExcludes>META-INF/*.exclude</packagingExcludes>
+							<failOnMissingWebXml>false</failOnMissingWebXml>
+						</configuration>
+					</plugin>
+
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>pilot</id>
+			<build>
+				<finalName>stockbasket-pilot</finalName>
+				<plugins>
+
+					<plugin>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>3.5.1</version>
+						<configuration>
+							<source>1.8</source>
+							<target>1.8</target>
+						</configuration>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>validate</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<delete file="src/main/webapp/META-INF/context.xml" />
+										<delete file="${project.build.outputDirectory}/config.properties" />
+										<delete file="${project.build.outputDirectory}/jslog.properties" />
+
+										<copy file="src/main/webapp/META-INF/context_pilot.xml"
+											tofile="src/main/webapp/META-INF/context.xml" />
+										<copy file="src/main/resources/config_pilot.properties.exclude"
+											tofile="${project.build.outputDirectory}/config.properties" />
+										<copy file="src/main/resources/jslog_pilot.properties.exclude"
+											tofile="${project.build.outputDirectory}/jslog.properties" />
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-war-plugin</artifactId>
+						<version>3.1.0</version>
+						<configuration>
+							<packagingExcludes>WEB-INF/classes/*.exclude</packagingExcludes>
+							<packagingExcludes>META-INF/*.exclude</packagingExcludes>
+							<failOnMissingWebXml>false</failOnMissingWebXml>
+						</configuration>
+					</plugin>
+
+				</plugins>
+			</build>
+		</profile>
+		
+	</profiles>
+</project>

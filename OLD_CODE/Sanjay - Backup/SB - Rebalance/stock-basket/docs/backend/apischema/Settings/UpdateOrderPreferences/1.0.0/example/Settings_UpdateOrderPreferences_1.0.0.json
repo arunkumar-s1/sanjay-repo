@@ -1,0 +1,33 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {
+                "prefType": "PRODUCT_TYPE",
+                "type": {
+                    "orderType": "L",
+                    "cash": "CNC",
+                    "derivatives": "NRML",
+                    "options": "NRML"
+                }
+            }
+        },
+        "response": {
+            "svcName": "UpdateOrderPreferences",
+            "serverTime": "1510740683913",
+            "infoID": "0",
+            "data": {
+                "msg": "Preference updated successfully."
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "43cc1268-ba9a-46a7-ac77-cf6339290e00",
+            "svcGroup": "Settings"
+        },
+        "config": {
+            "label": 4,
+            "message": 236,
+            "menu": 72,
+            "app": 101
+        }
+}
+

@@ -1,0 +1,53 @@
+{
+    "echo": {},
+        "request": {
+            "data": {
+                "pageNo": "1"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "StocknoteInbox",
+            "serverTime": "1506573184984",
+            "infoID": "0",
+            "data": {
+                "stockNote": [
+                {
+                    "dispExpDate": "-",
+                    "instrument": "-",
+                    "mesgID": "60ca780d5921bc89b4f8f3407cdc1e97",
+                    "displayStrikePrice": "-",
+                    "sentiment": "Neutral",
+                    "dispInstType": "-",
+                    "headline": "India may offer up to 60% stakes in producing fields to private companies: Sources",
+                    "change": "-0.75",
+                    "extraInfo": {
+                        "SCREEN": "STOCKNOTE",
+                        "newsID": "e6a8082e61fd4f0c23b5b15d48b567af"
+                    },
+                    "newsID": "e6a8082e61fd4f0c23b5b15d48b567af",
+                    "changePer": "-0.44",
+                    "exc": "NSE",
+                    "lTP": "169.45",
+                    "symbol": "2475_NSE",
+                    "udpateTime": "14 Hour ago - 07:05 PM",
+                    "isRead": false,
+                    "optionType": "-",
+                    "symName": "ONGC"
+                }
+                ],
+                    "totalPages": "42",
+                    "alertCount": "429",
+                    "snInboxCount": "2651"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "3c5330d8-2b7d-4a66-a8e5-f456a46d4ba0",
+            "svcGroup": "Push"
+        },
+        "config": {
+            "label": 4,
+            "message": 229,
+            "menu": 66,
+            "app": 96
+        }
+}

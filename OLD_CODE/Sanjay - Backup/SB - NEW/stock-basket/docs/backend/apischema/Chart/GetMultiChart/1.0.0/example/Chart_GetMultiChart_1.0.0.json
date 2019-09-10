@@ -1,0 +1,52 @@
+{
+  "echo": {},
+  "request": {
+    "response_format": "json",
+    "requestType": "U",
+    "data": {
+      "symbols": [
+        {
+          "symbol": "24225_NSE",
+          "tradingSymbol": "TCS",
+          "ind": "Nifty 50",
+          "pageNo": "2"
+        }
+      ]
+    },
+    "appID": "{{appid}}",
+    "formFactor": "M"
+  },
+  "response": {
+    "svcName": "GetMultiChart",
+    "serverTime": "1501581416731",
+    "infoID": "0",
+    "data": {
+      "multiCharts": [
+        {
+          "points": [
+            {
+              "Open": "472",
+              "High": "472",
+              "Close": "472",
+              "Volume": "609",
+              "DT": "2017-08-01T11:48:00.000Z",
+              "DT_UTC": "2017-07-14 00:00:00",
+              "Low": "472"
+            }
+          ],
+          "symbol": "24225_NSE",
+          "precision": "2"
+        }
+      ]
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "21009d84-5889-4d9f-bdae-0cf044d44c6e",
+    "svcGroup": "Chart"
+  },
+  "config": {
+    "label": 4,
+    "message": 207,
+    "menu": 43,
+    "app": 92
+  }
+}

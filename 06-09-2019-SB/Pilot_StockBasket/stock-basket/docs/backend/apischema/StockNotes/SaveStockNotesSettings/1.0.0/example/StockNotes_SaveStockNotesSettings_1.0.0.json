@@ -1,0 +1,38 @@
+{
+    "echo": {},
+        "request": {
+            "data": {
+                "feedTypeFW": "algorithmic",
+                "feedTypeTT": "general",
+                "feedTypeAll": "chronological",
+                "email": "all",
+                "volume": "high"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "SaveStockNotesSettings",
+            "serverTime": "1505800598709",
+            "infoID": "0",
+            "data": {
+                "status": "success",
+                "stockNotesSettings": {
+                    "feedTypeFW": "algorithmic",
+                	"feedTypeTT": "general",
+                	"feedTypeAll": "chronological",
+                    "email": "all",
+                    "volume": "high"
+                }
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "669a40f3-f55b-4369-8257-6671876c09bf",
+            "svcGroup": "StockNotes",
+            "infoMsg": "Settings updated successfully"
+        },
+        "config": {
+            "label": 4,
+            "message": 226,
+            "menu": 44,
+            "app": 96
+        }
+}

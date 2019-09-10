@@ -1,0 +1,94 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "e101"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "GetPositionsHoldingsWatchlist",
+    "serverTime": "1492683509181",
+    "infoID": "0",
+    "data": {
+      "results": [
+        {
+          "symbol": "10440_NSE",
+          "tradingSymbol": "-21",
+          "changePer": "1.05",
+          "strikePrice": "",
+          "dispInstType": "",
+          "associatedSymbol": [
+            {
+              "exc": "BSE",
+              "symName": "LUPIN",
+              "symbol": "500257_BSE"
+            }
+          ],
+          "symName": "LUPIN",
+          "dispExpDate": "",
+          "optionType": "",
+          "change": "14.75",
+          "lTP": "1471.80",
+          "totalQuantity": "50",
+          "exc": "NSE",
+          "instrument": ""
+        },
+        {
+          "symbol": "31181_NSE",
+          "tradingSymbol": "-21",
+          "changePer": "1.48",
+          "strikePrice": "",
+          "dispInstType": "",
+          "associatedSymbol": [
+            {
+              "exc": "BSE",
+              "symName": "MCX",
+              "symbol": "534091_BSE"
+            }
+          ],
+          "symName": "MCX",
+          "dispExpDate": "",
+          "optionType": "",
+          "change": "16.75",
+          "lTP": "1118.30",
+          "totalQuantity": "100",
+          "exc": "NSE",
+          "instrument": ""
+        },
+        {
+          "symbol": "2885_NSE",
+          "changePer": "-0.07",
+          "strikePrice": "",
+          "dispInstType": "",
+          "associatedSymbol": [
+            {
+              "exc": "BSE",
+              "symName": "RELIANCE",
+              "symbol": "500325_BSE"
+            }
+          ],
+          "symName": "RELIANCE",
+          "dispExpDate": "",
+          "optionType": "",
+          "change": "-0.90",
+          "lTP": "1240.25",
+          "totalQuantity": "100",
+          "exc": "NSE",
+          "instrument": ""
+        }
+      ]
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "9140178c-44ad-4631-b770-40c878e4faa9",
+    "svcGroup": "Watchlist"
+  },
+  "config": {
+    "label": 4,
+    "message": 120,
+    "menu": 49,
+    "app": 35
+  }
+}

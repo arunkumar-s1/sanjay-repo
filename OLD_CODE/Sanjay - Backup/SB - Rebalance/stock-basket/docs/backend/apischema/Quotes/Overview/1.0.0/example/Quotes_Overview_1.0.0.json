@@ -1,0 +1,79 @@
+{
+	"echo": {},
+		"request": {
+			"appID": "f24c543af510aea86e1f4413687ab5b6",
+			"data": {
+				"userID": "E102",
+				"symbol": "1020_CDS"
+			},
+			"formFactor": "s",
+			"requestType": "U"
+		},
+		"response": {
+			"svcName": "Overview",
+			"serverTime": "1493817081617",
+			"infoID": "0",
+			"data": {
+				"quoteOverview": {
+					"dispExpDate": "28NOV2017",
+					"instrument": "FUTCUR",
+					"bidSize": "0",
+					"displayStrikePrice": "-0.00",
+					"fiftyTwoWkLow": "00.0000",
+					"dispInstType": "FUT",
+					"expiry": "28 Nov 2017",
+					"undSymDetails": {
+						"exc": "CDS",
+						"undSymbol": "1_CDS",
+						"undSymName": "USDINR",
+						"undLTP": "0.00",
+						"associatedSymbol": [
+						{
+							"exc": "CDS",
+							"symName": "USDINR",
+							"symbol": "1_CDS"
+						}
+						]
+					},
+					"high": "00.0000",
+					"change": "-14.3750",
+					"fiftyTwoWkHigh": "00.0000",
+					"open": "00.0000",
+					"lotSize": "1",
+					"lTT": "NA",
+					"associatedSymbol": [
+					{
+						"exc": "BSE-CDS",
+						"symName": "EURINR",
+						"symbol": "1007619_BCD"
+					}
+					],
+						"changePer": "-18.7908",
+						"tickSize": "25000",
+						"prevClose": "76.5000",
+						"exc": "NSE-CDS",
+						"askPrice": "00.0000",
+						"lTP": "62.1250",
+						"strikePrice": "-0.00",
+						"tradingSymbol": "EURINR17NOVFUT",
+						"askSize": "0",
+						"symbol": "1020_CDS",
+						"optionType": "XX",
+						"bidPrice": "00.0000",
+						"symName": "EURINR",
+						"low": "00.0000",
+						"companyName": "Nov 2017",
+						"isFav": "false"
+				}
+			},
+			"appID": "f24c543af510aea86e1f4413687ab5b6",
+			"msgID": "5b79e1a7-9b7c-4e86-9381-4556de3d32a1",
+			"svcGroup": "Quotes"
+		},
+		"config": {
+			"label": 4,
+			"message": 121,
+			"menu": 49,
+			"app": 44
+		}
+}

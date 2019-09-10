@@ -1,0 +1,19 @@
+{
+    "request": {
+        "appID": "123456789012345678902345",
+        "data": {
+            "build": "android-phone",
+            "deviceToken": "12345678909876545678998765456",
+            "user": "test",
+            "userType": "Login"
+        }
+    },
+    "response": {
+        "data": {},
+        "infoID": "0",
+        "msgID": "b5738d1a-e687-44d6-97ba-980d3c78eb6d",
+        "serverTime": "1499742273820",
+        "svcGroup": "Device",
+        "svcName": "Register"
+    }
+}

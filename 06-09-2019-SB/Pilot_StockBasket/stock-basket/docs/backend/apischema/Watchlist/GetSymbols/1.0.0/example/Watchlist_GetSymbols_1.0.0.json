@@ -1,0 +1,109 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "E104",
+      "groupName": "Sat",
+      "symbolsList": "",
+      "sortBy": "alphabetical",
+      "orderBy": "descending"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "GetSymbols",
+    "serverTime": "1497947725188",
+    "infoID": "0",
+    "data": {
+      "symbolList": [
+        {
+          "dispExpDate": "",
+          "instrument": "",
+          "bidSize": "19562678",
+          "oIBuildup": "-",
+          "oI": "0",
+          "dispInstType": "",
+          "expiry": "NA",
+          "high": "0.15",
+          "totalQuantity": "-",
+          "change": "0.00",
+          "open": "0.00",
+          "oIBuildupAbs": "-",
+          "close": "0.15",
+          "associatedSymbol": [
+            {
+              "exc": "BSE",
+              "symName": "VISESHINFO",
+              "symbol": "532411_BSE"
+            }
+          ],
+          "changePer": "0.00",
+          "exc": "NSE",
+          "tickSize": "5",
+          "askPrice": "0.10",
+          "strikePrice": "",
+          "lTP": "0.15",
+          "value": "0.00",
+          "tradingSymbol": "VISESHINFO-EQ",
+          "askSize": "31472756",
+          "symbol": "7303_NSE",
+          "volume": "207453",
+          "optionType": "",
+          "bidPrice": "0.15",
+          "oIBuildupPer": "-",
+          "symName": "VISESHINFO",
+          "low": "0.10"
+        },
+        {
+          "dispExpDate": "",
+          "instrument": "",
+          "bidSize": "3",
+          "oIBuildup": "-",
+          "oI": "0",
+          "dispInstType": "",
+          "expiry": "NA",
+          "high": "470.00",
+          "totalQuantity": "-",
+          "change": "-0.30",
+          "open": "0.00",
+          "oIBuildupAbs": "-",
+          "close": "469.30",
+          "associatedSymbol": [
+            {
+              "exc": "BSE",
+              "symName": "SPAL",
+              "symbol": "540048_BSE"
+            }
+          ],
+          "changePer": "-0.06",
+          "exc": "NSE",
+          "tickSize": "5",
+          "askPrice": "468.75",
+          "strikePrice": "",
+          "lTP": "469.00",
+          "value": "0.00",
+          "tradingSymbol": "SPAL-EQ",
+          "askSize": "50",
+          "symbol": "18252_NSE",
+          "volume": "13402",
+          "optionType": "",
+          "bidPrice": "469.00",
+          "oIBuildupPer": "-",
+          "symName": "SPAL",
+          "low": "464.20"
+        }
+      ]
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "39deb2c8-b082-4403-9729-829e0730c18a",
+    "svcGroup": "Watchlist"
+  },
+  "config": {
+    "label": 4,
+    "message": 196,
+    "menu": 51,
+    "app": 76
+  }
+}

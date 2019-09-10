@@ -1,0 +1,79 @@
+{
+	"request": {
+		"data": {
+			"symbols": [
+			{
+				"symbol": "22_NSE"
+			}
+			]
+		},
+			"streaming_type": "quote2",
+			"request_type": "subscribe",
+			"response_format": "json",
+			"session": "foo"
+	},
+		"response": {
+			"data": {
+				"askValues": [
+				{
+					"no": "2",
+					"price": "1730.0000",
+					"qty": "10"
+				},
+				{
+					"no": "1",
+					"price": "1730.2000",
+					"qty": "1"
+				},
+				{
+					"no": "1",
+					"price": "1730.9500",
+					"qty": "12"
+				},
+				{
+					"no": "2",
+					"price": "1731.0000",
+					"qty": "300"
+				},
+				{
+					"no": "1",
+					"price": "1731.4000",
+					"qty": "208"
+				}
+				],
+					"bidValues": [
+					{
+						"no": "2",
+						"price": "1729.5500",
+						"qty": "32"
+					},
+					{
+						"no": "2",
+						"price": "1729.5000",
+						"qty": "92"
+					},
+					{
+						"no": "1",
+						"price": "1729.2000",
+						"qty": "25"
+					},
+					{
+						"no": "1",
+						"price": "1729.1500",
+						"qty": "25"
+					},
+					{
+						"no": "1",
+						"price": "1729.1000",
+						"qty": "10"
+					}
+				],
+					"ltt": "08/05/2017 12:45:23",
+					"lttUTC": "08/05/2017 12:45:23",
+					"symbol": "22_NSE",
+					"taq": "85909",
+					"tbq": "86792"
+			},
+			"streaming_type": "quote2"
+		}
+}

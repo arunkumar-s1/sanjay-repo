@@ -1,0 +1,99 @@
+{
+	"echo": {
+		
+	},
+	"request": {
+		"requestType": "U",
+		"appID": "f24c543af510aea86e1f4413687ab5b6",
+		"formFactor": "M",
+		"data": {
+			"orderParams": {
+				"exc": "NSE",
+				"tradingSymbol": "INFY-EQ",
+				"symbol": "2885_NSE",
+				"orderType": "MKT",
+				"side": "BUY",
+				"qty": "1",
+				"triggerPrice": "1351",
+				"price": "1350",
+				"isAmo": true,
+				"userTag": "MOB",
+				"validity": "DAY",
+				"gtd_date": "20/11/2017 15:10:10",
+				"discQty": "0",
+				"mrktProtection": "NA",
+				"misMultiplier": "1",
+				"dispInstType": "FUT",
+				"ordCount": "0"
+			},
+			"boOrderParams": {
+				"trailingSL": "Y",
+				"tSLticks": "8.5",
+				"slValue": "8",
+				"slAbsOrticks": "Ticks",
+				"sqrOffLtpOrAtp": "LTP",
+				"sqrOffAbsOrticks": "Absolute",
+				"sqrOffvalue": "12"
+			},
+			"coOrderParams": {
+				"stopSellPrc": "1259.00"
+			},
+			"productCode": "NRML"
+		}
+	},
+	"response": {
+		"svcName": "PlaceOrder",
+		"serverTime": "1492683550784",
+		"infoID": "0",
+		"data": {
+			"fillQty": "1",
+			"fillPrice": "1001.00",
+			"side": "BUY",
+			"dispInstType": "FUT",
+			"orderType": "L",
+			"isAccepted": false,
+			"status": "REJECTED",
+			"qty": "1",
+			"orderEntryTime": "05/05/2017 17:51:59",
+			"orderNumber": "170420000000004",
+			"productCode": "NRML",
+			"triggerPrice": "2685.00",
+			"orderPrice": "2685.00",
+			"rejDetails": {
+				"primarySolution": "We have found 1 solutions for your rejection",
+				"possibleSolutions": [
+					{
+						"buttonName": "Subscribe to CashPlus",
+						"dispSolutionID": "Solution 1",
+						"navigationDetails": {
+							"toTrade": false,
+							"updatedQty": "-",
+							"toFund": false,
+							"webLinkUrl": "https://www.samco.in/cashplus",
+							"toWebLink": true,
+							"updatedProdType": "-",
+							"toWatchlist": false,
+							"side": "BUY",
+							"updatedPrice": "0.00",
+							"updatedTriggerPrice": "0.00"
+						},
+						"dispSolutionMsg": "You can place a NRML order in cash markets if you subscribe to the CashPlus Product. Would you like to subscribe to CashPlus?",
+						"navigate": "WEBLINK",
+						"solutionID": "1"
+					}
+				],
+				"rejectionReason": "NRML order not allowed for cashmarket",
+				"dispRejReason": "Apologies! NRML orders are not allowed for cash market"
+			}
+		},
+		"appID": "0272e2b55be329bc40e82169bfd5ca56",
+		"msgID": "e6b8529d-73e1-4d3b-807e-4108039870ef",
+		"svcGroup": "Order"
+	},
+	"config": {
+		"label": 4,
+		"message": 120,
+		"menu": 49,
+		"app": 35
+	}
+}

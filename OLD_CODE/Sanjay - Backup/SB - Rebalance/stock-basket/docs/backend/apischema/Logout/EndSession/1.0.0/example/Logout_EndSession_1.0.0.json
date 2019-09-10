@@ -1,0 +1,27 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "E105"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "EndSession",
+    "serverTime": "1487684500644",
+    "infoID": "0",
+    "data": {
+      "msg": "User has successfully logged out"
+    },
+    "msgID": "981d1b94-29e6-493c-9d2b-546a6ab6c574",
+    "svcGroup": "Logout"
+  },
+  "config": {
+    "label": 2,
+    "message": 50,
+    "menu": 45,
+    "app": 9
+  }
+}

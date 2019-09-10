@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "required": true,
+  "type": "object",
+  "id": "#",
+  "properties": {
+    "request": {
+      "required": true,
+      "type": "object",
+      "id": "request",
+      "properties": {
+        "data": {
+          "required": true,
+          "type": "object",
+          "id": "data"
+        },
+        "appID": {
+          "required": true,
+          "type": "string",
+          "id": "appID"
+        }
+      }
+    },
+    "config": {
+      "required": true,
+      "type": "object",
+      "id": "config",
+      "properties": {
+        "menu": {
+          "required": true,
+          "type": "number",
+          "id": "menu"
+        },
+        "message": {
+          "required": true,
+          "type": "number",
+          "id": "message"
+        },
+        "app": {
+          "required": true,
+          "type": "number",
+          "id": "app"
+        },
+        "label": {
+          "required": true,
+          "type": "number",
+          "id": "label"
+        }
+      }
+    },
+    "response": {
+      "required": true,
+      "type": "object",
+      "id": "response",
+      "properties": {
+        "msgID": {
+          "required": true,
+          "type": "string",
+          "id": "msgID"
+        },
+        "svcGroup": {
+          "required": true,
+          "type": "string",
+          "id": "svcGroup"
+        },
+        "serverTime": {
+          "required": true,
+          "type": "string",
+          "id": "serverTime"
+        },
+        "infoID": {
+          "required": true,
+          "type": "string",
+          "id": "infoID"
+        },
+        "appID": {
+          "required": true,
+          "type": "string",
+          "id": "appID"
+        },
+        "svcName": {
+          "required": true,
+          "type": "string",
+          "id": "svcName"
+        },
+        "data": {
+          "required": true,
+          "type": "object",
+          "id": "data",
+          "properties": {
+            "notifyPref": {
+              "items": {
+                "required": true,
+                "type": "object",
+                "id": "0",
+                "properties": {
+                  "notifyType": {
+                    "required": true,
+                    "type": "string",
+                    "id": "notifyType"
+                  },
+                  "enable": {
+                    "required": true,
+                    "type": "string",
+                    "id": "enable"
+                  },
+                  "notifyName": {
+                    "required": true,
+                    "type": "string",
+                    "id": "notifyName"
+                  }
+                }
+              },
+              "required": true,
+              "type": "array",
+              "id": "notifyPref"
+            }
+          }
+        }
+      }
+    }
+  }
+}

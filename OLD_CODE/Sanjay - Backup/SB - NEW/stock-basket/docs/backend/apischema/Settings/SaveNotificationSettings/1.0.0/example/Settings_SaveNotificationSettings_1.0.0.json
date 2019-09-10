@@ -1,0 +1,30 @@
+{
+    "request": {
+        "data": {
+            "notifyPref": [
+            {
+                "enable": "true",
+                    "notifyType": "ordTrdAlerts"
+            }
+            ]
+        },
+            "appID": "169fd42ab825341a351381cf08606e3a"
+    },
+        "response": {
+            "svcName": "SaveNotificationSettings",
+            "serverTime": "1507029944298",
+            "infoID": "0",
+            "data": {
+                "msg": "Notification settings updated successfully."
+            },
+            "appID": "169fd42ab825341a351381cf08606e3a",
+            "msgID": "1acbd6f3-8cb2-47e3-9944-c64c58987751",
+            "svcGroup": "Settings"
+        },
+        "config": {
+            "label": 4,
+            "message": 231,
+            "menu": 66,
+            "app": 97
+        }
+}

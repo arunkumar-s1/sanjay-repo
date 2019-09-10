@@ -1,0 +1,79 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {
+                "filter": {
+                    "exchange": [
+                        "NFO",
+                    "NSE"
+                        ],
+                    "orderType": [
+                        "L"
+                        ],
+                    "tradeType": [
+                        "SELL"
+                        ],
+                    "instrument": [
+                        "OPTSTK"
+                        ],
+                    "prodType": [
+                        "NRML"
+                        ],
+                    "orderVal": [
+                        "lesser"
+                        ],
+                    "status": [
+                        "rejected"
+                        ],
+                    "expiry": [
+                        "rejected"
+                        ]
+                }
+            }
+        },
+        "response": {
+            "svcName": "TradeBook",
+            "serverTime": "1500630214676",
+            "infoID": "0",
+            "data": {
+                "tradeBookList": [
+                {
+                    "dispExpDate": "",
+                    "tradeTime": "05:40 PM",
+                    "orderPrice": "1525.25",
+                    "displayStrikePrice": "",
+                    "dispInstType": "",
+                    "productCode": "CNC",
+                    "rmsOrderNo": "170719000000017",
+                    "qty": "2",
+                    "filledQuantity": "2",
+                    "orderType": "BUY",
+                    "clientDate": "19JUL2017",
+                    "validity": "DAY",
+                    "tradePrice": "1525.25",
+                    "exc": "NSE",
+                    "orderTime": "05:40 PM",
+                    "strikePrice": "",
+                    "exchangeOrderNo": "1000000000025534",
+                    "tradingSymbol": "RELIANCE-EQ",
+                    "symbol": "2885_NSE",
+                    "priceType": "LIMIT",
+                    "optionType": "",
+                    "symName": "RELIANCE",
+                    "instrument": "",
+                    "tradeNo": "1234"
+                }
+                ]
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "81545768-ae7a-4a6e-9bf2-b596f6f10ba7",
+            "svcGroup": "Trade"
+        },
+        "config": {
+            "label": 4,
+            "message": 207,
+            "menu": 43,
+            "app": 92
+        }
+}

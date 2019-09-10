@@ -1,0 +1,354 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "requestType": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "requestType"
+                }, 
+                "formFactor": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "formFactor"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "userTag": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "userTag"
+                        }, 
+                        "tSLticks": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "tSLticks"
+                        }, 
+                        "orderType": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "orderType"
+                        }, 
+                        "sqrOffAbsOrticks": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "sqrOffAbsOrticks"
+                        }, 
+                        "trailingSL": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "trailingSL"
+                        }, 
+                        "symbol": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "symbol"
+                        }, 
+                        "disQty": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "disQty"
+                        }, 
+                        "qty": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "qty"
+                        }, 
+                        "price": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "price"
+                        }, 
+                        "source": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "source"
+                        }, 
+                        "sqrOffvalue": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "sqrOffvalue"
+                        }, 
+                        "validity": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "validity"
+                        }, 
+                        "isAmo": {
+                            "required": true, 
+                            "type": "boolean", 
+                            "id": "isAmo"
+                        }, 
+                        "slAbsOrticks": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "slAbsOrticks"
+                        }, 
+                        "slValue": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "slValue"
+                        }, 
+                        "ltpOrAtp": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "ltpOrAtp"
+                        }, 
+                        "side": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "side"
+                        },
+                        "ordCount": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "ordCount"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "dispInstType": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "dispInstType"
+                        }, 
+                        "status": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "status"
+                        }, 
+                        "orderEntryTime": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "orderEntryTime"
+                        }, 
+                        "orderNumber": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "orderNumber"
+                        }, 
+                        "orderType": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "orderType"
+                        }, 
+                        "fillPrice": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "fillPrice"
+                        }, 
+                        "qty": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "qty"
+                        }, 
+                        "isAccepted": {
+                            "required": true, 
+                            "type": "boolean", 
+                            "id": "isAccepted"
+                        }, 
+                        "productCode": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "productCode"
+                        }, 
+                        "side": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "side"
+                        }, 
+                        "rejDetails": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "rejDetails", 
+                            "properties": {
+                                "primarySolution": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "primarySolution"
+                                }, 
+                                "possibleSolutions": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "object", 
+                                        "id": "0", 
+                                        "properties": {
+                                            "navigate": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "navigate"
+                                            }, 
+                                            "dispSolutionMsg": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "dispSolutionMsg"
+                                            }, 
+                                            "dispSolutionID": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "dispSolutionID"
+                                            }, 
+                                            "navigationDetails": {
+                                                "required": true, 
+                                                "type": "object", 
+                                                "id": "navigationDetails", 
+                                                "properties": {
+                                                    "toFund": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toFund"
+                                                    }, 
+                                                    "toWatchlist": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toWatchlist"
+                                                    }, 
+                                                    "toWebLink": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toWebLink"
+                                                    }, 
+                                                    "toTrade": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toTrade"
+                                                    }, 
+                                                    "updatedQty": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "updatedQty"
+                                                    }, 
+                                                    "updatedProdType": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "updatedProdType"
+                                                    }, 
+                                                    "webLinkUrl": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "webLinkUrl"
+                                                    }
+                                                }
+                                            }, 
+                                            "solutionID": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "solutionID"
+                                            }, 
+                                            "buttonName": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "buttonName"
+                                            }
+                                        }
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "possibleSolutions"
+                                }, 
+                                "rejectionReason": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "rejectionReason"
+                                }, 
+                                "dispRejReason": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "dispRejReason"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

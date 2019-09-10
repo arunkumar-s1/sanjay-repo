@@ -1,0 +1,26 @@
+{
+    "request": {
+        "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {},
+            "formFactor": "s",
+            "requestType": "U"
+    },
+        "echo": {},
+        "response": {
+            "svcName": "GetCashPlusURL",
+            "serverTime": "1507541567120",
+            "infoID": "0",
+            "data": {
+                "url": "http://star.samco.in/msfapi_client/subscription/dmhsNDloYVQ1RlYvUXlHQUYwMTlLZz09/f109d17db12373666be3080dbd612e87/cashplus"
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "19e1379f-a7f0-44c5-bef4-380e4cf69af8",
+            "svcGroup": "AccountSettings"
+        },
+        "config": {
+            "label": 4,
+            "message": 233,
+            "menu": 67,
+            "app": 98
+        }
+}

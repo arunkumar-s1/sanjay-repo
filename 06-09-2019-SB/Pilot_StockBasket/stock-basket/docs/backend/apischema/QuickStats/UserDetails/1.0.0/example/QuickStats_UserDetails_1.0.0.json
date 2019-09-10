@@ -1,0 +1,29 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {}
+        },
+        "response": {
+            "svcName": "UserDetails",
+            "serverTime": "1506493660446",
+            "infoID": "0",
+            "data": {
+                "accountName": "NAROTTAM B. VYAS",
+                "mobile": "9819730095",
+                "emailID": "listsamco@inxsasia.com",
+                "panNo": "AAEPV9402H",
+                "nickName": "NAROTTAM B. VYAS",
+                "dob": "12/31/1899"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "1a164128-b9f3-421f-b514-47cf77cd9ebf",
+            "svcGroup": "QuickStats"
+        },
+        "config": {
+            "label": 4,
+            "message": 229,
+            "menu": 66,
+            "app": 96
+        }
+}

@@ -1,0 +1,41 @@
+{
+  "echo": {},
+  "request": {
+    "response_format": "json",
+    "requestType": "U",
+    "appID": "fb6ebfcfdca6222c8357764d0d6da069",
+    "data": {
+      "language": "English"
+    },
+    "msgID": "914d7317-5b0a-4e02-8713-ad4f698bb873",
+    "formFactor": "M"
+  },
+  "response": {
+    "svcName": "ConfigDetails",
+    "serverTime": "1538982534394",
+    "infoID": "0",
+    "data": {
+      "config_location": {
+        "messageConfigLocation": "/home/samco/configs/MESSAGE_CONFIG_ENGLISH.json",
+        "labelConfigLocation": "/home/samco/configs/LABEL_CONFIG_ENGLISH.json",
+        "appConfigLocation": "/home/samco/configs/APP_CONFIG_ENGLISH.json",
+        "menuConfigLocation": "/home/samco/configs/APP_CONFIG_ENGLISH.json"
+      },
+      "Version": {
+        "labelConfigVersion": "1.0.0",
+        "messageConfigVersion": "1.0.0",
+        "appConfigVersion": "1.0.0",
+        "menuConfigVersion": "1.0.0"
+      }
+    },
+    "appID": "fb6ebfcfdca6222c8357764d0d6da069",
+    "msgID": "914d7317-5b0a-4e02-8713-ad4f698bb873",
+    "svcGroup": "Config"
+  },
+  "config": {
+    "label": 3,
+    "message": 121,
+    "menu": 86,
+    "app": 74
+  }
+}

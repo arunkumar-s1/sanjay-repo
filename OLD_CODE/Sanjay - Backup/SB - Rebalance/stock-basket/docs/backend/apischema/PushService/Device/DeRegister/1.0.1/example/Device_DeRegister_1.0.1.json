@@ -1,0 +1,17 @@
+{
+    "request": {
+        "appID": "123456789012345678902345",
+        "data": {
+            "build": "android-phone",
+            "deviceToken": "12345678909876545678998765456"
+        }
+    },
+    "response": {
+        "data": {},
+        "infoID": "0",
+        "msgID": "54bb0cfa-d53e-49b1-b8f3-7e72cf1a6bf4",
+        "serverTime": "1499742471141",
+        "svcGroup": "Device",
+        "svcName": "DeRegister"
+    }
+}

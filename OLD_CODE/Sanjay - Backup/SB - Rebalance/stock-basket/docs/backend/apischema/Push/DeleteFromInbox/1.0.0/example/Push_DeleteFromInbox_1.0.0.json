@@ -1,0 +1,36 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {
+                "mesgID": [
+                    "8d3b2d51334243f4a3257e83fb874021",
+                "8d3b2d51334243f4a3257e83fb874021",
+                "4b01885b04b9bc4280af59de3a5d5f20"
+                    ],
+                "inboxAction": "read",
+                "markAll": "true",
+                "type":"Stock Notes"
+            }
+        },
+        "response": {
+            "svcName": "DeleteFromInbox",
+            "serverTime": "1506501152413",
+            "infoID": "0",
+            "data": {
+                "alertCount": "454",
+                "snInboxCount": "2651",
+                "status": "success",
+                "msg": "Notification sucessfully read"
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "a8e055d1-5c2f-448f-967d-26a6b44f2dc5",
+            "svcGroup": "Push"
+        },
+        "config": {
+            "label": 4,
+            "message": 229,
+            "menu": 66,
+            "app": 96
+        }
+}

@@ -1,0 +1,39 @@
+{
+	"request": {
+		"appID": "f24c543af510aea86e1f4413687ab5b6",
+			"data": {
+				"symbol": "45586_NFO",
+				"exc": "NFO"
+			}
+	},
+		"response": {
+			"svcName": "RelatedDerivativeContracts",
+			"serverTime": "1492523869165",
+			"infoID": "0",
+			"data": {
+				"relatedContracts": [
+				{
+					"exc": "NFO",
+					"tradingSymbol": "JPASSOCIAT17APRFUT",
+					"symbol": "46670_NFO",
+					"symName": "JPASSOCIAT",
+					"associatedSymbol": [
+					{
+						"exc": "BFO",
+						"symbol": "858260_BFO"
+					}
+					]
+				}
+				]
+			},
+			"appID": "f24c543af510aea86e1f4413687ab5b6",
+			"msgID": "f177a119-824d-4aec-9741-90a292bc3dab",
+			"svcGroup": "Quotes"
+		},
+		"config": {
+			"label": 4,
+			"message": 117,
+			"menu": 49,
+			"app": 35
+		}
+}

@@ -1,0 +1,26 @@
+{
+  "echo": {},
+  "request": {
+    "data": {
+    },
+    "appID": "f24c543af510aea86e1f4413687ab5b6"
+  },
+  "response": {
+    "svcName": "GetInbox",
+    "serverTime": "1506092681665",
+    "infoID": "0",
+    "data": {
+      "alertCount": "0",
+      "snInboxCount": "868"
+    },
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "msgID": "73a89520-b54f-442b-9160-393165bc9be9",
+    "svcGroup": "Push"
+  },
+  "config": {
+    "label": 4,
+    "message": 228,
+    "menu": 66,
+    "app": 96
+  }
+}

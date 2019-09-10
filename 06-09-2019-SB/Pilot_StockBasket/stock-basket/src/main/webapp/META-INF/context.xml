@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="true" useHttpOnly="false">
+        <!-- Specify a JDBC mysql datasource -->
+
+
+        <Resource name="jdbc/samco" auth="Container" type="javax.sql.DataSource"
+                username="root" password="roadrunner"
+                driverClassName="com.mysql.jdbc.Driver"
+                url="jdbc:mysql://db1.stockbasket.com:3306/stock_basket?autoReconnect=true&amp;useSSL=false"
+                initialSize="1"
+                maxTotal="500"
+                maxIdle="350"
+                minIdle="20"
+                timeBetweenEvictionRunsMillis="10000"
+                minEvictableIdleTimeMillis="15000"
+                removeAbandonedOnMaintenance="true"
+                removeAbandonedOnBorrow="true"
+                removeAbandonedTimeout="15"
+                maxWaitMillis="5000"
+                validationQuery="select 1"
+                testOnBorrow="true" />
+
+        <Resource name="jdbc/samco_session" auth="Container" type="javax.sql.DataSource"
+                username="root" password="roadrunner"
+                driverClassName="com.mysql.jdbc.Driver"
+                url="jdbc:mysql://db2.samco.in:3306/samco_session?autoReconnect=true&amp;useLocalSessionState=true&amp;useSSL=false"
+                initialSize="1"
+                maxTotal="500"
+                maxIdle="350"
+                minIdle="20"
+                timeBetweenEvictionRunsMillis="10000"
+                minEvictableIdleTimeMillis="15000"
+                removeAbandonedOnMaintenance="true"
+                removeAbandonedOnBorrow="true"
+                removeAbandonedTimeout="15"
+                maxWaitMillis="5000"
+                validationQuery="select 1"
+                testOnBorrow="true" />
+                
+        <Resource name="jdbc/stock_basket" auth="Container" type="javax.sql.DataSource"
+                username="root" password="roadrunner"
+                driverClassName="com.mysql.jdbc.Driver"
+                url="jdbc:mysql://db1.stockbasket.com:3306/stock_basket?autoReconnect=true&amp;useSSL=false"
+                initialSize="1"
+                maxTotal="50"
+                maxIdle="30"
+                minIdle="20"
+                timeBetweenEvictionRunsMillis="10000"
+                minEvictableIdleTimeMillis="15000"
+                removeAbandonedOnMaintenance="true"
+                removeAbandonedOnBorrow="true"
+                removeAbandonedTimeout="15"
+                maxWaitMillis="5000"
+                validationQuery="select 1"
+                testOnBorrow="true" />
+        
+		
+        <Resource name="jdbc/quote_data" auth="Container" type="javax.sql.DataSource"
+                username="root" password="roadrunner"
+                driverClassName="com.mysql.jdbc.Driver"
+                url="jdbc:mysql://db1.stockbasket.com:3306/quote_data?autoReconnect=true&amp;useLocalSessionState=true&amp;useSSL=false"
+                initialSize="1"
+                maxTotal="500"
+                maxIdle="350"
+                minIdle="20"
+                timeBetweenEvictionRunsMillis="10000"
+                minEvictableIdleTimeMillis="15000"
+                removeAbandonedOnMaintenance="true"
+                removeAbandonedOnBorrow="true"
+                removeAbandonedTimeout="15"
+                maxWaitMillis="5000"
+                validationQuery="select 1"
+                testOnBorrow="true" />
+
+	<!--        <Resource name="jdbc/push_notification" auth="Container"
+                type="javax.sql.DataSource" username="root" password="roadrunner"
+                maxTotal="50" maxIdle="30" maxWaitMillis="10000"
+                minIdle="5" driverClassName="com.mysql.jdbc.Driver"
+                url="jdbc:mysql://db1.samco.in:3306/push_notification?autoReconnect=true&amp;useLocalSessionState=true&amp;useSSL=false"
+                validationQuery="SELECT 1" removeAbandonedOnMaintenance="true"
+                timeBetweenEvictionRunsMillis="10000" logAbandoned="true"
+		removeAbandonedOnBorrow="true" removeAbandonedTimeout="30" />
+-->
+
+        <Resource name="jdbc/rms_prsnt_value_publish" auth="Container"
+                type="javax.sql.DataSource" username="omadmin" password="Mysql@123"
+                maxTotal="100" maxIdle="30" maxWaitMillis="10000" initialSize="5"
+                minIdle="5" driverClassName="com.mysql.jdbc.Driver"
+                url="jdbc:mysql://172.16.14.34:4417/nexus_risk_params_uat?autoReconnect=true&amp;useSSL=false"
+                validationQuery="SELECT 1" removeAbandonedOnMaintenance="true"
+                timeBetweenEvictionRunsMillis="10000" logAbandoned="true" removeAbandonedOnBorrow="true"
+                removeAbandonedTimeout="30" />
+
+        <!--<WatchedResource>/src/main/webapp/WEB-INF/web.xml</WatchedResource> -->
+
+</Context>

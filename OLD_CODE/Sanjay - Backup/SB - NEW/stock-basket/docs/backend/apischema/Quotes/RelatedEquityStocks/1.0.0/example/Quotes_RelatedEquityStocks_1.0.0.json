@@ -1,0 +1,63 @@
+{
+  "echo": {},
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "symbol": "500027_BSE",
+      "exc": "BSE"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "response": {
+    "svcName": "RelatedEquityStocks",
+    "serverTime": "1491374782167",
+    "infoID": "0",
+    "data": {
+      "relatedStocks": [
+        {
+          "exc": "BSE",
+          "symName": "ATUL",
+          "symbol": "500027_BSE",
+          "associatedSymbol": [
+            {
+              "exc": "NSE",
+              "symbol": "263_NSE"
+            }
+          ]
+        },
+        {
+          "exc": "BSE",
+          "symName": "BAYERCROP",
+          "symbol": "506285_BSE",
+          "associatedSymbol": [
+            {
+              "exc": "NSE",
+              "symbol": "17927_NSE"
+            }
+          ]
+        },
+        {
+          "exc": "BSE",
+          "symName": "ASTEC",
+          "symbol": "533138_BSE",
+          "associatedSymbol": [
+            {
+              "exc": "NSE",
+              "symbol": "17728_NSE"
+            }
+          ]
+        }
+      ]
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "8097d99a-3585-4a7e-978f-c907272dfcd0",
+    "svcGroup": "Quotes"
+  },
+  "config": {
+    "label": 4,
+    "message": 111,
+    "menu": 49,
+    "app": 35
+  }
+}

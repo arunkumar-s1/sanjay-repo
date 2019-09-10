@@ -1,0 +1,6 @@
+log_level=2
+namespace=samco
+filename=sb-webservice.log
+url=onm.stockbasket.com:5679
+type=remote
+filepath=/home/samco/Logs/production/samco/sb-webservice.log

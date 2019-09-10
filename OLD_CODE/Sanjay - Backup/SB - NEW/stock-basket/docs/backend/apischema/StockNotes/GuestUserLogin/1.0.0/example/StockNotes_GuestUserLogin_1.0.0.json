@@ -1,0 +1,30 @@
+{
+  "echo": {},
+  "request": {
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "data": {
+      "userID": "jinto.thomas623@gmail.com",
+      "platformType": "facebook",
+      "authKey": "EAAB5QwClMFwBAA5R2LZChkHZCmceWgFZCYXQivy5qKZAAn6Ftya8lXUxhZBshADof7BJ4cQa8IEYKzjP5gjEAZCXcbKfCgz87LFtyZAZAZBK4tzOtnOLLEumbluZCAvN0rxhjtoMg1PV6TRbVqmeZA9s3px0Oqq6P4rsHywY1xgqoc8AZBlcxoiEseHI66ZBoPV2SAkT9JUZB0pGPCsgZDZD"
+    }
+  },
+  "response": {
+    "svcName": "GuestUserLogin",
+    "serverTime": "1500386425380",
+    "infoID": "0",
+    "data": {
+      "success": "true",
+      "isWelcomeAboard": true,
+      "isOTPNeeded": true
+    },
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "msgID": "26fd50ff-194e-4649-a655-4bf7410ece9f",
+    "svcGroup": "StockNotes"
+  },
+  "config": {
+    "label": 4,
+    "message": 207,
+    "menu": 41,
+    "app": 92
+  }
+}

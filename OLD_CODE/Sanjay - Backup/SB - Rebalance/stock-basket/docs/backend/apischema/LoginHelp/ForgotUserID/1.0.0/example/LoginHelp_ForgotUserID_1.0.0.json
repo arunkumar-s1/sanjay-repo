@@ -1,0 +1,28 @@
+{
+  "echo": {},
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "emailID": "pratikadani@gmail.com",
+      "panNo": "AGAPA5926H"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "response": {
+    "svcName": "ForgotUserID",
+    "serverTime": "1486988138844",
+    "infoID": "0",
+    "data": {
+      "userID": "RP1001"
+    },
+    "msgID": "4ba8f98d-d1ca-481a-af97-a552a4accf40",
+    "svcGroup": "LoginHelp"
+  },
+  "config": {
+    "label": 2,
+    "message": 23,
+    "menu": 48,
+    "app": 1
+  }
+}

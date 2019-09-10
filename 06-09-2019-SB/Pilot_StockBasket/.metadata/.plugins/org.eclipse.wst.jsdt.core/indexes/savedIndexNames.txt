@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Workspace\Pilot_StockBasket\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1426141684.index
+2159521199.index
+1946570120.index
+112079851.index
+4091749289.index
+3242167260.index

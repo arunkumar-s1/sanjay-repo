@@ -1,0 +1,737 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "searchStr": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "searchStr"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "MutualFund": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "sortPriority": {
+                                        "required": true, 
+                                        "type": "number", 
+                                        "id": "sortPriority"
+                                    }, 
+                                    "lTP": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "lTP"
+                                    }, 
+                                    "dispName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispName"
+                                    }, 
+                                    "dispLen": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispLen"
+                                    }, 
+                                    "companyName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "companyName"
+                                    }, 
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "tradingSymbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "tradingSymbol"
+                                    }, 
+                                    "associatedSymbol": {
+                                        "items": {
+                                            "required": true, 
+                                            "type": "object", 
+                                            "id": "0", 
+                                            "properties": {
+                                                "symbol": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symbol"
+                                                }, 
+                                                "symName": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symName"
+                                                }, 
+                                                "exc": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "exc"
+                                                }
+                                            }
+                                        }, 
+                                        "required": true, 
+                                        "type": "array", 
+                                        "id": "associatedSymbol"
+                                    }, 
+                                    "istradeableIndex": {
+                                        "required": true, 
+                                        "type": "boolean", 
+                                        "id": "istradeableIndex"
+                                    }, 
+                                    "changePer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "changePer"
+                                    }, 
+                                    "change": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "change"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "MutualFund"
+                        }, 
+                        "Stocks": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "sortPriority": {
+                                        "required": true, 
+                                        "type": "number", 
+                                        "id": "sortPriority"
+                                    }, 
+                                    "lTP": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "lTP"
+                                    }, 
+                                    "dispName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispName"
+                                    }, 
+                                    "dispLen": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispLen"
+                                    }, 
+                                    "companyName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "companyName"
+                                    }, 
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "tradingSymbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "tradingSymbol"
+                                    }, 
+                                    "associatedSymbol": {
+                                        "items": {
+                                            "required": true, 
+                                            "type": "object", 
+                                            "id": "0", 
+                                            "properties": {
+                                                "symbol": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symbol"
+                                                }, 
+                                                "symName": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symName"
+                                                }, 
+                                                "exc": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "exc"
+                                                }
+                                            }
+                                        }, 
+                                        "required": true, 
+                                        "type": "array", 
+                                        "id": "associatedSymbol"
+                                    }, 
+                                    "istradeableIndex": {
+                                        "required": true, 
+                                        "type": "boolean", 
+                                        "id": "istradeableIndex"
+                                    }, 
+                                    "changePer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "changePer"
+                                    }, 
+                                    "change": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "change"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "Stocks"
+                        }, 
+                        "masterList": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "sortPriority": {
+                                        "required": true, 
+                                        "type": "number", 
+                                        "id": "sortPriority"
+                                    }, 
+                                    "optionType": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "optionType"
+                                    }, 
+                                    "strikePrice": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "strikePrice"
+                                    }, 
+                                    "lTP": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "lTP"
+                                    }, 
+                                    "associatedSymbol": {
+                                        "items": {
+                                            "required": true, 
+                                            "type": "object", 
+                                            "id": "0", 
+                                            "properties": {
+                                                "symbol": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symbol"
+                                                }, 
+                                                "symName": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symName"
+                                                }, 
+                                                "exc": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "exc"
+                                                }
+                                            }
+                                        }, 
+                                        "required": true, 
+                                        "type": "array", 
+                                        "id": "associatedSymbol"
+                                    }, 
+                                    "dispName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispName"
+                                    }, 
+                                    "dispLen": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispLen"
+                                    }, 
+                                    "companyName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "companyName"
+                                    }, 
+                                    "displayStrikePrice": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "displayStrikePrice"
+                                    }, 
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "expiry": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "expiry"
+                                    }, 
+                                    "dispInstType": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispInstType"
+                                    }, 
+                                    "instrument": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "instrument"
+                                    }, 
+                                    "tradingSymbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "tradingSymbol"
+                                    }, 
+                                    "change": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "change"
+                                    }, 
+                                    "istradeableIndex": {
+                                        "required": true, 
+                                        "type": "boolean", 
+                                        "id": "istradeableIndex"
+                                    }, 
+                                    "changePer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "changePer"
+                                    }, 
+                                    "dispExpDate": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispExpDate"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "masterList"
+                        }, 
+                        "ETF": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "sortPriority": {
+                                        "required": true, 
+                                        "type": "number", 
+                                        "id": "sortPriority"
+                                    }, 
+                                    "lTP": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "lTP"
+                                    }, 
+                                    "dispName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispName"
+                                    }, 
+                                    "dispLen": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispLen"
+                                    }, 
+                                    "companyName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "companyName"
+                                    }, 
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "tradingSymbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "tradingSymbol"
+                                    }, 
+                                    "associatedSymbol": {
+                                        "items": {
+                                            "required": true, 
+                                            "type": "object", 
+                                            "id": "0", 
+                                            "properties": {
+                                                "symbol": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symbol"
+                                                }, 
+                                                "symName": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symName"
+                                                }, 
+                                                "exc": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "exc"
+                                                }
+                                            }
+                                        }, 
+                                        "required": true, 
+                                        "type": "array", 
+                                        "id": "associatedSymbol"
+                                    }, 
+                                    "istradeableIndex": {
+                                        "required": true, 
+                                        "type": "boolean", 
+                                        "id": "istradeableIndex"
+                                    }, 
+                                    "changePer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "changePer"
+                                    }, 
+                                    "change": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "change"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "ETF"
+                        }, 
+                        "Indices": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "sortPriority": {
+                                        "required": true, 
+                                        "type": "number", 
+                                        "id": "sortPriority"
+                                    }, 
+                                    "lTP": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "lTP"
+                                    }, 
+                                    "dispName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispName"
+                                    }, 
+                                    "dispLen": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispLen"
+                                    }, 
+                                    "companyName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "companyName"
+                                    }, 
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "tradingSymbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "tradingSymbol"
+                                    }, 
+                                    "associatedSymbol": {
+                                        "items": {
+                                            "required": true, 
+                                            "type": "object", 
+                                            "id": "0", 
+                                            "properties": {
+                                                "symbol": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symbol"
+                                                }, 
+                                                "symName": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symName"
+                                                }, 
+                                                "exc": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "exc"
+                                                }
+                                            }
+                                        }, 
+                                        "required": true, 
+                                        "type": "array", 
+                                        "id": "associatedSymbol"
+                                    }, 
+                                    "istradeableIndex": {
+                                        "required": true, 
+                                        "type": "boolean", 
+                                        "id": "istradeableIndex"
+                                    }, 
+                                    "changePer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "changePer"
+                                    }, 
+                                    "change": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "change"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "Indices"
+                        }, 
+                        "DEBT": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "sortPriority": {
+                                        "required": true, 
+                                        "type": "number", 
+                                        "id": "sortPriority"
+                                    }, 
+                                    "lTP": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "lTP"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }, 
+                                    "dispLen": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispLen"
+                                    }, 
+                                    "companyName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "companyName"
+                                    }, 
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "tradingSymbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "tradingSymbol"
+                                    }, 
+                                    "associatedSymbol": {
+                                        "items": {
+                                            "required": true, 
+                                            "type": "object", 
+                                            "id": "0", 
+                                            "properties": {
+                                                "symbol": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symbol"
+                                                }, 
+                                                "symName": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symName"
+                                                }, 
+                                                "exc": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "exc"
+                                                }
+                                            }
+                                        }, 
+                                        "required": true, 
+                                        "type": "array", 
+                                        "id": "associatedSymbol"
+                                    }, 
+                                    "istradeableIndex": {
+                                        "required": true, 
+                                        "type": "boolean", 
+                                        "id": "istradeableIndex"
+                                    }, 
+                                    "changePer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "changePer"
+                                    }, 
+                                    "change": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "change"
+                                    }, 
+                                    "dispName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispName"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "DEBT"
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

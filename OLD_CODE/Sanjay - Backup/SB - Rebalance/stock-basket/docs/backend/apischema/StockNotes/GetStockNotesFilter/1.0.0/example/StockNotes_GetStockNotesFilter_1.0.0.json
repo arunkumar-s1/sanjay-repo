@@ -1,0 +1,202 @@
+{
+    "echo": "{}",
+        "request": {
+            "data": {},
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "formFactor": "M"
+        },
+        "response": {
+            "svcName": "GetStockNotesFilter",
+            "serverTime": "1499857187687",
+            "infoID": "0",
+            "data": {
+                "filterInfo": {
+                    "segment": [
+                    {
+                        "filterID": "21",
+                        "filterName": "Equity",
+                        "isChecked": false
+                    },
+                    {
+                        "filterID": "22",
+                        "filterName": "Equity Derivative",
+                        "isChecked": false
+                    },
+                    {
+                        "filterID": "23",
+                        "filterName": "Currency Derivative",
+                        "isChecked": false
+                    },
+                    {
+                        "filterID": "24",
+                        "filterName": "Commodity Derivative",
+                        "isChecked": false
+                    },
+                    {
+                        "filterID": "25",
+                        "filterName": "Index",
+                        "isChecked": false
+                    }
+                    ],
+                        "sentiment": [
+                        {
+                            "filterID": "9",
+                            "filterName": "Neutral",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "10",
+                            "filterName": "Bullish",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "11",
+                            "filterName": "Bearish",
+                            "isChecked": false
+                        }
+                    ],
+                        "event": [
+                        {
+                            "filterID": "28",
+                            "filterName": "Updates",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "29",
+                            "filterName": "Clarifications",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "30",
+                            "filterName": "Dividend",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "31",
+                            "filterName": "Financial Results",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "32",
+                            "filterName": "Press Release",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "33",
+                            "filterName": "test1",
+                            "isChecked": false
+                        }
+                    ],
+                        "category": [
+                        {
+                            "filterID": "6",
+                            "filterName": "Guest",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "7",
+                            "filterName": "Samco Users",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "8",
+                            "filterName": "Login Users",
+                            "isChecked": false
+                        }
+                    ],
+                        "source": [
+                        {
+                            "filterID": "12",
+                            "filterName": "MoneyControl",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "13",
+                            "filterName": "CNN",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "14",
+                            "filterName": "NDTV",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "15",
+                            "filterName": "Samco",
+                            "isChecked": false
+                        }
+                    ],
+                        "impact": [
+                        {
+                            "filterID": "2",
+                            "filterName": "No Impact",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "3",
+                            "filterName": "High Impact",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "4",
+                            "filterName": "Medium Impact",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "5",
+                            "filterName": "Low Impact",
+                            "isChecked": true
+                        }
+                    ],
+                        "assetClass": [
+                        {
+                            "filterID": "16",
+                            "filterName": "Mutual Funds",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "17",
+                            "filterName": "Equity and Equity Derivatives",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "18",
+                            "filterName": "Insurance",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "19",
+                            "filterName": "Currency and Currency Derivatives",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "20",
+                            "filterName": "Commodities",
+                            "isChecked": false
+                        }
+                    ],
+                        "mediaFilter": [
+                        {
+                            "filterID": "26",
+                            "filterName": "With Media",
+                            "isChecked": false
+                        },
+                        {
+                            "filterID": "27",
+                            "filterName": "Without Media",
+                            "isChecked": false
+                        }
+                    ]
+                }
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "ffcf5ed4-8fd1-442d-a65c-05fe6f1f1e9b",
+            "svcGroup": "StockNotes"
+        },
+        "config": {
+            "label": 4,
+            "message": 207,
+            "menu": 41,
+            "app": 90
+        }
+}

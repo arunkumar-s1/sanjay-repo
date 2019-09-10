@@ -1,0 +1,90 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "E104",
+      "symbol": "2885_NSE"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "GetMarketData",
+    "serverTime": "1490694378714",
+    "infoID": "0",
+    "data": {
+      "marketData": [
+        {
+          "key": "Sector",
+          "value": "Integrated Oil &amp; Gas"
+        },
+        {
+          "key": "52wk HIGH",
+          "value": "1129.55"
+        },
+        {
+          "key": "52wk LOW",
+          "value": "0.00"
+        },
+        {
+          "key": "Market Cap.",
+          "value": ""
+        },
+        {
+          "key": "Volume (Shares)",
+          "value": "3147947810"
+        },
+        {
+          "key": "Volume (Rs.)",
+          "value": "0.00"
+        },
+        {
+          "key": "Avg. Traded Price",
+          "value": "1272.20"
+        },
+        {
+          "key": "Total Buy Qty",
+          "value": "234659"
+        },
+        {
+          "key": "Total Sell Qty",
+          "value": "296309"
+        },
+        {
+          "key": "Exchange VAR Margin",
+          "value": ""
+        },
+        {
+          "key": "Upper Circuit Limit",
+          "value": "1376.20"
+        },
+        {
+          "key": "Lower Circuit Limit",
+          "value": "1126.00"
+        },
+        {
+          "key": "1 Year % Return",
+          "value": ""
+        },
+        {
+          "key": "Full year reported EPS",
+          "value": ""
+        },
+        {
+          "key": "P/E Ratio",
+          "value": ""
+        }
+      ]
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "b4e691c3-db70-4da6-9a4d-e196eecf5fed",
+    "svcGroup": "Quotes"
+  },
+  "config": {
+    "label": 4,
+    "message": 66,
+    "menu": 49,
+    "app": 35
+  }
+}

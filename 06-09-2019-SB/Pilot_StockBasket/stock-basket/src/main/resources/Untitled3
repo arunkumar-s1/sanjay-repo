@@ -1,0 +1,352 @@
+# 1 for info, 2 for info and debug
+#log_level=2
+#namespace=samco_log
+#filename=tiljo.log
+#url=localhost:5679
+#type=local
+#filepath=/tmp/tiljo.log
+
+#password encryption key
+login.enc_key=115fa6915df0c3013a211d3637b04d5a
+
+#unit testing properties
+unit_testing.enabled=false
+
+#Audit related properties
+audit.enabled=true
+
+# database used
+datasource.adapter=mysql
+
+# HTTP Connection timeout details
+httpconn.read_timeout=240
+httpconn.conn_timeout=60
+
+#market movers default value
+movers.default_value=30
+
+#stock notes page size
+stocknotes.page_size=20
+stocknotes.open_page_size=10
+
+retention_list={"retention_list":["GTD"\,"GTDys"\,"GTT"]}
+market_time={"startTime":"9"\,"endTime":"15"}
+
+base_url_old=http://192.168.20.21
+#base_url=http://125.99.79.86
+base_url=http://172.16.14.35
+base_url2=${base_url}/NestHtml5Mobile/rest/
+
+initial_key_url=${base_url}/NestHtml5Mobile_PRO/rest/GetInitialKey
+auth_key_url=${base_url}/NestHtml5Mobile_PRO/rest/GetPreAuthenticationKey
+validate_password_url=${base_url}/NestHtml5Mobile_PRO/rest/ValidPwd
+save_answer_url=${base_url}/NestHtml5Mobile_PRO/rest/SaveAns
+validate_answer_url=${base_url}/NestHtml5Mobile_PRO/rest/ValidAns
+default_login_url=${base_url}/NestHtml5Mobile_PRO/rest/DefaultLogin
+load_retentionType_url=${base_url}/NestHtml5Mobile_PRO/rest/LoadRetentionType
+dpr_validation_url=${base_url}/NestHtml5Mobile_PRO/rest/checkCrktPriceRange
+gtd_validation_url=${base_url}/NestHtml5Mobile_PRO/rest/ValidateGTD
+slm_validation_url=${base_url}/NestHtml5Mobile_PRO/rest/validateSLMPrice
+check_transaction_url=${base_url}/NestHtml5Mobile_PRO/rest/CheckTansactionPassword
+place_order_url=${base_url}/NestHtml5Mobile_PRO/rest/PlaceOrder
+market_watchList_url=${base_url}/NestHtml5Mobile_PRO/rest/MWList
+order_book_url=${base_url}/NestHtml5Mobile_PRO/rest/OrderBook
+modify_order_url=${base_url}/NestHtml5Mobile_PRO/rest/ModifyOrder
+cancel_order_url=${base_url}/NestHtml5Mobile_PRO/rest/CancelOrder
+execute_exit_order_url=${base_url}/NestHtml5Mobile_PRO/rest/ExecuteExitOrder
+order_history_url=${base_url}/NestHtml5Mobile_PRO/rest/OrderHistory
+ltp_cover_percentage_url=${base_url}/NestHtml5Mobile_PRO/rest/LTPCoverpercentage
+trade_book_url=${base_url}/NestHtml5Mobile_PRO/rest/TradeBook
+position_conversion_url=${base_url}/NestHtml5Mobile_PRO/rest/PositionConvertion
+trade_history_url=${base_url}/NestHtml5Mobile_PRO/rest/TradeHistory
+cover_price_order_flag_url=${base_url}/NestHtml5Mobile_PRO/rest/GetCOPriceFlag
+indices_alert_list_url=${base_url}/NestHtml5Mobile_PRO/rest/AlertIndex
+show_quote_url=${base_url}/NestHtml5Mobile_PRO/rest/ShowQuote
+limits_url = ${base_url}/NestHtml5Mobile_PRO/rest/Limits
+amo_status_url = ${base_url}/NestHtml5Mobile_PRO/rest/AMOStatusFlag
+add_symbols_url= ${base_url}/NestHtml5Mobile_PRO/rest/AddScripsToMW
+set_defaultgroup_url= ${base_url}/NestHtml5Mobile_PRO/rest/SetDefaultMarketWatch
+delete_groups_url= ${base_url}/NestHtml5Mobile_PRO/rest/DeleteMW
+delete_symbols_url= ${base_url}/NestHtml5Mobile_PRO/rest/DeleteMWScrips
+get_marketwatchlist_url= ${base_url}/NestHtml5Mobile_PRO/rest/MWList
+get_predefined_groups_url= ${base_url}/NestHtml5Mobile_PRO/rest/broker/mw/list
+market_data_url = ${base_url}/NestHtml5Mobile_PRO/rest/SecurityInfo
+market_depth_url = ${base_url}/NestHtml5Mobile_PRO/rest/ShowMrktPicture
+get_initial_key_url = ${base_url}/NestHtml5Mobile_PRO/rest/GetInitialKey
+pre_authentication_key_url = ${base_url}/NestHtml5Mobile_PRO/rest/GetPreAuthenticationKey
+valid_pwd_url = ${base_url}/NestHtml5Mobile_PRO/rest/ValidPwd
+save_ans_url = ${base_url}/NestHtml5Mobile_PRO/rest/SaveAns
+ans_validation_url = ${base_url}/NestHtml5Mobile_PRO/rest/ValidAns
+default_login_url = ${base_url}/NestHtml5Mobile_PRO/rest/DefaultLogin
+change_pwd_url = ${base_url}/NestHtml5Mobile_PRO/rest/Changepwd
+rearrange_mw_scrips_url = ${base_url}/NestHtml5Mobile_PRO/rest/SortMarketwatchScrips
+get_symbols_url = ${base_url}/NestHtml5Mobile_PRO/rest/MarketWatch
+get_holdings_url = ${base_url}/NestHtml5Mobile_PRO/rest/Holding
+span_calculator_url = ${base_url}/NestHtml5Mobile_PRO/rest/user/span/calculator
+get_positions_url = ${base_url}/NestHtml5Mobile_PRO/rest/PositionBook
+partial_position_conversion_url = ${base_url}/NestHtml5Mobile_PRO/rest/PartialPositionconvertion
+square_off_position_url = ${base_url}/NestHtml5Mobile_PRO/rest/SquareOffPosition
+forgot_password_url = ${base_url}/NestHtml5Mobile_PRO/rest/ForgotPassword
+unblock_user_url = ${base_url}/NestHtml5Mobile_PRO/rest/UnblockUser
+logout_url = ${base_url}/NestHtml5Mobile_PRO/rest/Logout
+
+#forgot_user_id_auth = https://api.samco.in/msfapi/authenticate
+#forgot_user_id_clientid = https://api.samco.in/msfapi/get_client_id
+
+forgot_user_id_auth = https://api.samco.in/Msfapi_client/authenticate
+forgot_user_id_clientid = https://api.samco.in/Msfapi_client/get_client_id
+
+index_details_url=http://192.168.20.21/NestHtml5Mobile_PRO/rest/IndexDetails
+security_info_url = ${base_url}/NestHtml5Mobile_PRO/rest/SecurityInfo
+market_depth_url = ${base_url}/NestHtml5Mobile_PRO/rest/ShowMrktPicture
+#samco_api_url = http://www.samco.in/msfapi_client
+samco_api_url = https://api.samco.in/msfapi_client
+google_auth_url=https://www.googleapis.com/oauth2/v3/tokeninfo
+facebook_access_token_url=https://graph.facebook.com/oauth/access_token
+facebook_auth_url=https://graph.facebook.com/debug_token
+bracket_order_url=${base_url}/NestHtml5Mobile_PRO/rest/user/bo/placeorder
+exit_bracket_order_url=${base_url}/NestHtml5Mobile_PRO/rest/user/bo/exitorder
+get_om_session_token_url=${base_url}/NestHtml5Mobile_PRO/rest/GetOMSessionToken
+payout_api_url=https://www.samco.in/msfapi_client
+user_details_url=${base_url}/NestHtml5Mobile_PRO/rest/user/account/details
+reset_2fa_url = ${base_url}/NestHtml5Mobile_PRO/rest/user/reset2fa
+market_status_url=${base_url}/NestHtml5Mobile_PRO/rest/MarketStatus
+exchange_message_url=${base_url}/NestHtml5Mobile_PRO/rest/ExchangeMessage
+predefined_mkt_watch_scrip=${base_url}/NestHtml5Mobile_PRO/rest/broker/mw/scrips
+samco_otp_url = https://www.samco.in/msfapi_client
+
+#fb application ID and token
+facebook_app_id=136023310440486
+facebook_app_secret=07ff51359ba166d6ecc845b7fbd4bea5
+
+#Exchange based square off times
+NSE_square_off_time = 15:15:00-23:59:59
+BSE_square_off_time = 15:15:00-23:59:59
+NFO_square_off_time = 15:15:00-23:59:59
+BFO_square_off_time = 15:15:00-23:59:59
+CDS_square_off_time = 16:45:00-23:59:59
+BCD_square_off_time = 16:45:00-23:59:59
+MCD_square_off_time = 23:05:00-23:30:00
+MFO_square_off_time = 23:05:00-23:30:00
+
+
+#AlertService
+AddAlert_url=http://127.0.0.1:15001/Alert/AddAlert/1.0.0
+DeleteAlert_url=http://127.0.0.1:15001/Alert/DeleteAlert/1.0.0
+ModifyAlert_url=http://127.0.0.1:15001/Alert/ModifyAlert/1.0.0
+
+alert.key=Rises Above
+alert.key=Falls Below
+alert.key=Price Hit
+alert.key=Volume Above
+alert.key=Volume Below
+alert.key=gp
+alert.key=lp
+alert.key=sp
+alert.key=gv
+alert.key=lv
+alert.key=>=
+alert.key=<=
+alert.key=Equal to
+alert.key=gl
+alert.key=ll
+alert.key=sl
+alert.key=Daily % Chg Above
+alert.key=Daily % Chg Below
+alert.key=gp_p
+alert.key=lp_p
+
+
+alert.value=gp
+alert.value=lp
+alert.value=sp
+alert.value=gv
+alert.value=lv
+alert.value=Rises above
+alert.value=Falls below
+alert.value=Price hit
+alert.value=Volume Above
+alert.value=Volume Below
+alert.value=gl
+alert.value=ll
+alert.value=sl
+alert.value=>=
+alert.value=<=
+alert.value=Equal to
+alert.value=gp_p
+alert.value=lp_p
+alert.value=Daily % Chg Above
+alert.value=Daily % Chg Below
+
+
+#JMX Monitoring prefix
+jmx.prefix=com.msf.samco.monitor.uat
+
+#Stock Notes
+sn.group_limits=2
+sn.group_watchlist=watchlists
+sn.group_favourite=favourites
+sn.group_fav_limit=100
+
+#Token Generation credentials
+merchant_id=msfuser
+merchant_password=db49be355cfe7d84dfe79da88fab9d00
+token.api=1
+
+#Open Positions credentials
+positions.api=5
+
+#CashPlus Positions credentials
+cashpluspositions.api=8
+
+#Holdings credentials
+holdings.api=4
+
+#CashPlus URL credentials
+cashplusurl.api=10
+
+#StockPlus URL credentials
+stockplusurl.api=11
+
+#Subscription status URL credentials
+subscriptionstatus.api=12
+
+#Historical Profit and Loss Equity URL credentials
+equityhplurl.api=13
+
+#Historical Profit and Loss Derivative URL credentials
+derivativehplurl.api=14
+
+#order alert percentage
+order.alert_percentage=2
+
+#this is to set no.of recent ticks on multichart data
+charts.multi_chart_ticks=10
+
+#MCX Energy Index
+mcx_energy_index=CRUDEOIL
+mcx_energy_index=NATURALGAS
+
+#MCX Agri Index
+mcx_agri_index=CARDAMOM
+mcx_agri_index=MENTHAOIL
+mcx_agri_index=CRUDEPALMOIL
+mcx_agri_index=COTTON
+
+#MCX Comdex Index
+mcx_comdex_index=GOLD
+mcx_comdex_index=SILVER
+mcx_comdex_index=COPPER
+mcx_comdex_index=ALUMINIUM
+mcx_comdex_index=NICKEL
+mcx_comdex_index=ZINC
+mcx_comdex_index=LEAD
+mcx_comdex_index=CRUDEOIL
+mcx_comdex_index=NATURALGAS
+mcx_comdex_index=CARDAMOM
+mcx_comdex_index=MENTHAOIL
+mcx_comdex_index=CRUDEPALMOIL
+mcx_comdex_index=COTTON
+
+#MCX Metal Index
+mcx_metal_index=GOLD
+mcx_metal_index=SILVER
+mcx_metal_index=COPPER
+mcx_metal_index=ALUMINIUM
+mcx_metal_index=NICKEL
+mcx_metal_index=ZINC
+mcx_metal_index=LEAD
+
+#inbox
+stocknote_inbox_cache_page_limit=12
+alert_inbox_cache_page_limit=12
+
+#default order and product type settings for Notifications
+notification.order_type_default={\"ORDER_TYPE\":[\"L\"\,\"MKT\"\,\"SL\"\,\"SL-M\"]}
+notification.product_type_default={\"PRODUCT_TYPE\":[\"CNC\"\,\"CO\"\,\"MIS\"\,\"NRML\"]}
+
+#default order and product type settings
+preference.order_type_default={\"ORDER_TYPE\":[\"L\"\,\"MKT\"\,\"SL\"\,\"SL-M\"]}
+preference.eq.product_type_default={\"PRODUCT_TYPE\":[\"CNC\"\,\"CO\"\,\"MIS\"\,\"NRML\"\,\"BO\"]}
+preference.derv.product_type_default={\"PRODUCT_TYPE\":[\"CO\"\,\"MIS\"\,\"NRML\"\,\"BO\"]}
+preference.opts.product_type_default={\"PRODUCT_TYPE\":[\"MIS\"\,\"NRML\"]}
+
+#valid notification type
+notification.valid_type=ordTrdAlerts
+notification.valid_type=mrgAlerts
+notification.valid_type=posConvAlerts
+notification.valid_type=posSqrAlerts
+notification.valid_type=ppAlerts
+notification.valid_type=ordMonAlerts
+notification.valid_type=defProdTypeAlerts
+
+#valid Names for Notification Type
+notification.ordTrdAlerts=Order and Trade Alerts
+notification.mrgAlerts=Margin Alerts
+notification.posConvAlerts=Position Conversion Alerts
+notification.posSqrAlerts=Position Square-off Alerts
+notification.ppAlerts=Position and Portfolio Alerts
+notification.ordMonAlerts=Order Monitoring Alerts
+notification.defOrdTypeAlerts=Default Order Type for Trigger Alerts
+notification.defProdTypeAlerts=Default Product Type for Trigger Alerts
+
+#Tradable indices
+tradable_index=Nifty Bank
+tradable_index=Nifty CPSE
+tradable_index=Nifty 50
+tradable_index=Nifty IT
+tradable_index=Nifty Infra
+tradable_index=Nifty PSE
+tradable_index=Nifty 500
+tradable_index=India VIX
+
+#Non underlying future symbols
+non_underlying_symbols=1_CDS
+non_underlying_symbols=25_CDS
+non_underlying_symbols=26_CDS
+non_underlying_symbols=27_CDS
+
+#SEBI registration details
+sebi_registration_number=[\"NSE:INEB 231213530\"\,\"NFO:INF 231213530\"\,\"MCX:INZ000002535\"]
+
+#no of records for charts
+multichart.noRecs=20
+
+#tradable index vs fut trading symbols
+tradable_index.base_name=BANKNIFTY
+tradable_index.base_name=NIFTYCPSE
+tradable_index.base_name=NIFTY
+tradable_index.base_name=NIFTYIT
+tradable_index.base_name=NIFTYINFRA
+tradable_index.base_name=NIFTYPSE
+tradable_index.base_name=NIFTY500
+tradable_index.base_name=INDIAVIX
+
+#Index symbol
+index_symbol=-21
+index_symbol=-22
+index_symbol=-40
+index_symbol=-31
+index_symbol=-42
+index_symbol=-44
+index_symbol=-24
+
+#Future index base symbol
+future_index.base_name=NIFTY
+future_index.base_name=BANKNIFTY
+future_index.base_name=NIFTYCPSE
+future_index.base_name=NIFTYIT
+future_index.base_name=NIFTYINFRA
+future_index.base_name=NIFTYPSE
+future_index.base_name=NIFTYMID50
+
+
+#Holiday List
+
+holidayList=26-Jan-2018\,13-Feb-2018\,02-Mar-2018\,29-Mar-2018\,30-Mar-2018\,01-May-2018\,15-Aug-2018\,22-Aug-2018\,13-Sep-2018\,20-Sep-2018\,02-Oct-2018\,18-Oct-2018\,07-Nov-2018\,08-Nov-2018\,23-Nov-2018\,25-Dec-2018
+
+#Alert Engine shut timing
+alertEngineStopTiming=8:55
+alertEngineStartTiming=9:16
+
+amo_time=17:30:00

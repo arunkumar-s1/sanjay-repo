@@ -1,0 +1,18 @@
+INDEX VERSION 1.130+D:\06-09-2019-SB\StockBasket\.metadata\.plugins\org.eclipse.jdt.core
+3647682021.index
+3213159882.index
+2956378016.index
+284087706.index
+3170785682.index
+3598628654.index
+2692035760.index
+1230538165.index
+2604928772.index
+3947521672.index
+1946570120.index
+1404327307.index
+421022922.index
+3637040476.index
+1329257546.index
+3955957399.index
+2856353427.index

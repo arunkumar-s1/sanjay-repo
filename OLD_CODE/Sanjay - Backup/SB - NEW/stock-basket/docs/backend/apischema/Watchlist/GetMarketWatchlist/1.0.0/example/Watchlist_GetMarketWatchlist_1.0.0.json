@@ -1,0 +1,37 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "userID": "E104"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "GetMarketWatchlist",
+    "serverTime": "1487926491613",
+    "infoID": "0",
+    "data": {
+      "predefinedMWList": {
+        "symbolsList": "nse_cm|236,nse_cm|16669,nse_cm|13986,nse_cm|1333,nse_cm|11915,bse_cm|50010,bse_cm|500875,bse_cm|500325,bse_cm|524715,bse_cm|532540",
+        "mWName": "Sample"
+      },
+      "userMWList": [
+        "test",
+        ",",
+        "1660",
+        "test7",
+        "test2"
+      ]
+    },
+    "msgID": "5a2236c9-a310-42cf-abab-be993776649b",
+    "svcGroup": "Watchlist"
+  },
+  "config": {
+    "label": 2,
+    "message": 57,
+    "menu": 45,
+    "app": 9
+  }
+}

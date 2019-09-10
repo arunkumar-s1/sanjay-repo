@@ -1,0 +1,543 @@
+
+package com.msf.libsb.services.operations;
+
+import java.sql.Connection;
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+
+import org.json.me.JSONArray;
+import org.json.me.JSONObject;
+
+import com.msf.libsb.connection.DBConnection;
+import com.msf.libsb.constants.APP_CONSTANT;
+import com.msf.libsb.constants.QueryConstants;
+import com.msf.libsb.services.investments.MyInvestmentResponse;
+import com.msf.libsb.utils.helper.MultiMap;
+import com.msf.libsb.utils.helper.SamcoHelper;
+import com.msf.log.Logger;
+import com.msf.utils.helper.Helper;
+
+public class InvestmentOperations {
+	private static Logger log = Logger.getLogger(InvestmentOperations.class);
+
+	public static MyInvestmentResponse getInvestments(String userId) throws Exception {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet res = null;
+		double totalInvestment = 0.0;
+		double totalCurrentValue = 0.0;
+		double totalPLValue = 0.0;
+		double totalPLPercent = 0.0;
+		int nTotalQty = 0;
+		int nRemainingQty = 0;
+		Map<String, JSONObject> profitLossMap = new LinkedHashMap<String, JSONObject>();
+
+		String sQuery = "Call CalculateProfitAndLoss(?)";
+		try {
+
+			conn = DBConnection.getInstance().getStockBasketDBConnection();
+			pstmt = conn.prepareStatement(sQuery);
+			pstmt.setString(1, userId);
+			log.debug(pstmt);
+
+			res = pstmt.executeQuery();
+			while (res.next()) {
+				JSONObject plObject = new JSONObject();
+				plObject.put("pl", res.getString("TOTAL_PL"));
+				plObject.put("plPer", res.getString("PL_PER"));
+				String sKey = res.getString("BASKET_NAME") + res.getString("BASKET_VERSION");
+				profitLossMap.put(sKey, plObject);
+			}
+		} finally {
+			Helper.closeResultSet(res);
+			Helper.closeStatement(pstmt);
+			Helper.closeConnection(conn);
+		}
+
+		MultiMap mMap = new MultiMap();
+		MultiMap mBasketMap = new MultiMap();
+		try {
+			conn = DBConnection.getInstance().getStockBasketDBConnection();
+			pstmt = conn.prepareStatement(QueryConstants.MY_INVESTMENTS_QUERY);
+			pstmt.setString(1, userId);
+			// pstmt.setString(2, userId);
+
+			log.debug(pstmt);
+
+			res = pstmt.executeQuery();
+			while (res.next()) {
+				String sKey = res.getString("BASKET_NAME") + res.getString("BASKET_VERSION");
+				log.debug("Key to be inserted in map :: " + sKey);
+				JSONObject tempObject = new JSONObject();
+				JSONObject basketObject = new JSONObject();
+				tempObject.put(APP_CONSTANT.BASKET_NAME, res.getString("BASKET_NAME"));
+				basketObject.put(APP_CONSTANT.BASKET_NAME, res.getString("BASKET_NAME"));
+				tempObject.put(APP_CONSTANT.BASKET_VERSION, res.getString("BASKET_VERSION"));
+				basketObject.put(APP_CONSTANT.BASKET_VERSION, res.getString("BASKET_VERSION"));
+				tempObject.put(APP_CONSTANT.TRANS_TYPE, res.getString("TRANS_TYPE"));
+				tempObject.put(APP_CONSTANT.BASKET_QTY, res.getString("REMAINING_QTY"));
+				//tempObject.put(APP_CONSTANT.LAST_TRADED_PRICE, res.getString("LAST_PRICE"));
+				nTotalQty = Integer.parseInt(res.getString("QTY"));
+				nRemainingQty = Integer.parseInt(res.getString("REMAINING_QTY"));
+				
+				Double dLastPrice = ((Double.parseDouble(res.getString("LAST_PRICE")) / nTotalQty) * nRemainingQty);
+				Double dPrice = ((Double.parseDouble(res.getString("PRICE")) / nTotalQty) * nRemainingQty);
+				tempObject.put(APP_CONSTANT.PRICE, Double.toString(dPrice));
+				tempObject.put(APP_CONSTANT.LAST_TRADED_PRICE, Double.toString(dLastPrice));
+				tempObject.put(APP_CONSTANT.ICON_URL, res.getString("ICON_URL"));
+				tempObject.put(APP_CONSTANT.BASKET_ORDER_NO, res.getString("ORDER_NO"));
+				tempObject.put("isRebalanceDone", res.getInt("IS_REBALANCE_DONE"));
+				if (res.getString("PARENT_ORDER_NO") != null) {
+					tempObject.put("parentOrderNo", res.getString("PARENT_ORDER_NO"));
+				} else {
+					tempObject.put("parentOrderNo", "");
+				}
+				mMap.put(sKey, tempObject);
+				log.debug("---> Inserting into basket map :: " + res.getString("ORDER_NO") + " :: "
+						+ basketObject.toString());
+				mBasketMap.put(res.getString("ORDER_NO"), sKey);
+			}
+		} finally {
+			Helper.closeResultSet(res);
+			Helper.closeStatement(pstmt);
+			Helper.closeConnection(conn);
+		}
+
+		log.debug("-----> Map size :: " + mMap.size());
+		Set pairs = mMap.entrySet();
+		Iterator pairsIterator = pairs.iterator();
+		JSONArray tempArray = new JSONArray();
+		while (pairsIterator.hasNext()) {
+			JSONArray orderArray = new JSONArray();
+			Map.Entry keyValuePair = (Map.Entry) pairsIterator.next();
+			log.debug("----> Key :: " + keyValuePair.getKey());
+			Collection coll = (Collection) keyValuePair.getValue();
+			log.debug("----> Values :: " + coll.size() + " :: " + coll.toString());
+			JSONArray temp = new JSONArray(coll.toString());
+			if (coll.size() > 1) {
+
+				JSONObject firstObject = temp.getJSONObject(0);
+				Double dAveragePrice = 0.0;
+				Double dLastAveragePrice = 0.0;
+				int nNetQty = 0;
+				Double dCurrentPLValue = 0.0;
+				Double dCurrentPLPercentage = 0.0;
+				for (int nIterator = 0; nIterator < coll.size(); nIterator++) {
+					JSONObject tempObject = temp.getJSONObject(nIterator);
+					JSONObject plObject = profitLossMap.get(keyValuePair.getKey());
+					if (tempObject.getString(APP_CONSTANT.TRANS_TYPE).equalsIgnoreCase("BUY")) {
+						nNetQty += Integer.parseInt(tempObject.getString(APP_CONSTANT.BASKET_QTY));
+						dAveragePrice += Double.parseDouble(tempObject.getString(APP_CONSTANT.PRICE));
+						dLastAveragePrice += Double.parseDouble(tempObject.getString(APP_CONSTANT.LAST_TRADED_PRICE));
+						log.debug("-----> PL Value :: " + plObject.getString("pl"));
+
+					} else {
+						nNetQty -= Integer.parseInt(tempObject.getString(APP_CONSTANT.BASKET_QTY));
+						dAveragePrice -= Double.parseDouble(tempObject.getString(APP_CONSTANT.PRICE));
+						dLastAveragePrice -= Double.parseDouble(tempObject.getString(APP_CONSTANT.LAST_TRADED_PRICE));
+					}
+
+					JSONObject orderObject = new JSONObject();
+					orderObject.put("qty", tempObject.getString(APP_CONSTANT.BASKET_QTY));
+					orderObject.put("orderNo", tempObject.getString(APP_CONSTANT.BASKET_ORDER_NO));
+					orderArray.put(orderObject);
+
+					tempObject.put("orders", orderArray);
+				}
+				log.debug("Total Net Qty :: " + nNetQty);
+				log.debug("Average price :: " + dAveragePrice);
+				firstObject.put(APP_CONSTANT.MAX_QTY, Integer.toString(nNetQty));
+				firstObject.put(APP_CONSTANT.PRICE, SamcoHelper.getIndianCurrencyFormat(dAveragePrice));
+				firstObject.put(APP_CONSTANT.LAST_TRADED_PRICE, SamcoHelper.getIndianCurrencyFormat(dLastAveragePrice));
+				JSONObject plObject = profitLossMap.get(keyValuePair.getKey());
+				dCurrentPLValue += Double.parseDouble(plObject.getString("pl"));
+				dCurrentPLPercentage += Double.parseDouble(plObject.getString("plPer"));
+				firstObject.put(APP_CONSTANT.CURRENT_PL_VALUE, SamcoHelper.getIndianCurrencyFormat(dCurrentPLValue));
+				firstObject.put(APP_CONSTANT.CURRENT_PL_PERCENT,
+						SamcoHelper.getIndianCurrencyFormat(dCurrentPLPercentage));
+				firstObject.put("orders", orderArray);
+				firstObject.remove(APP_CONSTANT.BASKET_QTY);
+				firstObject.remove(APP_CONSTANT.BASKET_ORDER_NO);
+				firstObject.remove(APP_CONSTANT.TRANS_TYPE);
+				if (nNetQty == 0) {
+					firstObject.put(APP_CONSTANT.PRICE, "0.00");
+				}
+				totalInvestment += dAveragePrice;
+				//totalInvestment = (totalInvestment/nTotalQty) * nRemainingQty;
+				log.debug("----> totalInvestment :: " + totalInvestment);
+				totalCurrentValue += dLastAveragePrice;
+				//totalCurrentValue = (totalCurrentValue/nTotalQty) * nRemainingQty;
+				totalPLValue += dCurrentPLValue;
+				totalPLPercent += dCurrentPLPercentage;
+
+				if (firstObject.has("isRebalanceDone")) {
+					if (firstObject.getInt("isRebalanceDone") == 0) {
+						log.debug("Rebalance not done");
+						if (firstObject.getString("parentOrderNo").length() > 0) {
+							log.debug("Retrieving parent order details");
+							JSONObject parentOrderObject = new JSONObject();
+							String sParentQty = null;
+							ResultSet qtyRes = null;
+							PreparedStatement qtyStmt = null;
+							try {
+								conn = DBConnection.getInstance().getStockBasketDBConnection();
+								qtyStmt = conn.prepareStatement(QueryConstants.QUANITY_PARENT_ORDER);
+								qtyStmt.setString(1, firstObject.getString("parentOrderNo"));
+
+								log.debug(qtyStmt);
+
+								qtyRes = qtyStmt.executeQuery();
+
+								while (qtyRes.next()) {
+									sParentQty = qtyRes.getString("QTY");
+								}
+							} finally {
+								Helper.closeResultSet(qtyRes);
+								Helper.closeStatement(qtyStmt);
+							}
+							parentOrderObject.put("qty", sParentQty);
+							parentOrderObject.put("orderNo", firstObject.getString("parentOrderNo"));
+							orderArray.put(parentOrderObject);
+
+						}
+						firstObject.put("orders", orderArray);
+
+						tempArray.put(firstObject);
+					}
+
+				} else {
+					tempArray.put(firstObject);
+				}
+
+			} else {
+				JSONObject orderObject = new JSONObject();
+				log.debug("--------> Else temp :: " + temp.toString());
+				orderObject.put("qty", temp.getJSONObject(0).getString(APP_CONSTANT.BASKET_QTY));
+				orderObject.put("orderNo", temp.getJSONObject(0).getString(APP_CONSTANT.BASKET_ORDER_NO));
+				orderArray.put(orderObject);
+				JSONObject plObject = profitLossMap.get(keyValuePair.getKey());
+				if (plObject != null) {
+					if (plObject.has("pl")) {
+						temp.getJSONObject(0).put(APP_CONSTANT.CURRENT_PL_VALUE, plObject.getString("pl"));
+						temp.getJSONObject(0).put(APP_CONSTANT.CURRENT_PL_PERCENT, plObject.getString("plPer"));
+					} else {
+						temp.getJSONObject(0).put(APP_CONSTANT.CURRENT_PL_VALUE, "0.00");
+						temp.getJSONObject(0).put(APP_CONSTANT.CURRENT_PL_PERCENT, "0.00");
+					}
+				}
+				temp.getJSONObject(0).put(APP_CONSTANT.MAX_QTY,
+						temp.getJSONObject(0).getString(APP_CONSTANT.BASKET_QTY));
+				temp.getJSONObject(0).remove(APP_CONSTANT.BASKET_QTY);
+				temp.getJSONObject(0).remove(APP_CONSTANT.BASKET_ORDER_NO);
+				temp.getJSONObject(0).remove(APP_CONSTANT.TRANS_TYPE);
+				totalInvestment += Double.parseDouble(temp.getJSONObject(0).getString(APP_CONSTANT.PRICE));
+				//totalInvestment = ((totalInvestment/nTotalQty) * nRemainingQty);
+				log.debug("----> totalInvestment single item:: " + totalInvestment);
+				totalCurrentValue += Double
+						.parseDouble(temp.getJSONObject(0).getString(APP_CONSTANT.LAST_TRADED_PRICE));
+				//totalCurrentValue = ((totalCurrentValue/nTotalQty) * nRemainingQty);
+				if (plObject != null) {
+					if (plObject.has("pl")) {
+						totalPLValue += Double.parseDouble(plObject.getString("pl"));
+						totalPLPercent += Double.parseDouble(plObject.getString("plPer"));
+					} else {
+						totalPLValue += 0.00;
+						totalPLPercent += 0.00;
+					}
+				}
+				if (temp.getJSONObject(0).has("isRebalanceDone")) {
+					if (temp.getJSONObject(0).getInt("isRebalanceDone") == 0) {
+						log.debug("Rebalance not done");
+						if (temp.getJSONObject(0).getString("parentOrderNo").length() > 0) {
+							log.debug("Retrieving parent order details");
+							JSONObject parentOrderObject = new JSONObject();
+							String sParentQty = null;
+							ResultSet qtyRes = null;
+							PreparedStatement qtyStmt = null;
+							try {
+								conn = DBConnection.getInstance().getStockBasketDBConnection();
+								qtyStmt = conn.prepareStatement(QueryConstants.QUANITY_PARENT_ORDER);
+								qtyStmt.setString(1, temp.getJSONObject(0).getString("parentOrderNo"));
+
+								log.debug(qtyStmt);
+
+								qtyRes = qtyStmt.executeQuery();
+
+								while (qtyRes.next()) {
+									sParentQty = qtyRes.getString("QTY");
+								}
+							} finally {
+								Helper.closeResultSet(qtyRes);
+								Helper.closeStatement(qtyStmt);
+							}
+							parentOrderObject.put("qty", sParentQty);
+							parentOrderObject.put("orderNo", temp.getJSONObject(0).getString("parentOrderNo"));
+							orderArray.put(parentOrderObject);
+
+						}
+						temp.getJSONObject(0).put("orders", orderArray);
+						temp.getJSONObject(0).put(APP_CONSTANT.PRICE, SamcoHelper.getIndianCurrencyFormat(
+								Double.parseDouble(temp.getJSONObject(0).getString(APP_CONSTANT.PRICE))));
+						log.debug("----> Temp array put :: " + temp.getJSONObject(0).toString());
+						tempArray.put(temp.getJSONObject(0));
+					}
+				} else {
+					temp.getJSONObject(0).put("orders", orderArray);
+					temp.getJSONObject(0).put(APP_CONSTANT.PRICE, SamcoHelper.getIndianCurrencyFormat(
+							Double.parseDouble(temp.getJSONObject(0).getString(APP_CONSTANT.PRICE))));
+					tempArray.put(temp.getJSONObject(0));
+				}
+
+				// tempArray.put(temp.getJSONObject(0));
+			}
+
+		}
+
+		log.debug("-----> tempArray :: " + tempArray.toString());
+		MyInvestmentResponse resp = new MyInvestmentResponse();
+		resp.setTotalInvestment(SamcoHelper.getIndianCurrencyFormat(totalInvestment));
+		resp.setOverallCurrentValue(SamcoHelper.getIndianCurrencyFormat(totalCurrentValue));
+		totalPLPercent = (totalInvestment == 0.00 ? 0.00 : (totalPLValue / totalInvestment) * 100);
+		resp.setOverallProfitOrLossPercent(String.format("%.2f", totalPLPercent));
+		resp.setOverallProfitOrLossValue(SamcoHelper.getIndianCurrencyFormat(totalPLValue));
+		resp.setInvestmentArr(tempArray);
+
+		return resp;
+	}
+
+	public static MyInvestmentResponse getInvestment(JSONArray orders, String sUserID, String sBasketName,
+			String sBasketVersion) throws Exception {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet res = null;
+		double totalInvestment = 0.0;
+		double totalCurrentValue = 0.0;
+		double totalPLValue = 0.0;
+		double totalPLPercent = 0.0;
+		JSONArray stockArr = new JSONArray();
+		Date lastInvestedOn = null;
+		Map<String, JSONObject> profitLossMap = new LinkedHashMap<String, JSONObject>();
+		String sProfitLossKey = sBasketName + sBasketVersion;
+
+		String sQuery = "Call CalculateProfitAndLoss(?)";
+		try {
+
+			conn = DBConnection.getInstance().getStockBasketDBConnection();
+			pstmt = conn.prepareStatement(sQuery);
+			pstmt.setString(1, sUserID);
+			log.debug(pstmt);
+
+			res = pstmt.executeQuery();
+			while (res.next()) {
+				JSONObject plObject = new JSONObject();
+				plObject.put("pl", res.getString("TOTAL_PL"));
+				plObject.put("plPer", res.getString("PL_PER"));
+				String sKey = res.getString("BASKET_NAME") + res.getString("BASKET_VERSION");
+				profitLossMap.put(sKey, plObject);
+				// profitLossMap.put(res.getString("BASKET_ORDER_NO"), plObject);
+			}
+		} finally {
+			Helper.closeResultSet(res);
+			Helper.closeStatement(pstmt);
+			Helper.closeConnection(conn);
+		}
+		MultiMap mMap = new MultiMap();
+		sQuery = "Call getPnl(?)";
+		String sOrderInput = null;
+		for (int nIterator = 0; nIterator < orders.length(); nIterator++) {
+			if (nIterator == 0) {
+				sOrderInput = orders.getJSONObject(nIterator).getString("orderNo");
+			} else {
+				sOrderInput = sOrderInput + "," + orders.getJSONObject(nIterator).getString("orderNo");
+			}
+		}
+		log.debug("----> Order Input :: " + sOrderInput);
+		HashMap<String, String> symbolProfitLossMap = new HashMap<>();
+		try {
+
+			conn = DBConnection.getInstance().getStockBasketDBConnection();
+			pstmt = conn.prepareStatement(sQuery);
+			pstmt.setString(1, sOrderInput);
+			log.debug(pstmt);
+
+			res = pstmt.executeQuery();
+			while (res.next()) {
+				log.debug("--->" + res.getString("SYMBOL") + "::" + res.getString("BASKET_ORDER_NO") + "::"
+						+ res.getString("PNL"));
+				JSONObject tempObject = new JSONObject();
+				tempObject.put(APP_CONSTANT.SYMBOL, res.getString("SYMBOL"));
+				if (res.getString("PNL") != null) {
+					tempObject.put("pnl", res.getString("PNL"));
+				} else {
+					tempObject.put("pnl", "0.00");
+				}
+				log.debug("----> tempobject :: " + tempObject);
+				// mMap.put(res.getString("BASKET_ORDER_NO"), tempObject);
+				symbolProfitLossMap.put(res.getString("SYMBOL"), res.getString("PNL"));
+			}
+		} finally {
+			Helper.closeResultSet(res);
+			Helper.closeStatement(pstmt);
+			Helper.closeConnection(conn);
+		}
+		Set pairs = mMap.entrySet();
+		Iterator pairsIterator = pairs.iterator();
+		JSONArray tempArray = new JSONArray();
+		while (pairsIterator.hasNext()) {
+			JSONArray orderArray = new JSONArray();
+			Map.Entry keyValuePair = (Map.Entry) pairsIterator.next();
+			log.debug("----> Key :: " + keyValuePair.getKey());
+			Collection coll = (Collection) keyValuePair.getValue();
+			log.debug("----> Values :: " + coll.size() + " :: " + coll.toString());
+			tempArray = new JSONArray(coll.toString());
+			log.debug("===tempArray :: " + tempArray.toString());
+		}
+		MultiMap mSymbolMap = new MultiMap();
+		try {
+			boolean isMultiple = false;
+			conn = DBConnection.getInstance().getStockBasketDBConnection();
+			String sInvestmentQuery = null;
+			if (orders.length() > 1) {
+				isMultiple = true;
+				sInvestmentQuery = QueryConstants.MY_INVESTMENT_MULTIPLE_QUERY;
+			} else if (orders.length() == 1) {
+				sInvestmentQuery = QueryConstants.MY_INVESTMENT_QUERY;
+			}
+			String sb = "";
+			if (isMultiple) {
+				for (int nIterator = 0; nIterator < orders.length(); nIterator++) {
+
+					sb += orders.getJSONObject(nIterator).getString(APP_CONSTANT.ORDER_NO) + " ";
+					if (nIterator < orders.length() - 1) {
+						sInvestmentQuery += "?,";
+					}
+				}
+				sInvestmentQuery += "?)";
+
+			} else {
+				sb += (orders.getJSONObject(0).getString(APP_CONSTANT.ORDER_NO));
+			}
+			pstmt = conn.prepareStatement(sInvestmentQuery);
+
+			log.debug("sInput :: " + sb);
+			int i = 1;
+			if (isMultiple) {
+				for (String s : sb.split(" ")) {
+					pstmt.setString(i++, s);
+				}
+			} else {
+				pstmt.setString(i, sb);
+			}
+			log.debug(pstmt);
+
+			res = pstmt.executeQuery();
+			if (res.next()) {
+				do {
+					JSONObject tempObject = new JSONObject();
+					Double dQty = Double.parseDouble(res.getString("ORIGINAL_QTY"));
+					int nQty = dQty.intValue();
+					tempObject.put("qty", Integer.toString(nQty));
+					tempObject.put("transType", res.getString("TRANS_TYPE"));
+					tempObject.put("price", res.getString("AVG_PRICE"));
+					tempObject.put(APP_CONSTANT.BASKET_ORDER_NO, res.getString("BASKET_ORDER_NO"));
+					Double dPrice = Double.parseDouble(res.getString("AVG_PRICE"));
+					/*
+					 * int nBasketQty = Integer.parseInt(res.getString("BASKET_QTY")); Double
+					 * nOriginalQty = Double.parseDouble(res.getString("ORIGINAL_QTY")); int
+					 * nDivisibleFactor = nOriginalQty.intValue() / nBasketQty; dPrice = dPrice /
+					 * nDivisibleFactor; tempObject.put("price", Double.toString(dPrice));
+					 */
+					tempObject.put(APP_CONSTANT.BASKET_QTY, res.getString("BASKET_QTY"));
+					tempObject.put(APP_CONSTANT.DESCRIPTION, res.getString("DESCRIPTION"));
+					tempObject.put(APP_CONSTANT.LAST_TRADED_PRICE, res.getString("LAST_PRICE"));
+					mSymbolMap.put(res.getString("SYMBOL"), tempObject);
+
+				} while (res.next());
+			}
+
+		} finally {
+			Helper.closeResultSet(res);
+			Helper.closeStatement(pstmt);
+			Helper.closeConnection(conn);
+		}
+		Set symbolPairs = mSymbolMap.entrySet();
+		Iterator symbolPairsIterator = symbolPairs.iterator();
+		while (symbolPairsIterator.hasNext()) {
+			JSONArray orderArray = new JSONArray();
+			int nNetQty = 0;
+			double dAveragePrice = 0.0;
+			double dCurrentPrice = 0.0;
+			double dNetAveragePrice = 0.0;
+			double dAveragePnL = 0.0;
+			Map.Entry keyValuePair = (Map.Entry) symbolPairsIterator.next();
+			log.debug("----> symbol Key :: " + keyValuePair.getKey());
+			Collection coll = (Collection) keyValuePair.getValue();
+			log.debug("----> symbol Values :: " + coll.size() + " :: " + coll.toString());
+			JSONArray temp = new JSONArray(coll.toString());
+			String sDescription = null;
+			for (int nIterator = 0; nIterator < coll.size(); nIterator++) {
+				JSONObject tempObject = temp.getJSONObject(nIterator);
+				int nBasketQty = Integer.parseInt(tempObject.getString(APP_CONSTANT.BASKET_QTY));
+				int nStockQty = Integer.parseInt(tempObject.getString(APP_CONSTANT.QUANTITY));
+				int nFinalQty = nStockQty;
+				String sBasketOrderNo = tempObject.getString(APP_CONSTANT.BASKET_ORDER_NO);
+				// JSONArray jArray = (JSONArray)mMap.get(sBasketOrderNo);
+				if (tempObject.getString(APP_CONSTANT.TRANS_TYPE).equalsIgnoreCase("BUY")) {
+					log.debug("--->" + tempObject.getString("price") + "::" + nFinalQty);
+					dAveragePrice += (Double.parseDouble(tempObject.getString("price")) * nFinalQty);
+					log.debug("---> Average Price :: " + dAveragePrice);
+					dCurrentPrice += (Double.parseDouble(tempObject.getString(APP_CONSTANT.LAST_TRADED_PRICE))
+							* nFinalQty);
+					nNetQty += nFinalQty;
+
+				} else if (tempObject.getString(APP_CONSTANT.TRANS_TYPE).equalsIgnoreCase("SELL")) {
+					dAveragePrice -= (Double.parseDouble(tempObject.getString("price")) * nFinalQty);
+					dCurrentPrice -= (Double.parseDouble(tempObject.getString(APP_CONSTANT.LAST_TRADED_PRICE))
+							* nFinalQty);
+					nNetQty -= nFinalQty;
+				}
+				sDescription = tempObject.getString(APP_CONSTANT.DESCRIPTION);
+			}
+			log.debug("NetQty :: " + nNetQty);
+			log.debug("Average Price before dividing :: " + dAveragePrice);
+			totalInvestment += dAveragePrice;
+			totalCurrentValue += dCurrentPrice;
+			dNetAveragePrice = dAveragePrice / nNetQty;
+			log.debug("Average Price before dividing :: " + dAveragePrice);
+			log.debug("Final values :: " + keyValuePair.getKey() + " :: " + nNetQty + " :: " + dAveragePrice);
+			JSONObject myStock = new JSONObject();
+			myStock.put(APP_CONSTANT.QUANTITY, Integer.toString(nNetQty));
+			myStock.put(APP_CONSTANT.PRICE, SamcoHelper.getIndianCurrencyFormat(dNetAveragePrice));
+			log.debug("---------> Price after comma :: " + myStock.getString(APP_CONSTANT.PRICE));
+			myStock.put(APP_CONSTANT.DESCRIPTION, sDescription);
+			log.debug("Before pl percent --->" + keyValuePair.getKey());
+			myStock.put(APP_CONSTANT.PL_PERCENT, SamcoHelper
+					.getIndianCurrencyFormat(Double.parseDouble(symbolProfitLossMap.get(keyValuePair.getKey()))));
+			log.debug("After pl percent");
+			if (nNetQty > 0) {
+				stockArr.put(myStock);
+			}
+		}
+
+		JSONObject plObject = profitLossMap.get(sProfitLossKey);
+		totalPLValue += Double.parseDouble(plObject.getString("pl"));
+		totalPLPercent += Double.parseDouble(plObject.getString("plPer"));
+
+		MyInvestmentResponse resp = new MyInvestmentResponse();
+		resp.setLastInvestedOn(lastInvestedOn);
+		resp.setTotalInvestment(SamcoHelper.getIndianCurrencyFormat(totalInvestment));
+		resp.setOverallCurrentValue(SamcoHelper.getIndianCurrencyFormat(totalCurrentValue));
+		resp.setOverallProfitOrLossPercent(String.format("%.2f", totalPLPercent));
+		resp.setOverallProfitOrLossValue(SamcoHelper.getIndianCurrencyFormat(totalPLValue));
+		resp.setInvestmentArr(stockArr);
+		return resp;
+	}
+
+}

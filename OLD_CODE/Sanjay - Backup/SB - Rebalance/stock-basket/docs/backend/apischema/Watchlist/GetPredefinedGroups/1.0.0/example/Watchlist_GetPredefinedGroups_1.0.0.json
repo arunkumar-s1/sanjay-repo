@@ -1,0 +1,30 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {},
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "GetPredefinedGroups",
+    "serverTime": "1488268082674",
+    "infoID": "0",
+    "data": {
+      "predefinedGroups": [
+        {
+          "sMwScripList": "Sample",
+          "sGroupLeg3": "nse_cm|236,nse_cm|16669,nse_cm|13986,nse_cm|1333,nse_cm|11915,bse_cm|50010,bse_cm|500875,bse_cm|500325,bse_cm|524715,bse_cm|532540"
+        }
+      ]
+    },
+    "msgID": "1f538f60-fd26-4df0-bff1-9a361620975e",
+    "svcGroup": "Watchlist"
+  },
+  "config": {
+    "label": 4,
+    "message": 58,
+    "menu": 45,
+    "app": 9
+  }
+}

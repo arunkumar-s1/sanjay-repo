@@ -1,0 +1,219 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "requestType": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "requestType"
+                }, 
+                "formFactor": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "formFactor"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "symbol": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "symbol"
+                        }, 
+                        "userID": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "userID"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "marketDepth": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "marketDepth", 
+                            "properties": {
+                                "lTP": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "lTP"
+                                }, 
+                                "lTT": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "lTT"
+                                }, 
+                                "exc": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "exc"
+                                }, 
+                                "companyName": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "companyName"
+                                }, 
+                                "bestFiveAsk": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "object", 
+                                        "id": "0", 
+                                        "properties": {
+                                            "askPrice": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "askPrice"
+                                            }, 
+                                            "askSize": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "askSize"
+                                            }
+                                        }
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "bestFiveAsk"
+                                }, 
+                                "tBuyQty": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "tBuyQty"
+                                }, 
+                                "tradingSymbol": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "tradingSymbol"
+                                }, 
+                                "tSellQty": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "tSellQty"
+                                }, 
+                                "bestFiveBid": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "object", 
+                                        "id": "0", 
+                                        "properties": {
+                                            "bidSize": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "bidSize"
+                                            }, 
+                                            "bidPrice": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "bidPrice"
+                                            }
+                                        }
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "bestFiveBid"
+                                }, 
+                                "changePer": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "changePer"
+                                }, 
+                                "change": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "change"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

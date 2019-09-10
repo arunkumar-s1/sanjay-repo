@@ -1,0 +1,359 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "requestType": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "requestType"
+                }, 
+                "formFactor": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "formFactor"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "filter": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "filter", 
+                            "properties": {
+                                "secPrice": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "secPrice"
+                                }, 
+                                "value": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "value"
+                                }, 
+                                "qty": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "qty"
+                                }
+                            }
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "totGnL": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "totGnL"
+                        }, 
+                        "daysGnL": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "daysGnL"
+                        }, 
+                        "losingToday": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "losingToday"
+                        }, 
+                        "daysGnLPer": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "daysGnLPer"
+                        }, 
+                        "totGnLPer": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "totGnLPer"
+                        }, 
+                        "holdingsData": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "daysPnL": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "daysPnL"
+                                    }, 
+                                    "haircut": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "haircut"
+                                    }, 
+                                    "stockRating": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "stockRating"
+                                    }, 
+                                    "totalPnL": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "totalPnL"
+                                    }, 
+                                    "collateralQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "collateralQty"
+                                    }, 
+                                    "associatedSymbol": {
+                                        "items": {
+                                            "required": true, 
+                                            "type": "object", 
+                                            "id": "0", 
+                                            "properties": {
+                                                "symbol": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symbol"
+                                                }, 
+                                                "symName": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symName"
+                                                }, 
+                                                "exc": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "exc"
+                                                }
+                                            }
+                                        }, 
+                                        "required": true, 
+                                        "type": "array", 
+                                        "id": "associatedSymbol"
+                                    }, 
+                                    "productCode": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "productCode"
+                                    }, 
+                                    "BTSTHoldingsQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "BTSTHoldingsQty"
+                                    }, 
+                                    "calcNetQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "calcNetQty"
+                                    }, 
+                                    "prevClose": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "prevClose"
+                                    }, 
+                                    "tradingSymbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "tradingSymbol"
+                                    }, 
+                                    "todaysMtoM": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "todaysMtoM"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "holdingsQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "holdingsQty"
+                                    }, 
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }, 
+                                    "avgPrc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "avgPrc"
+                                    }, 
+                                    "daysGnLPer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "daysGnLPer"
+                                    }, 
+                                    "totGnLPer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "totGnLPer"
+                                    }, 
+                                    "soldnPendingSellQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "soldnPendingSellQty"
+                                    }, 
+                                    "holdQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "holdQty"
+                                    }, 
+                                    "isSymbolPresent": {
+                                        "required": true, 
+                                        "type": "boolean", 
+                                        "id": "isSymbolPresent"
+                                    }, 
+                                    "change": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "change"
+                                    }, 
+                                    "lTP": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "lTP"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }, 
+                                    "holdingVal": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "holdingVal"
+                                    }, 
+                                    "totalMtoM": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "totalMtoM"
+                                    }, 
+                                    "isin": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "isin"
+                                    }, 
+                                    "changePer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "changePer"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "holdingsData"
+                        }, 
+                        "gainingToday": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "gainingToday"
+                        }, 
+                        "portfolioVal": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "portfolioVal"
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

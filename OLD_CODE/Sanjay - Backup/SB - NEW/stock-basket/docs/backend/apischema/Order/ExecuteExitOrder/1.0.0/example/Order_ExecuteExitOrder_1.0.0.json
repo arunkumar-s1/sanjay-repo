@@ -1,0 +1,31 @@
+{
+  "echo": {},
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "nestOrderNumber": "170905000000028",
+      "syomOrdNo": "170905000000027|1",
+      "productCode": "CO"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "response": {
+    "svcName": "ExecuteExitOrder",
+    "serverTime": "1500640768099",
+    "infoID": "0",
+    "data": {
+      "msg": "CO order exited successfully",
+      "nestOrderNumber": " NEST Order Number :170905000000028"
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "9ed3d221-3b9e-4f27-99d6-ad46f64c577f",
+    "svcGroup": "Order"
+  },
+  "config": {
+    "label": 4,
+    "message": 207,
+    "menu": 43,
+    "app": 92
+  }
+}

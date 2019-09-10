@@ -1,0 +1,36 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "type": "NET"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "GetPositionsChart",
+    "serverTime": "1495442261231",
+    "infoID": "0",
+    "data": {
+      "marginUsed": "356263.44",
+      "marginUsedPer": "63.62",
+      "daysGnLPer": "",
+      "daysGnL": "",
+      "gainingToday": "",
+      "totGnL": "-3,549,978,737.5",
+      "marginAvl": "560000.00",
+      "totGnLPer": "-35499787.38",
+      "losingToday": ""
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "21e85bcc-6c1f-401d-9c69-cddbb96ab0e9",
+    "svcGroup": "Positions"
+  },
+  "config": {
+    "label": 4,
+    "message": 193,
+    "menu": 49,
+    "app": 44
+  }
+}

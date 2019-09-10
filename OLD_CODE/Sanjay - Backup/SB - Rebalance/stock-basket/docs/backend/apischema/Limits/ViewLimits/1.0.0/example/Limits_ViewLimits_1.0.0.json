@@ -1,0 +1,26 @@
+{
+  "request": {
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "data": {
+      "exc": "eq"
+    }
+  },
+  "response": {
+    "svcName": "ViewLimits",
+    "serverTime": "1507192305536",
+    "infoID": "0",
+    "data": {
+      "usedAmt": "1570354.11",
+      "marginAvl": "614122.44"
+    },
+    "appID": "f24c543af510aea86e1f4413687ab5b6",
+    "msgID": "b6a6659b-9a04-463f-b648-cf76847439b3",
+    "svcGroup": "Limits"
+  },
+  "config": {
+    "label": 4,
+    "message": 232,
+    "menu": 66,
+    "app": 97
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {
+                "userID": "5234"
+            }
+        },
+        "response": {
+            "svcName": "Get2FAQuestions",
+            "serverTime": "1512535068585",
+            "infoID": "0",
+            "data": {
+                "questions": [
+                {
+                    "question": "What is your favourite colour?",
+                    "qid": "55",
+                    "enable": false
+                }
+                ]
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "34c18558-9b30-4997-a377-153e8ba6304b",
+            "svcGroup": "LoginHelp"
+        },
+        "config": {
+            "label": 4,
+            "message": 243,
+            "menu": 74,
+            "app": 104
+        }
+}

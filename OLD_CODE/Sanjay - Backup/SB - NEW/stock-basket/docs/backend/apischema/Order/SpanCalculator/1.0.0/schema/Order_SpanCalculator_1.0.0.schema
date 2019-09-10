@@ -1,0 +1,193 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "formFactor": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "formFactor"
+                }, 
+                "requestType": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "requestType"
+                }, 
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "response_format": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "response_format"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "productCode": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "productCode"
+                        }, 
+                        "strikePrice": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "strikePrice"
+                        }, 
+                        "price": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "price"
+                        }, 
+                        "qty": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "qty"
+                        }, 
+                        "symbol": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "symbol"
+                        }, 
+                        "instrument": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "instrument"
+                        }, 
+                        "lotSize": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "lotSize"
+                        }, 
+                        "triggerPrice": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "triggerPrice"
+                        }, 
+                        "misMultiplier": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "misMultiplier"
+                        }, 
+                        "side": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "side"
+                        }
+                    }
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "estimatedBrokerage": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "estimatedBrokerage"
+                        }, 
+                        "marginRequired": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "marginRequired"
+                        }, 
+                        "estimatedExpenses": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "estimatedExpenses"
+                        }, 
+                        "estimatedOrderValue": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "estimatedOrderValue"
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

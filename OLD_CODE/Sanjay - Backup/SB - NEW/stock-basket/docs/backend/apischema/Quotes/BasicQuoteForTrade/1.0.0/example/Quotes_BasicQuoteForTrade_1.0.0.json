@@ -1,0 +1,92 @@
+{
+    "echo": {},
+        "request": {
+            "response_format": "json",
+            "requestType": "U",
+            "data": {
+                "symbol": "553_NSE"
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "formFactor": "M"
+        },
+        "response": {
+            "svcName": "BasicQuoteForTrade",
+            "serverTime": "1493292903724",
+            "infoID": "0",
+            "data": {
+                "tradeQuote": {
+                    "sqrOffTime": "1493891100000",
+                    "amoTime": "127631872386",
+                    "dispExpDate": "-",
+                    "instrument": "-",
+                    "usedAmt": "0.00",
+                    "bidSize": "0",
+                    "marginAvl": "0.00",
+                    "dispInstType": "-",
+                    "prodType": [
+                        "NRML",
+                    "CNC",
+                    "CO",
+                    "BO",
+                    "MIS"
+                        ],
+                    "optionType": "CE",
+                    "strikePrice": "-",
+                    "displayStrikePrice": "-",
+                    "validity": [
+                        "DAY",
+                    "EOS",
+                    "IOC"
+                        ],
+                    "tradeValidity": {
+                        "sl": [
+                            "DAY"
+                            ],
+                        "limit": [
+                            "DAY",
+                        "IOC"
+                            ],
+                        "slm": [
+                            "DAY"
+                            ],
+                        "market": [
+                            "DAY",
+                        "IOC"
+                            ]
+                    },
+                    "expiry": "-",
+                    "misMultiplier": "1",
+                    "change": "00.00",
+                    "lowerCktLimit": "0",
+                    "lotSize": "1",
+                    "lTT": "27/04/2017 15:59:33",
+                    "amoStatus": true,
+                    "changePer": "00.00",
+                    "exc": "NSE",
+                    "tickSize": "5",
+                    "askPrice": "582.50",
+                    "lTP": "582.50",
+                    "tradingSymbol": "RELINFRA-EQ",
+                    "symbol": "553_NSE",
+                    "askSize": "3164",
+                    "bidPrice": "00.00",
+                    "freezeQty": "-",
+                    "symName": "RELINFRA",
+                    "upperCktLimit": "63255",
+                    "companyName": "RELIANCE INFRASTRUCTU LTD",
+                    "PRODUCT_TYPE": "CO",
+                    "ORDER_TYPE": "SL",
+                    "multiplier": "1000"
+                }
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "dba02ef8-18d0-4238-881d-b4f06a568fac",
+            "svcGroup": "Quotes"
+        },
+        "config": {
+            "label": 4,
+            "message": 121,
+            "menu": 49,
+            "app": 35
+        }
+}

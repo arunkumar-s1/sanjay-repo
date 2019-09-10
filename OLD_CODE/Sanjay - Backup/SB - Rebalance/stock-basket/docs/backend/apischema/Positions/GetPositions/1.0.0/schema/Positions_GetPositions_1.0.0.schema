@@ -1,0 +1,437 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "requestType": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "requestType"
+                }, 
+                "formFactor": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "formFactor"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "filter": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "filter", 
+                            "properties": {
+                                "tradeType": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "tradeType"
+                                }, 
+                                "exchange": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "exchange"
+                                }, 
+                                "prodType": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "prodType"
+                                }, 
+                                "instrument": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "instrument"
+                                }, 
+                                "posSize": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "posSize"
+                                }, 
+                                "expiry": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "0"
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "expiry"
+                                }
+                            }
+                        }, 
+                        "type": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "type"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "losingToday": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "losingToday"
+                        }, 
+                        "positionsData": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "optionType": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "optionType"
+                                    }, 
+                                    "daysPnL": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "daysPnL"
+                                    }, 
+                                    "netPosVal": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "netPosVal"
+                                    }, 
+                                    "netQtyPosConvFlag": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "netQtyPosConvFlag"
+                                    }, 
+                                    "totalPnL": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "totalPnL"
+                                    }, 
+                                    "cfAvgPrc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "cfAvgPrc"
+                                    }, 
+                                    "productCode": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "productCode"
+                                    }, 
+                                    "marginBlocked": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "marginBlocked"
+                                    }, 
+                                    "calcNetQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "calcNetQty"
+                                    }, 
+                                    "boughtVal": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "boughtVal"
+                                    }, 
+                                    "netVal": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "netVal"
+                                    }, 
+                                    "displayStrikePrice": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "displayStrikePrice"
+                                    }, 
+                                    "buyQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "buyQty"
+                                    }, 
+                                    "avgBuyPrice": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "avgBuyPrice"
+                                    }, 
+                                    "prevClose": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "prevClose"
+                                    }, 
+                                    "instrument": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "instrument"
+                                    }, 
+                                    "tradingSymbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "tradingSymbol"
+                                    }, 
+                                    "change": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "change"
+                                    }, 
+                                    "sellQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "sellQty"
+                                    }, 
+                                    "boardLotQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "boardLotQty"
+                                    }, 
+                                    "cfQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "cfQty"
+                                    }, 
+                                    "transactionType": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "transactionType"
+                                    }, 
+                                    "dispInstType": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispInstType"
+                                    }, 
+                                    "dispNetQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispNetQty"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "avgSellPrice": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "avgSellPrice"
+                                    }, 
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }, 
+                                    "avgPrc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "avgPrc"
+                                    }, 
+                                    "expiry": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "expiry"
+                                    }, 
+                                    "lTP": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "lTP"
+                                    }, 
+                                    "soldVal": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "soldVal"
+                                    }, 
+                                    "multiplier": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "multiplier"
+                                    }, 
+                                    "cfVal": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "cfVal"
+                                    }, 
+                                    "dispExpDate": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispExpDate"
+                                    }, 
+                                    "squareOffFlag": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "squareOffFlag"
+                                    }, 
+                                    "strikePrice": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "strikePrice"
+                                    }, 
+                                    "positionFlag": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "positionFlag"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }, 
+                                    "netAvgPrc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "netAvgPrc"
+                                    }, 
+                                    "possibleConvs": {
+                                        "items": {
+                                            "required": true, 
+                                            "type": "string", 
+                                            "id": "0"
+                                        }, 
+                                        "required": true, 
+                                        "type": "array", 
+                                        "id": "possibleConvs"
+                                    }, 
+                                    "lotSize": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "lotSize"
+                                    }, 
+                                    "netQty": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "netQty"
+                                    }, 
+                                    "positionType": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "positionType"
+                                    }, 
+                                    "breakEvenPrc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "breakEvenPrc"
+                                    }, 
+                                    "changePer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "changePer"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "positionsData"
+                        }, 
+                        "gainingToday": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "gainingToday"
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

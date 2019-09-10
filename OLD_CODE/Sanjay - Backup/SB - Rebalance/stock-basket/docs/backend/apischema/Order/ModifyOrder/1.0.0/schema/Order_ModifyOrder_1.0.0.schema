@@ -1,0 +1,450 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "requestType": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "requestType"
+                }, 
+                "formFactor": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "formFactor"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "orderParams": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "orderParams", 
+                            "properties": {
+                                "status": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "status"
+                                }, 
+                                "isAmo": {
+                                    "required": true, 
+                                    "type": "boolean", 
+                                    "id": "isAmo"
+                                }, 
+                                "exc": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "exc"
+                                }, 
+                                "ordCount": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "ordCount"
+                                }, 
+                                "triggerPrice": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "triggerPrice"
+                                }, 
+                                "orderType": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "orderType"
+                                }, 
+                                "nestOrderNumber": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "nestOrderNumber"
+                                }, 
+                                "side": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "side"
+                                }, 
+                                "disQty": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "disQty"
+                                }, 
+                                "mrktProtection": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "mrktProtection"
+                                }, 
+                                "symbol": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "symbol"
+                                }, 
+                                "filledQuantity": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "filledQuantity"
+                                }, 
+                                "tradingSymbol": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "tradingSymbol"
+                                }, 
+                                "validity": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "validity"
+                                }, 
+                                "price": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "price"
+                                }, 
+                                "qty": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "qty"
+                                }, 
+                                "userTag": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "userTag"
+                                }, 
+                                "misMultiplier": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "misMultiplier"
+                                }, 
+                                "requestID": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "requestID"
+                                }
+                            }
+                        }, 
+                        "boOrderParams": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "boOrderParams", 
+                            "properties": {
+                                "tSLticks": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "tSLticks"
+                                }, 
+                                "slLtpOrAtp": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "slLtpOrAtp"
+                                }, 
+                                "slAbsOrticks": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "slAbsOrticks"
+                                }, 
+                                "sqrOffLtpOrAtp": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "sqrOffLtpOrAtp"
+                                }, 
+                                "sqrOffvalue": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "sqrOffvalue"
+                                }, 
+                                "slValue": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "slValue"
+                                }, 
+                                "sqrOffAbsOrticks": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "sqrOffAbsOrticks"
+                                }, 
+                                "trailingSL": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "trailingSL"
+                                }
+                            }
+                        }, 
+                        "coOrderParams": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "coOrderParams", 
+                            "properties": {
+                                "stopSellPrc": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "stopSellPrc"
+                                }
+                            }
+                        }, 
+                        "productCode": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "productCode"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "dispInstType": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "dispInstType"
+                        }, 
+                        "status": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "status"
+                        }, 
+                        "fillQty": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "fillQty"
+                        }, 
+                        "orderEntryTime": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "orderEntryTime"
+                        }, 
+                        "orderNumber": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "orderNumber"
+                        }, 
+                        "orderType": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "orderType"
+                        }, 
+                        "nestOrderNumber": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "nestOrderNumber"
+                        }, 
+                        "fillPrice": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "fillPrice"
+                        }, 
+                        "qty": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "qty"
+                        }, 
+                        "isAccepted": {
+                            "required": true, 
+                            "type": "boolean", 
+                            "id": "isAccepted"
+                        }, 
+                        "msg": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "msg"
+                        }, 
+                        "productCode": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "productCode"
+                        }, 
+                        "side": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "side"
+                        }, 
+                        "rejDetails": {
+                            "required": true, 
+                            "type": "object", 
+                            "id": "rejDetails", 
+                            "properties": {
+                                "primarySolution": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "primarySolution"
+                                }, 
+                                "possibleSolutions": {
+                                    "items": {
+                                        "required": true, 
+                                        "type": "object", 
+                                        "id": "0", 
+                                        "properties": {
+                                            "navigate": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "navigate"
+                                            }, 
+                                            "dispSolutionMsg": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "dispSolutionMsg"
+                                            }, 
+                                            "dispSolutionID": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "dispSolutionID"
+                                            }, 
+                                            "navigationDetails": {
+                                                "required": true, 
+                                                "type": "object", 
+                                                "id": "navigationDetails", 
+                                                "properties": {
+                                                    "toFund": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toFund"
+                                                    }, 
+                                                    "toWatchlist": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toWatchlist"
+                                                    }, 
+                                                    "toWebLink": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toWebLink"
+                                                    }, 
+                                                    "toTrade": {
+                                                        "required": true, 
+                                                        "type": "boolean", 
+                                                        "id": "toTrade"
+                                                    }, 
+                                                    "updatedQty": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "updatedQty"
+                                                    }, 
+                                                    "updatedProdType": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "updatedProdType"
+                                                    }, 
+                                                    "webLinkUrl": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "webLinkUrl"
+                                                    }, 
+                                                    "side": {
+                                                        "required": true, 
+                                                        "type": "string", 
+                                                        "id": "side"
+                                                    }
+                                                }
+                                            }, 
+                                            "solutionID": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "solutionID"
+                                            }, 
+                                            "buttonName": {
+                                                "required": true, 
+                                                "type": "string", 
+                                                "id": "buttonName"
+                                            }
+                                        }
+                                    }, 
+                                    "required": true, 
+                                    "type": "array", 
+                                    "id": "possibleSolutions"
+                                }, 
+                                "rejectionReason": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "rejectionReason"
+                                }, 
+                                "dispRejReason": {
+                                    "required": true, 
+                                    "type": "string", 
+                                    "id": "dispRejReason"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

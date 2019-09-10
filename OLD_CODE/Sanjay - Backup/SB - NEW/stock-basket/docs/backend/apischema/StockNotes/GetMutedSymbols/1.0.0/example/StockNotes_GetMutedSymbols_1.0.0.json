@@ -1,0 +1,32 @@
+{
+    "echo": {},
+        "request": {
+            "data": {},
+            "appID": "f24c543af510aea86e1f4413687ab5b6"
+        },
+        "response": {
+            "svcName": "GetMutedSymbols",
+            "serverTime": "1506345481443",
+            "infoID": "0",
+            "data": {
+                "mutedSymbol": [
+                {
+                    "tradingSymbol": "INFY-EQ",
+                    "symName": "INFY",
+                    "isin": "INE009A01021",
+                    "description": "Infosys Limited",
+                    "symbol": "1594_NSE"
+                }
+                ]
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "da217f76-e01f-4220-8998-a0cde1ee0d8e",
+            "svcGroup": "StockNotes"
+        },
+        "config": {
+            "label": 4,
+            "message": 228,
+            "menu": 66,
+            "app": 96
+        }
+}

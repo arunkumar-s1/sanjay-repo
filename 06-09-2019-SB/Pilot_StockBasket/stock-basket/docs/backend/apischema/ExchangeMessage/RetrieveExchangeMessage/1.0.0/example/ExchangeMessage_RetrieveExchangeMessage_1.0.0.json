@@ -1,0 +1,28 @@
+{
+    "echo": {},
+        "request": {
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "data": {
+                "exc": "CDS"
+            },
+            "formFactor": "s",
+            "requestType": "U"
+        },
+        "response": {
+            "svcName": "RetrieveExchangeMessage",
+            "serverTime": "1508221892323",
+            "infoID": "0",
+            "data": {
+                "exchangeMsg": "No Data"
+            },
+            "appID": "a7a84f33504caa69e3f82c764621ec82",
+            "msgID": "942f175d-2629-4d32-99c9-3af12f471ec3",
+            "svcGroup": "ExchangeMessage"
+        },
+        "config": {
+            "label": 4,
+            "message": 233,
+            "menu": 69,
+            "app": 98
+        }
+}

@@ -1,0 +1,40 @@
+{
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "productCode": "NRML",
+      "productToCode": "MIS",
+      "exc": "NFO",
+      "qty": "4",
+      "tradingSymbol": "L&TFH17MAYFUT",
+      "netAmt": "-1,089,900.00",
+      "transactionType": "B",
+      "symbol": "49615_NFO",
+      "netQty": "9000",
+      "avgBuyPrice": "0",
+      "avgSellPrice": "0",
+      "conversnType": "C",
+      "boardLotQty": "4500"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "echo": {},
+  "response": {
+    "svcName": "PositionConversion",
+    "serverTime": "1494328258871",
+    "infoID": "0",
+    "data": {
+      "msg": "Position conversion successful"
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "1b0989f3-faf6-44c9-a9ae-1aeea509206d",
+    "svcGroup": "Positions"
+  },
+  "config": {
+    "label": 4,
+    "message": 137,
+    "menu": 49,
+    "app": 44
+  }
+}

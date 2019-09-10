@@ -1,0 +1,55 @@
+{
+  "echo": {},
+  "request": {
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "data": {
+      "symName": "USDINR",
+      "instrument": "OPTCUR",
+      "expiry": "29MAR2017",
+      "optionType": "CE",
+      "strikePrice": "71.75",
+      "exc": "NSE-CDS"
+    },
+    "formFactor": "s",
+    "requestType": "U"
+  },
+  "response": {
+    "svcName": "DerivativeSymbolDetails",
+    "serverTime": "1490871987559",
+    "infoID": "0",
+    "data": {
+      "symbolDetails": {
+        "tradingSymbol": "USDINR17MAR71.75CE",
+        "displayStrikePrice": "71.75",
+        "expiry": "29 Mar 17",
+        "symbol": "1363_CDS",
+        "changePer": "0.00",
+        "strikePrice": "71.75",
+        "dispInstType": "OPTCUR",
+        "associatedSymbol": [
+          {
+            "exc": "BSE-CDS",
+            "symName": "USDINR",
+            "symbol": "1007534_BCD"
+          }
+        ],
+        "symName": "USDINR",
+        "dispExpDate": "29MAR2017",
+        "optionType": "CE",
+        "change": "0.00",
+        "lTP": "0.00",
+        "exc": "NSE-CDS",
+        "instrument": "OPTCUR"
+      }
+    },
+    "appID": "a7a84f33504caa69e3f82c764621ec82",
+    "msgID": "bd2775da-7c40-4c2f-945c-583c0b94ff47",
+    "svcGroup": "Search"
+  },
+  "config": {
+    "label": 4,
+    "message": 66,
+    "menu": 49,
+    "app": 35
+  }
+}

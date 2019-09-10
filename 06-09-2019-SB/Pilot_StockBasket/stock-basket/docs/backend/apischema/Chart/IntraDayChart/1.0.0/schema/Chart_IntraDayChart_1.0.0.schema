@@ -1,0 +1,170 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "symbol": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "symbol"
+                        },
+                        "tradingSymbol": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "tradingSymbol"
+                        }, 
+                        "resolution": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "resolution"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "points": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "Volume": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "Volume"
+                                    }, 
+                                    "High": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "High"
+                                    }, 
+                                    "Low": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "Low"
+                                    }, 
+                                    "Close": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "Close"
+                                    }, 
+                                    "DT": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "DT"
+                                    }, 
+                                    "Open": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "Open"
+                                    }, 
+                                    "DT_UTC": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "DT_UTC"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "points"
+                        }, 
+                        "precision": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "precision"
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}

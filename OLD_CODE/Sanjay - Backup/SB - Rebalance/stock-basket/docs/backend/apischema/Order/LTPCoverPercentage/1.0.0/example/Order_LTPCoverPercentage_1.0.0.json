@@ -1,0 +1,35 @@
+{
+	"echo": {},
+		"request": {
+			"appID": "a7a84f33504caa69e3f82c764621ec82",
+			"data": {
+				"symbol": "2882_NSE",
+				"exc": "NSE",
+				"side": "BUY"
+			},
+			"formFactor": "s",
+			"requestType": "U"
+		},
+		"response": {
+			"svcName": "LTPCoverPercentage",
+			"serverTime": "1501087855711",
+			"infoID": "0",
+			"data": {
+				"ltpCoverPercent": {
+					"lowerCOLimit": "597.60",
+					"coverPercent": "5.00",
+					"upperCOLimit": "660.50",
+					"lTP": "629.05"
+				}
+			},
+			"appID": "a7a84f33504caa69e3f82c764621ec82",
+			"msgID": "26fd1b3c-6d45-456a-be6d-fc1ee4be57b3",
+			"svcGroup": "Order"
+		},
+		"config": {
+			"label": 4,
+			"message": 207,
+			"menu": 43,
+			"app": 92
+		}
+}

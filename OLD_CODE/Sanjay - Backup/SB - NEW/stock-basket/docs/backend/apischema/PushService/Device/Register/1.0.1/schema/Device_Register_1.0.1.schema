@@ -1,0 +1,84 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "userType": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "userType"
+                        }, 
+                        "build": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "build"
+                        }, 
+                        "deviceToken": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "deviceToken"
+                        }, 
+                        "user": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "user"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "request": {
+        "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "data": {}
+    },
+        "response": {
+            "svcName": "AccountSummary",
+            "serverTime": "1506086344670",
+            "infoID": "0",
+            "data": {
+                "equityDetails": {
+                    "holdings": "",
+                    "netOptions": "",
+                    "totalEquity": "",
+                    "marginBlocked": "",
+                    "netCashAvl": "",
+                    "lastUpdatedDate": "01 Jan 2018"
+                },
+                "commodityDetails": {
+                    "netOptions": "0",
+                    "totalCommodity": "NA",
+                    "holdings": "0",
+                    "netCashAvl": "0",
+                    "marginBlocked": "",
+                    "lastUpdatedDate": "01 Jan 2018"
+                }
+            },
+            "appID": "f24c543af510aea86e1f4413687ab5b6",
+            "msgID": "d87c376c-7792-4b5e-8f71-26e98dfa71e2",
+            "svcGroup": "QuickStats"
+        },
+        "config": {
+            "label": 4,
+            "message": 228,
+            "menu": 66,
+            "app": 96
+        }
+}

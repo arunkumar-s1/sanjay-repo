@@ -1,0 +1,306 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "request": {
+            "required": true, 
+            "type": "object", 
+            "id": "request", 
+            "properties": {
+                "requestType": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "requestType"
+                }, 
+                "formFactor": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "formFactor"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "searchStr": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "searchStr"
+                        }, 
+                        "assetType": {
+                            "required": true, 
+                            "type": "string", 
+                            "id": "assetType"
+                        }
+                    }
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }
+            }
+        }, 
+        "config": {
+            "required": true, 
+            "type": "object", 
+            "id": "config", 
+            "properties": {
+                "menu": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "menu"
+                }, 
+                "message": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "message"
+                }, 
+                "app": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "app"
+                }, 
+                "label": {
+                    "required": true, 
+                    "type": "number", 
+                    "id": "label"
+                }
+            }
+        }, 
+        "response": {
+            "required": true, 
+            "type": "object", 
+            "id": "response", 
+            "properties": {
+                "msgID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "msgID"
+                }, 
+                "svcGroup": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcGroup"
+                }, 
+                "serverTime": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "serverTime"
+                }, 
+                "infoID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "infoID"
+                }, 
+                "appID": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "appID"
+                }, 
+                "svcName": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "svcName"
+                }, 
+                "data": {
+                    "required": true, 
+                    "type": "object", 
+                    "id": "data", 
+                    "properties": {
+                        "indicesList": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "instrument": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "instrument"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "indicesList"
+                        }, 
+                        "masterList": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "sortPriority": {
+                                        "required": true, 
+                                        "type": "number", 
+                                        "id": "sortPriority"
+                                    }, 
+                                    "optionType": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "optionType"
+                                    }, 
+                                    "strikePrice": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "strikePrice"
+                                    }, 
+                                    "lTP": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "lTP"
+                                    }, 
+                                    "dispName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispName"
+                                    }, 
+                                    "dispLen": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispLen"
+                                    }, 
+                                    "companyName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "companyName"
+                                    }, 
+                                    "displayStrikePrice": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "displayStrikePrice"
+                                    }, 
+                                    "symbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symbol"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "expiry": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "expiry"
+                                    }, 
+                                    "dispInstType": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispInstType"
+                                    }, 
+                                    "instrument": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "instrument"
+                                    }, 
+                                    "tradingSymbol": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "tradingSymbol"
+                                    }, 
+                                    "change": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "change"
+                                    }, 
+                                    "associatedSymbol": {
+                                        "items": {
+                                            "required": true, 
+                                            "type": "object", 
+                                            "id": "0", 
+                                            "properties": {
+                                                "symbol": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symbol"
+                                                }, 
+                                                "symName": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "symName"
+                                                }, 
+                                                "exc": {
+                                                    "required": true, 
+                                                    "type": "string", 
+                                                    "id": "exc"
+                                                }
+                                            }
+                                        }, 
+                                        "required": true, 
+                                        "type": "array", 
+                                        "id": "associatedSymbol"
+                                    }, 
+                                    "changePer": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "changePer"
+                                    }, 
+                                    "dispExpDate": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "dispExpDate"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "masterList"
+                        }, 
+                        "stockList": {
+                            "items": {
+                                "required": true, 
+                                "type": "object", 
+                                "id": "0", 
+                                "properties": {
+                                    "instrument": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "instrument"
+                                    }, 
+                                    "symName": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "symName"
+                                    }, 
+                                    "exc": {
+                                        "required": true, 
+                                        "type": "string", 
+                                        "id": "exc"
+                                    }
+                                }
+                            }, 
+                            "required": true, 
+                            "type": "array", 
+                            "id": "stockList"
+                        }
+                    }
+                }
+            }
+        }, 
+        "echo": {
+            "required": true, 
+            "type": "object", 
+            "id": "echo"
+        }
+    }
+}
